@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7e199dacec32443a07841f7e067ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlighted: {fileID: 0}
+  highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
 --- !u!135 &287321538
 SphereCollider:
   m_ObjectHideFlags: 0
