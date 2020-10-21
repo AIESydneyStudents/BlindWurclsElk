@@ -21,6 +21,12 @@ public class InteractionBase : MonoBehaviour
         // Get the mesh renderer and the current material
         render = GetComponent<MeshRenderer>();
         normal = render.material;
+
+        // If a highlighted material is not selected, use the default
+        if (highlighted == null)
+        {
+            highlighted = normal;
+        }
     }
 
 
