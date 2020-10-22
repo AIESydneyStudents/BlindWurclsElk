@@ -28,7 +28,7 @@ public abstract class BaseNode : Node
 	// Ports are not read for values, so this is unused
 	public override object GetValue(NodePort port)
 	{
-		return base.GetValue(port);
+		return null;
 	}
 
 
