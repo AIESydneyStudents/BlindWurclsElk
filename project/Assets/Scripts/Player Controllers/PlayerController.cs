@@ -30,6 +30,16 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
     }
 
+    void OnEnable()
+    {
+        // Reset rotation to cameras current after being disabled
+        rotationX = playerCamera.transform.rotation.eulerAngles.x;
+        // Negitive rotations loop to 360
+        if (rotationX > 180)
+        { rotationX -= 360; }
+    }
+
+
     void Update()
     {
         // We are grounded, so recalculate move direction based on axes
