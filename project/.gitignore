@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+
+# ProBuilder stored editor info in Settings.json, so dont keep it
+/[Pp]rojectSettings/Packages/com.unity.probuilder/Settings.json
