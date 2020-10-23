@@ -5,12 +5,14 @@ using UnityEngine;
 public class CollectionManager_Test : CollectionManagerBase
 {
     public float fadeTime = 1f;
+    public float delayToShowObject = 1f;
+
+    public GameObject uiObject;
 
 
     protected override void AllCollected()
     {
-        //temp for debugging
-        Debug.Log("All items collected");
+        StartCoroutine(ShowObject(delayToShowObject));
     }
 
     protected override void NewCollection(int itemID)
@@ -37,5 +39,18 @@ public class CollectionManager_Test : CollectionManagerBase
 
             yield return null;
         }
+    }
+
+    private IEnumerator ShowObject(float time)
+    {
+        //wait time
+        yield return new WaitForSeconds(time);
+
+        //hide each element
+        foreach (var val in uiElements)
+        { val.gameObject.SetActive(false); }
+
+        //show object
+        uiObject.SetActive(true);
     }
 }
