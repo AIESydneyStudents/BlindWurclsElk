@@ -30,7 +30,8 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // Get this rect transform
         trans = GetComponent<RectTransform>();
 
-        //add to manager list
+        // Add to the manager's list of tiles
+        DragManager.instance.tiles.Add(this);
     }
 
 
@@ -68,8 +69,8 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         moving = false;
 
 
-        //temp: move to manager
-        float radius = 50f;
+        // Get range from manager
+        float radius = DragManager.instance.slotSnapRange;
 
         // Get slots and itterate
         foreach (var slot in FindObjectsOfType<DragSlotScript>())
@@ -89,8 +90,8 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 break;
             }
         }
-        
 
-        //message manager
+        // Get manager to check for game over
+        DragManager.instance.CheckTiles();
     }
 }
