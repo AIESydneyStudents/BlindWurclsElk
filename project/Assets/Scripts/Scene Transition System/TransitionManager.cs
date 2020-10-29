@@ -69,17 +69,17 @@ public class TransitionManager : MonoBehaviour
         loadOp.allowSceneActivation = true;
 
 
-
         //while something is still happening
         while (!loadOp.isDone || !unloadOp.isDone)
         {
             yield return null;
         }
 
-
-
-        //update pos
+        
+        //update pos. the char controller overrides the transform, so it needs to be disabled first
+        player.GetComponent<CharacterController>().enabled = false;
         player.transform.position = pos;
+        player.GetComponent<CharacterController>().enabled = true;
 
         //activate sitting controller
         if (useSitting)
@@ -98,6 +98,8 @@ public class TransitionManager : MonoBehaviour
         //set animator toggle
 
 
+        //get new scene
+        currentScene = SceneManager.GetSceneAt(1);
         //done, remove ref
         loadOp = null;
     }
