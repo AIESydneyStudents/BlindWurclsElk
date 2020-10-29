@@ -29,7 +29,9 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         // Get this rect transform
         trans = GetComponent<RectTransform>();
-
+    }
+    void Start()
+    {
         // Add to the manager's list of tiles
         DragManager.instance.tiles.Add(this);
     }
