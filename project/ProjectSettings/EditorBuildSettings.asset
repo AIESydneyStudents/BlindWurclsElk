@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/SandBox/SB-TransitionBase.unity
+    guid: 3bef04f581ad4d340aad252ad7b886f9
+  - enabled: 1
+    path: Assets/SandBox/SB-Thomas.unity
+    guid: 0346a8873df67994586f6050b9f43e94
+  - enabled: 1
+    path: Assets/SandBox/TransitionTestScene.unity
+    guid: c75b239255600aa4aa674cfccae68e3c
   m_configObjects: {}
