@@ -10,17 +10,20 @@ public class DialogueNode : BaseNode
 	public AudioClip audio;
 
 	[Tooltip("The durration of the audio clip is added")]
-	public float durration = 1;
+	public float extraPlayTime = 1;
+
+	private float duration;
 
 
 	protected override void Init()
 	{
 		base.Init();
-		
+
+		duration = extraPlayTime;
 		// Add the length of the audio clip to the node durration
 		if (audio != null)
 		{
-			durration += audio.length;
+			duration += audio.length;
 		}
 	}
 
@@ -34,7 +37,7 @@ public class DialogueNode : BaseNode
 	private IEnumerator Wait()
 	{
 		// Wait for the durration to be over before returning to the graph
-		yield return new WaitForSeconds(durration);
+		yield return new WaitForSeconds(duration);
 		(graph as DialogueGraph).NextNode();
 	}
 }
