@@ -12,15 +12,17 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     // Is the object currently being moved?
     bool moving = false;
+    // The slot the tile is currently in, or null
+    DragSlotScript usedSlot = null;
 
 
-    [Tooltip("")]
+    // A slot of the same value will lock it
     public char tileValue;
 
     // Has the object been locked?
     [HideInInspector]
     public bool canBeMoved = true;
-
+    
 
 
     void Awake()
@@ -37,9 +39,15 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // If the object isnt locked
         if (canBeMoved)
         {
+            // If in a slot, get out of it
+            if (usedSlot != null)
+            {
+                usedSlot.used = false;
+                usedSlot = null;
+            }
+
             // Get the offset for where the player has clicked the object
             mouseOffset = trans.position - (Vector3)eventData.position;
-
             // Allow the object to be moved
             moving = true;
         }
@@ -60,8 +68,28 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         moving = false;
 
 
-        //check for DragSlotScript in area
-        //  is corrent tile val, canBeMoved = false
+        //temp: move to manager
+        float radius = 50f;
+
+        // Get slots and itterate
+        foreach (var slot in FindObjectsOfType<DragSlotScript>())
+        {
+            // If slot is not being used and is in range
+            if (!slot.used && Vector3.Distance(slot.transform.position, trans.position) < radius)
+            {
+                // Use the slot
+                trans.position = slot.transform.position;
+                usedSlot = slot;
+                slot.used = true;
+
+                // If the slot accepts this tile, lock
+                if (tileValue == slot.acceptedTileValue)
+                { canBeMoved = false; }
+
+                break;
+            }
+        }
+        
 
         //message manager
     }

@@ -9,13 +9,6 @@ public class DragManager : MonoBehaviour
 
 
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    //func
+    //  if all locked, game over
 }
