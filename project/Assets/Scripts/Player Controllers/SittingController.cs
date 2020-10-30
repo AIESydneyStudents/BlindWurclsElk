@@ -115,7 +115,7 @@ public class SittingController : MonoBehaviour
 
         //lerp rotation vars
         Quaternion startRot = transform.rotation;
-        Quaternion endRot = Quaternion.Euler(new Vector3(0, seat.forwardRotation, 0));
+        Quaternion endRot = Quaternion.Euler(new Vector3(0, -seat.forwardRotation, 0));
 
         //run for tSitPos
         for (float timePassed = 0f; timePassed < tSitPos; timePassed += Time.deltaTime)
