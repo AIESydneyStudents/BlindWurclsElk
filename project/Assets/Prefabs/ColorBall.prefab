@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3131727699296735346}
   - component: {fileID: 3131727699296735347}
   - component: {fileID: 3131727699296735340}
+  - component: {fileID: 4004223677410315698}
   m_Layer: 0
   m_Name: ColorBall
   m_TagString: Untagged
@@ -110,3 +111,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &4004223677410315698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3131727699296735341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c313368480a31d54c9f7a5b2692b4475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleEffect: {fileID: 0}
