@@ -33,10 +33,16 @@ public class SittingController : MonoBehaviour
         //disable the player controller
         GetComponent<PlayerController>().enabled = false;
 
+        // Should sitting down be animated?
+        bool useAnim = true;
+
 
         // If no seat is passed, find nearby seat to use
         if (seat == null)
         {
+            // Dont animate if not passed a seat: this should occur in scene transitions
+            useAnim = false;
+
             //only need 1 seat
             Collider[] res = new Collider[1];
 
@@ -67,8 +73,17 @@ public class SittingController : MonoBehaviour
         { rotationX -= 360; }
 
 
-        //'anim' moves player to standing pos quickly, then to sitting pos, then sets isSitting to true
-        StartCoroutine(EaseToSit(0.2f, 1f));
+        if (useAnim)
+        {
+            //'anim' moves player to standing pos quickly, then to sitting pos, then sets isSitting to true
+            StartCoroutine(EaseToSit(0.2f, 1f));
+        }
+        else
+        {
+            // Move the player to the seat and let them look around
+            transform.position = seat.sittingPos;
+            isSitting = true;
+        }
     }
 
     //call when script deactivated

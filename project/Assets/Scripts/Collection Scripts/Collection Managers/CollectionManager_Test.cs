@@ -10,9 +10,14 @@ public class CollectionManager_Test : CollectionManagerBase
     public GameObject uiObject;
 
 
+
     protected override void AllCollected()
     {
         StartCoroutine(ShowObject(delayToShowObject));
+
+        // Enable the collected object in the train carrage.
+        // such a script should be created for every collection (new script as it uses a static)
+        CollectedObject_Test.active = true;
     }
 
     protected override void NewCollection(int itemID)
