@@ -155,7 +155,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7565c175f74e2444c8c2819867aef234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 1205483125}
   lookSpeed: 2
   lookXLimit: 45
   lookYLimit: 45
@@ -171,8 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13efbacf696b8b74c9fc1d3b317ff203, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 1205483125}
-  walkingSpeed: 7.5
+  speed: 7.5
   gravity: 20
   lookSpeed: 2
   lookXLimit: 45
@@ -281,7 +279,6 @@ GameObject:
   - component: {fileID: 706088895}
   - component: {fileID: 706088896}
   - component: {fileID: 706088897}
-  - component: {fileID: 706088898}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -325,18 +322,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ff4f2ce3d7ad844e9e8f1bbd91134c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &706088898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706088894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d6b4253a6ecc7d4aadfc3c0b8ecb536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1205483123

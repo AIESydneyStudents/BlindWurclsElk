@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public bool canMove = true;
 
 
-    void Start()
+    void Awake()
     {
         cam = FindObjectOfType<Camera>().transform;
         charController = GetComponent<CharacterController>();

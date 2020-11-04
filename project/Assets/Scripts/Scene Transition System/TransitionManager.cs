@@ -23,6 +23,19 @@ public class TransitionManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+
+
+        // If the active scene is not the player scene, hard load it
+        if (SceneManager.GetActiveScene().name != "PlayerScene")
+        {
+            SceneManager.LoadScene(0);
+        }
+
+        // If there are less than 2 scenes loaded, load the train carrage
+        if (SceneManager.sceneCount < 2)
+        {
+            SceneManager.LoadScene(1, LoadSceneMode.Additive);
+        }
     }
     void Start()
     {
