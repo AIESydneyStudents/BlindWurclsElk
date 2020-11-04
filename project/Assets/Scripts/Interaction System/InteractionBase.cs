@@ -54,10 +54,13 @@ public class InteractionBase : MonoBehaviour
     /// </summary>
     public void Use()
     {
-        // Activate each attached component
+        // Activate each attached component if it is enabled
         foreach (TriggerComponentBase comp in GetComponents<TriggerComponentBase>())
         {
-            comp.Activate();
+            if (comp.enabled)
+            {
+                comp.Activate();
+            }
         }
     }
 }
