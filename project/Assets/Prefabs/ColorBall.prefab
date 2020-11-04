@@ -124,3 +124,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particleEffect: {fileID: 0}
+  splat: {fileID: 2800000, guid: a74dba0dde15ad147a78205948c9e195, type: 3}
+  color: {r: 0.9622642, g: 0, b: 0, a: 1}
