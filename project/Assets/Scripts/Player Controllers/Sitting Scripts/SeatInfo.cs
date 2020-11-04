@@ -17,5 +17,8 @@ public class SeatInfo : MonoBehaviour
         //get positions relative to the object
         sittingPos += transform.position;
         standingPos += transform.position;
+
+        // Set the object's layer to 'seat'
+        gameObject.layer = 8;
     }
 }
