@@ -10,7 +10,7 @@ public class DialogueGraph : NodeGraph
 	DialogueManager manager;
 
 	// The dialogue node the graph is currently on
-	DialogueNode current;
+	public DialogueNode current;
 
 
 	/// <summary>

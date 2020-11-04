@@ -72,5 +72,8 @@ public class DialogueManager : MonoBehaviour
         uiPanel.SetActive(false);
         if (dialoguePlayer != null)
         { dialoguePlayer.Stop(); }
+
+        // Remove graph ref
+        graph = null;
     }
 }

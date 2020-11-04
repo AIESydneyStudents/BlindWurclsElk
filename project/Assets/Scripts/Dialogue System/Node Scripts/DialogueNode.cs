@@ -38,6 +38,10 @@ public class DialogueNode : BaseNode
 	{
 		// Wait for the durration to be over before returning to the graph
 		yield return new WaitForSeconds(duration);
-		(graph as DialogueGraph).NextNode();
+
+		if ((graph as DialogueGraph).current == this)
+		{
+			(graph as DialogueGraph).NextNode();
+		}
 	}
 }
