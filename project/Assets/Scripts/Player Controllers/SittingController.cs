@@ -5,45 +5,51 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class SittingController : MonoBehaviour
 {
-    public Camera playerCamera;
+    Transform cam;
 
     public float lookSpeed = 2.0f;
     public float lookXLimit = 45.0f;
     public float lookYLimit = 45.0f;
 
 
-
-    //can the player currently look around?
+    // Can the player currently look around?
     bool isSitting = false;
 
-
-    //the seat the player is currently in
+    // The seat the player is currently in
     SeatInfo seat;
 
-
-    //current rotation
+    // Current rotations
     float rotationX = 0;
     float rotationY = 0;
 
 
 
-    //call when script activated. not in start because it needs param
+    void Awake()
+    {
+        cam = FindObjectOfType<Camera>().transform;
+    }
+
+
+    /// <summary>
+    /// Call after activating this script
+    /// </summary>
+    /// <param name="seat">The seat to use. If nothing is passed, the nearest seat will be used</param>
     public void StartSitting(SeatInfo seat = null)
     {
-        //disable the player controller
+        // Disable the player controller; only one should be active at a time
         GetComponent<PlayerController>().enabled = false;
 
-        // Should sitting down be animated?
+        // Should sitting down be animated? (false if using nearest seat)
         bool useAnim = true;
 
 
         // If no seat is passed, find nearby seat to use
         if (seat == null)
         {
-            // Dont animate if not passed a seat: this should occur in scene transitions
+            // This should be a scene transition, so dont animate sitting
             useAnim = false;
 
-            //only need 1 seat
+            // Allocate array for 1 seat
             Collider[] res = new Collider[1];
 
             //do a sphere cast with a layer mask for 'Seats' layer
@@ -67,7 +73,7 @@ public class SittingController : MonoBehaviour
         this.seat = seat;
         //reset rot
         rotationY = seat.forwardRotation;
-        rotationX = playerCamera.transform.rotation.eulerAngles.x;
+        rotationX = cam.rotation.eulerAngles.x;
         // Negitive rotations loop to 360
         if (rotationX > 180)
         { rotationX -= 360; }
@@ -86,10 +92,12 @@ public class SittingController : MonoBehaviour
         }
     }
 
-    //call when script deactivated
+    /// <summary>
+    /// Called to start standing again
+    /// </summary>
     public void StopSiting()
     {
-        //no control
+        // Remove control
         isSitting = false;
 
         //anim to stand pos (enables player controller at end)
@@ -151,33 +159,27 @@ public class SittingController : MonoBehaviour
     }
 
     
-
     void Update()
     {
-        //if not sitting, dont do anything
+        // If still animating, the player cant do anything
         if (!isSitting)
         { return; }
 
 
-
-        //stand up on space
+        //stand up on space - for debug
         if (Input.GetKeyDown(KeyCode.Space))
         { StopSiting(); }
 
 
-
-        //(up and down)
+        // Look up and down
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
-
-        //(left and right)
-        //y rotation needs to be clamped, relative to an abstract 'forward' (seat.forwardRotation)
+        // Look left and right
         rotationY += -Input.GetAxis("Mouse X") * lookSpeed;
         rotationY = Mathf.Clamp(rotationY, seat.forwardRotation - lookYLimit, seat.forwardRotation + lookYLimit);
 
-
-        //apply rotation
-        playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+        // Apply rotation
+        cam.localRotation = Quaternion.Euler(rotationX, 0, 0);
         transform.rotation = Quaternion.Euler(0, -rotationY, 0);
     }
 }
