@@ -16,6 +16,11 @@ public class CollectableComponent : TriggerComponentBase
         collectionManager.Collected(itemID);
 
         // Destroy the object now that its been collected
+        Invoke("DestroyObject", 0f);
+    }
+
+    private void DestroyObject()
+    {
         Destroy(gameObject);
     }
 }
