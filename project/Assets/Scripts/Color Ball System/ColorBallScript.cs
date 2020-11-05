@@ -19,9 +19,14 @@ public class ColorBallScript : MonoBehaviour
     {
         if (particleEffect != null)
         {
-            // Instantiate particle effect facing away from collision normal, and play effect
-            GameObject effect = Instantiate(particleEffect, transform.position, Quaternion.Euler(collision.GetContact(0).normal));
-            effect.GetComponent<ParticleSystem>().Play();
+            // Instantiate particle effect facing away from collision normal
+            GameObject effect = Instantiate(particleEffect, transform.position, Quaternion.Euler(collision.GetContact(0).normal + new Vector3(-90, 0, 0)));
+
+            // Scale the effect to the size of the projectile
+            effect.transform.localScale = transform.localScale;
+            // Set the effect's color to this color
+            var mainModule = effect.GetComponent<ParticleSystem>().main;
+            mainModule.startColor = color;
         }
 
 
