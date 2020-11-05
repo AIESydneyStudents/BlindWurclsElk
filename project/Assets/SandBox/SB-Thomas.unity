@@ -186,6 +186,7 @@ MonoBehaviour:
   - {fileID: 1915090403}
   fadeTime: 0.5
   delayToShowObject: 1
+  delayToTransition: 2
   uiObject: {fileID: 1936332712}
 --- !u!114 &449519
 MonoBehaviour:
@@ -474,6 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 432119116}
+  current: {fileID: 0}
 --- !u!1 &266136267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,6 +1907,7 @@ MonoBehaviour:
   nodes:
   - {fileID: 1771856052}
   - {fileID: 337149621}
+  current: {fileID: 0}
 --- !u!1 &1975337584
 GameObject:
   m_ObjectHideFlags: 0
