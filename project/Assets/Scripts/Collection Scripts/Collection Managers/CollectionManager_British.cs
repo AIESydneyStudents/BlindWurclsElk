@@ -15,7 +15,7 @@ public class CollectionManager_British : CollectionManagerBase
         StartCoroutine(TransitionToTrain(delayToTransition));
 
         // Enable the collected object in the train carrage
-        CollectedObject_Test.active = true;
+        CollectionObjects_British.collected = true;
     }
 
     protected override void NewCollection(int itemID)

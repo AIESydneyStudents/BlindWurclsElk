@@ -15,7 +15,7 @@ public class CollectionManager_India : CollectionManagerBase
         StartCoroutine(TransitionToTrain(delayToTransition));
 
         // Enable the collected object in the train carrage
-        CollectionObjects_Japan.collected = true;
+        CollectionObjects_India.collected = true;
     }
 
     protected override void NewCollection(int itemID)
