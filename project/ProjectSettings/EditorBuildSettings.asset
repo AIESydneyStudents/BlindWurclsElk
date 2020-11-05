@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/TT_Level_Japan_v1.unity
     guid: 4fa89ee3a1366bd4e83fae54e984b892
+  - enabled: 1
+    path: Assets/Scenes/Levels/TT_Level_Britain.unity
+    guid: 6233db9eb2cad404ca70d7187eca1a9e
+  - enabled: 1
+    path: Assets/Scenes/Levels/TT_Level_India.unity
+    guid: 581fe2c72fb815e4a9e79840df2c4db8
   m_configObjects: {}
