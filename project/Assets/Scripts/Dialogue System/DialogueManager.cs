@@ -19,8 +19,8 @@ public class DialogueManager : MonoBehaviour
     // The UI element for dialogue text
     public Text uiText;
 
-    [Tooltip("If an audio source is not given via script, this will be used instead")]
-    public AudioSource defaultDialoguePlayer;
+    // The dialogue player used if none is provided. set to be on the player
+    AudioSource defaultDialoguePlayer;
 
 
 
@@ -28,6 +28,9 @@ public class DialogueManager : MonoBehaviour
     {
         // This is a singleton, with only one instance
         instance = this;
+
+        // Get the player's audio source
+        defaultDialoguePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>();
     }
 
 
