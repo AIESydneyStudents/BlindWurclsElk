@@ -264,6 +264,8 @@ MonoBehaviour:
   sceneName: TT_Level_India
   changePos: 1
   pos: {x: 0, y: 1, z: 0}
+  changeRot: 1
+  rot: {x: 0, y: 0, z: 0}
   useSitting: 0
 --- !u!114 &371805076
 MonoBehaviour:
@@ -706,6 +708,8 @@ MonoBehaviour:
   sceneName: TT_Level_Britain
   changePos: 1
   pos: {x: 0, y: 1, z: 0}
+  changeRot: 1
+  rot: {x: 0, y: 0, z: 0}
   useSitting: 0
 --- !u!114 &747652795
 MonoBehaviour:
@@ -1025,6 +1029,8 @@ MonoBehaviour:
   sceneName: TT_Level_Japan_v1
   changePos: 1
   pos: {x: 55, y: 1, z: -15}
+  changeRot: 1
+  rot: {x: 0, y: 0, z: 0}
   useSitting: 0
 --- !u!114 &1182799219
 MonoBehaviour:

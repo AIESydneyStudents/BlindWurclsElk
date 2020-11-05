@@ -66,7 +66,7 @@ public class CollectionManager_Test : CollectionManagerBase
         yield return new WaitForSeconds(time);
 
         // Transition to train with the player sitting in the booth
-        TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-0.1f, 1f, 1.1f), true);
+        TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-0.1f, 1f, 1.1f), null, true);
 
     }
 }

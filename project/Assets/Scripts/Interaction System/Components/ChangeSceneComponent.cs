@@ -9,13 +9,15 @@ public class ChangeSceneComponent : TriggerComponentBase
     public bool changePos = false;
     public Vector3 pos;
     [Space]
+    public bool changeRot = false;
+    public Vector3 rot;
+    [Space]
     public bool useSitting = false;
-
 
 
 
     public override void Activate()
     {
-        TransitionManager.instance.ChangeScene(sceneName, (changePos) ? (Vector3?)pos : null, useSitting);
+        TransitionManager.instance.ChangeScene(sceneName, (changePos) ? (Vector3?)pos : null, (changeRot) ? (Vector3?)rot : null, useSitting);
     }
 }

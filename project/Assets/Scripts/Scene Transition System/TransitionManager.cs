@@ -17,6 +17,7 @@ public class TransitionManager : MonoBehaviour
     //  used by 2nd func
     AsyncOperation loadOp;
     Vector3 pos;
+    Vector3 rot;
     bool useSitting;
 
 
@@ -47,7 +48,7 @@ public class TransitionManager : MonoBehaviour
     }
 
 
-    public void ChangeScene(string sceneName, /*enum for anim,*/ Vector3? position = null, bool useSitting = false)
+    public void ChangeScene(string sceneName, /*enum for anim,*/ Vector3? position = null, Vector3? rotation = null, bool useSitting = false)
     {
         //disable controllers
         player.GetComponent<PlayerController>().enabled = false;
@@ -58,8 +59,9 @@ public class TransitionManager : MonoBehaviour
         //dont activate on load
         loadOp.allowSceneActivation = false;
 
-
+        //set values for other function
         pos = (position == null) ? player.transform.position : position.Value;
+        rot = (rotation == null) ? player.transform.rotation.eulerAngles : rotation.Value;
         this.useSitting = useSitting;
 
 
@@ -89,9 +91,10 @@ public class TransitionManager : MonoBehaviour
         }
 
         
-        //update pos. the char controller overrides the transform, so it needs to be disabled first
+        //update pos and rot. the char controller overrides the transform, so it needs to be disabled first
         player.GetComponent<CharacterController>().enabled = false;
         player.transform.position = pos;
+        player.transform.rotation = Quaternion.Euler(rot);
         player.GetComponent<CharacterController>().enabled = true;
 
         //activate sitting controller

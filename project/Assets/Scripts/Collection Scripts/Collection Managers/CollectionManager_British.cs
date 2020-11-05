@@ -48,7 +48,7 @@ public class CollectionManager_British : CollectionManagerBase
         yield return new WaitForSeconds(time);
 
         // Transition to train with the player sitting in the booth
-        TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-3.5f, 1f, -3.2f), true);
+        TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-3.5f, 1f, -3.2f), null, true);
 
     }
 }

@@ -4656,6 +4656,8 @@ MonoBehaviour:
   sceneName: TrainCarriage
   changePos: 1
   pos: {x: 0, y: 1, z: 0}
+  changeRot: 0
+  rot: {x: 0, y: 0, z: 0}
   useSitting: 0
 --- !u!114 &1509756285
 MonoBehaviour:
