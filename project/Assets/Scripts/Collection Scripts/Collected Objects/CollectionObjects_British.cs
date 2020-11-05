@@ -11,7 +11,13 @@ public class CollectionObjects_British : MonoBehaviour
     public static bool collected = false;
 
 
-    void Awake()
+    void Start()
+    {
+        // Invoke to allow the player to find the nearest chair before disabling it
+        Invoke("Toggle", 0.1f);
+    }
+
+    private void Toggle()
     {
         foreach (var obj in objects)
         {
