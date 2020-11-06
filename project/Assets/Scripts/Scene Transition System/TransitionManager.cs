@@ -26,8 +26,8 @@ public class TransitionManager : MonoBehaviour
         instance = this;
 
 
-        // If the active scene is not the player scene, hard load it
-        if (SceneManager.GetActiveScene().name != "PlayerScene" && SceneManager.GetActiveScene().name != "SB-TransitionBase")
+        // If the player scene is not loaded, hard load it
+        if (SceneManager.GetSceneByName("PlayerScene").IsValid() && SceneManager.GetSceneByName("SB-TransitionBase").IsValid())
         {
             SceneManager.LoadScene(0);
         }
