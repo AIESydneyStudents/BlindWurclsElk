@@ -1,6 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
+
+[System.Serializable]
+public class MyBoolEvent : UnityEvent<bool>
+{
+}
+
 
 [RequireComponent(typeof(Collider))]
 public class ColorBallScript : MonoBehaviour
@@ -9,10 +17,10 @@ public class ColorBallScript : MonoBehaviour
     public GameObject particleEffect;
 
     public Texture2D splat;
-
     public Color color;
 
-
+    [HideInInspector]
+    public UnityEvent<bool> Contact = new MyBoolEvent();
 
 
     void OnCollisionEnter(Collision collision)
@@ -43,6 +51,9 @@ public class ColorBallScript : MonoBehaviour
             }
         }
 
+
+        //invoke event
+        Contact.Invoke(collision.gameObject.CompareTag("Mannequin"));
 
         // Destroy the projectile
         Destroy(gameObject);

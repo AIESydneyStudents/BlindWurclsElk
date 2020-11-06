@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CollectionManager_British : CollectionManagerBase
 {
@@ -11,9 +12,9 @@ public class CollectionManager_British : CollectionManagerBase
 
     protected override void AllCollected()
     {
-        //start crossword minigame
-        StartCoroutine(TransitionToTrain(delayToTransition));
-
+        // Stat minigame
+        SceneManager.LoadScene("Britain_PuzzleScene", LoadSceneMode.Additive);
+        
         // Enable the collected object in the train carrage
         CollectionObjects_British.collected = true;
     }
@@ -23,7 +24,6 @@ public class CollectionManager_British : CollectionManagerBase
         // Make the element fade in
         StartCoroutine(FadeIn(itemID, fadeTime));
     }
-
 
     private IEnumerator FadeIn(int itemID, float time)
     {
@@ -41,14 +41,5 @@ public class CollectionManager_British : CollectionManagerBase
 
             yield return null;
         }
-    }
-
-    private IEnumerator TransitionToTrain(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-        // Transition to train with the player sitting in the booth
-        TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-3.5f, 1f, -3.2f), null, true);
-
     }
 }
