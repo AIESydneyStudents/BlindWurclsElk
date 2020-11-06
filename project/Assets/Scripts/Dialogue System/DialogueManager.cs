@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
+    public static DialogueManager instance;
+
     // The current dialogue graph (gotten from a passed DialogueSceneGraph)
     private DialogueGraph graph;
     // The audio source sound is to be played from
     private AudioSource dialoguePlayer;
     
-
-    [HideInInspector]
-    public static DialogueManager instance;
 
     // The UI panel that dialogue is displayed on
     public GameObject uiPanel;
@@ -33,11 +32,22 @@ public class DialogueManager : MonoBehaviour
         defaultDialoguePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>();
     }
 
+    void OnDestroy()
+    {
+        // Dont keep the instance as this
+        if (instance == this)
+        { instance = null; }
+    }
+
 
     /// <param name="dialogueGraph">The scene graph containing the dialogue to be used</param>
     /// <param name="audioPlayer">The audio source that audio is to be played from</param>
     public void StartDialogue(DialogueSceneGraph dialogueGraph, AudioSource audioPlayer = null)
     {
+        // If new dialogue is being played while another graph is still running, end it
+        if (graph != null)
+        { EndDialogue(); }
+
         // Make the dialogue panel visible
         uiPanel.SetActive(true);
 
@@ -71,6 +81,9 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void EndDialogue()
     {
+        if (graph != null)
+        { graph.current = null; }
+
         // Hide the dialogue panel and stop playing audio
         uiPanel.SetActive(false);
         if (dialoguePlayer != null)

@@ -50,6 +50,10 @@ public class TransitionManager : MonoBehaviour
 
     public void ChangeScene(string sceneName, /*enum for anim,*/ Vector3? position = null, Vector3? rotation = null, bool useSitting = false)
     {
+        //stop dialogue
+        if (DialogueManager.instance != null)
+        { DialogueManager.instance.EndDialogue(); }
+        
         //disable controllers
         player.GetComponent<PlayerController>().enabled = false;
         player.GetComponent<SittingController>().enabled = false;
