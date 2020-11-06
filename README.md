@@ -1,15 +1,19 @@
 # PROJECT NAME
 
 ## About the Game
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+A first-person narrative game where you are on a train and are approached by tea making strangers, telling you tales about their favourite teas, their experiences and stories as they make tea for you. 
+  
+As the stories begin from each stranger, the scenery around you changes, transporting you to their experiences and tea making lessons in a dreamlike world. 
 
 ### Contributors:
 Contributors to the project are strictly limated to AIE Students as part of their group work project.
 
-Members (example):
- - John Doe: designer
- - John Smith: programmer
- - Sandra Dee: artist
+Members:
+ - Andrew: designer
+ - William: designer
+ - Thomas: programmer
+ - Chloe: artist
+ - Josh: artist
 
 
 ## Build Steps:
