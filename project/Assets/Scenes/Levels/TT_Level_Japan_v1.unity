@@ -1180,7 +1180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpMessage: {fileID: 288555278}
-  waitTime: 0
+  waitTime: 3
 --- !u!114 &380014594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1407,6 +1407,89 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &419507457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 419507460}
+  - component: {fileID: 419507459}
+  - component: {fileID: 419507458}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &419507458
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419507457}
+  m_Enabled: 1
+--- !u!20 &419507459
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419507457}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &419507460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 419507457}
+  m_LocalRotation: {x: 0.014220538, y: 0.98574716, z: -0.123671696, w: 0.11316246}
+  m_LocalPosition: {x: -25.877178, y: 4.366934, z: 62.385876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &473014126
 Mesh:
   m_ObjectHideFlags: 0
@@ -1720,10 +1803,10 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Mother would often tell me that Pagodas would hold ancient artifacts of religious
-    significance but that was many hundreds of years ago.
+  text: 'Through a garden we sat at a bench and looked at the most beautiful Zen
+    Garden i had ever seen, at that moment i felt calm about everything around me. '
   audio: {fileID: 8300000, guid: ec2f4efa8daa9a440a75f2a80bd17c56, type: 3}
-  extraPlayTime: 1
+  extraPlayTime: 3
 --- !u!1 &508031443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpMessage: {fileID: 508031450}
-  waitTime: 0
+  waitTime: 3
 --- !u!114 &521568463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2173,10 +2256,11 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: There was these great arches, i later learnt they were called Torii, used
-    for entrances into temples
-  audio: {fileID: 8300000, guid: c5039dc11155daa40bf9d76fa5354111, type: 3}
-  extraPlayTime: 1
+  text: An old bridge, it has been around for as long as i can remember, my mother
+    told me the bridge was older than her and grandpa combined, more than 400 years
+    old
+  audio: {fileID: 8300000, guid: 06fddb475140f7848b80ab279cf5d91a, type: 3}
+  extraPlayTime: 3
 --- !u!1 &630820786
 GameObject:
   m_ObjectHideFlags: 0
@@ -3999,7 +4083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpMessage: {fileID: 1029559288}
-  waitTime: 0
+  waitTime: 3
 --- !u!114 &1075414975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4040,7 +4124,7 @@ MonoBehaviour:
   input: 0
   output: 0
   text: There were two Buddhist monks said to be responsible in bringing tea to Japan
-    from China and it was popular among the religeous class of that time... around
+    from China and it was popular among the religious class of that time... around
     the 13th century.
   audio: {fileID: 8300000, guid: cdb0de982b57b2e48b7f6a068dcf1fd1, type: 3}
   extraPlayTime: 1
@@ -4662,7 +4746,7 @@ MonoBehaviour:
   text: 'At the end of the walk we sat beneath a Cherry Blossom tree that was in
     full bloom in time and the leaves were falling like snow during spring. '
   audio: {fileID: 8300000, guid: 14e6e6f6d72f6cb4999b5bb834864a2e, type: 3}
-  extraPlayTime: 1
+  extraPlayTime: 3
 --- !u!1 &1611442987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4775,11 +4859,10 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: An old bridge, it has been around for as long as i can remember, my mother
-    told me the bridge was older than her and grandpa combined, more than 400 years
-    old
+  text: Mother would often tell me that Pagodas would hold ancient artifacts of religious
+    significance but that was many hundreds of years ago.
   audio: {fileID: 8300000, guid: 0abec599f624903489117f36285336b8, type: 3}
-  extraPlayTime: 1
+  extraPlayTime: 3
 --- !u!114 &1695335428
 MonoBehaviour:
   m_ObjectHideFlags: 0
