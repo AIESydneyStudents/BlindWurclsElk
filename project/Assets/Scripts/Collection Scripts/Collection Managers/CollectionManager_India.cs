@@ -8,11 +8,16 @@ public class CollectionManager_India : CollectionManagerBase
     public float delayToShowObject = 1f;
     public float delayToTransition = 2f;
 
+    public GameObject trigger;
+
 
     protected override void AllCollected()
     {
-        //enable throwing minigame
-        StartCoroutine(TransitionToTrain(delayToTransition));
+        // Enable trigger to start minigame
+        trigger.SetActive(true);
+
+        //play dialogue
+
 
         // Enable the collected object in the train carrage
         CollectionObjects_India.collected = true;
@@ -41,13 +46,5 @@ public class CollectionManager_India : CollectionManagerBase
 
             yield return null;
         }
-    }
-
-    private IEnumerator TransitionToTrain(float time)
-    {
-        yield return new WaitForSeconds(time);
-
-        // Transition to train with the player sitting in the booth
-        TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-7f, 1f, 1.7f), null, true);
     }
 }
