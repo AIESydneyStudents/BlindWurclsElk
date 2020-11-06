@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/TT_Level_India.unity
     guid: 581fe2c72fb815e4a9e79840df2c4db8
+  - enabled: 1
+    path: Assets/Scenes/Other/Britain_PuzzleScene.unity
+    guid: 591178dec7d69a44d93c1cb6ff711514
   m_configObjects: {}
