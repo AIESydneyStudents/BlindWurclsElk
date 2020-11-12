@@ -2167,7 +2167,7 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Namaste, please relax for a bit, have tea with me
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: f536dc29bca5c1f4dae709f7b762388b, type: 3}
   extraPlayTime: 1
 --- !u!1 &686699256
 GameObject:
