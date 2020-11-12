@@ -623,7 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpMessage: {fileID: 0}
-  waitTime: 0
+  waitTime: 3
 --- !u!1 &525760541
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpMessage: {fileID: 525760548}
-  waitTime: 0
+  waitTime: 3
 --- !u!43 &615828834
 Mesh:
   m_ObjectHideFlags: 0
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helpMessage: {fileID: 0}
-  waitTime: 0
+  waitTime: 3
 --- !u!114 &1005648534
 MonoBehaviour:
   m_ObjectHideFlags: 0
