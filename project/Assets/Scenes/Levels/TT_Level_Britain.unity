@@ -244,6 +244,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 3
   collectionManager: {fileID: 628405777}
+--- !u!114 &213329623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
+  m_Name: Dialogue
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1750231789}
+  position: {x: -268.5, y: -70.5}
+  ports:
+    keys:
+    - input
+    - output
+    values:
+    - _fieldName: input
+      _node: {fileID: 213329623}
+      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: output
+      _node: {fileID: 213329623}
+      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      connections: []
+      _direction: 1
+      _connectionType: 0
+      _typeConstraint: 0
+      _dynamic: 0
+  input: 0
+  output: 0
+  text: "When I was a young lad, I would sneak into His royal majesty\u2019s garden,
+    it had a hedge maze, I would be lost for hours, I would escape by climbing above
+    and out if it became late."
+  audio: {fileID: 0}
+  extraPlayTime: 1
 --- !u!1 &250050554
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +594,8 @@ GameObject:
   - component: {fileID: 525760544}
   - component: {fileID: 525760543}
   - component: {fileID: 525760547}
+  - component: {fileID: 525760549}
+  - component: {fileID: 525760548}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -658,6 +704,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: 0
   collectionManager: {fileID: 628405777}
+--- !u!114 &525760548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525760541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 1750231789}
+--- !u!114 &525760549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525760541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  helpMessage: {fileID: 525760548}
+  waitTime: 0
 --- !u!43 &615828834
 Mesh:
   m_ObjectHideFlags: 0
@@ -1989,6 +2062,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1750231789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
+  m_Name: Cube-graph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 213329623}
+  current: {fileID: 0}
 --- !u!1 &1912013783
 GameObject:
   m_ObjectHideFlags: 0
