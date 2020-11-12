@@ -308,9 +308,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: "In the kingdom, we use a napkin, and never! Do we call it a napkin, we dab,
-    never wipe\u2026 this is civility after all."
-  audio: {fileID: 0}
+  text: "In the kingdom, we use a napkin, and never! Do we call it a serviette, we
+    dab, never wipe\u2026 this is civility after all."
+  audio: {fileID: 8300000, guid: 3f2835226701ac84a819973a55e72bb7, type: 3}
   extraPlayTime: 1
 --- !u!1 &232397805
 GameObject:
@@ -486,7 +486,7 @@ MonoBehaviour:
   text: We do enjoy our tea, and only loose-leaf of course! We take pride in our
     traditions and we observe our protocols for proper tea drinking, at least for
     us proper British people
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 1e6c75b4a0dc6364cb7bd67819f48a7b, type: 3}
   extraPlayTime: 1
 --- !u!1 &449570639
 GameObject:
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   output: 0
   text: If you are stirring your tea, please only move your spoon, back and forth,
     avoid around and around, it is messy and we are not stirring a cauldron
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: ca8783cb35ff77b4fb7b41e9543984ad, type: 3}
   extraPlayTime: 1
 --- !u!1 &919134337
 GameObject:
@@ -3121,7 +3121,7 @@ MonoBehaviour:
   input: 0
   output: 0
   text: and here you are, Earl Grey, a proud and proper tea for most.
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: ca6b29c86ff990d4fa289f60b4f80238, type: 3}
   extraPlayTime: 1
 --- !u!1 &1901791832
 GameObject:
@@ -3446,7 +3446,7 @@ MonoBehaviour:
   input: 0
   output: 0
   text: "Hullo Ma\u2019am, if you will, join me for a spot of tea! Jolly good!"
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: b0d75dde76fd1f747a1b7a2f3f9ed4a7, type: 3}
   extraPlayTime: 1
 --- !u!1 &2085085518
 GameObject:
