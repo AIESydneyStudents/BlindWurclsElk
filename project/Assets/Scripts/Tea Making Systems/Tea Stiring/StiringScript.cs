@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StiringScript : MonoBehaviour
 {
@@ -14,6 +15,18 @@ public class StiringScript : MonoBehaviour
     // Used for smoothing
     float rotSpeed = 0f;
     float vel = 0f;
+
+    public float targetSpeed;
+    //how far out can it be and still count?
+    public float targetRange;
+
+    float winTimmer = 0;
+    public float timeToWin;
+
+
+    public Image colorChanger;
+    public Color start = Color.red;
+    public Color end = Color.green;
 
 
 
@@ -39,8 +52,29 @@ public class StiringScript : MonoBehaviour
 
     }
 
+	void Update()
+	{
+        // If the roatation speed is within the target
+		if (rotSpeed >= targetSpeed - targetRange && rotSpeed <= targetSpeed + targetRange)
+		{
+            winTimmer += Time.deltaTime;
 
-    void FixedUpdate()
+            if (winTimmer >= timeToWin)
+			{
+                Debug.Log("win");
+			}
+		}
+        else if (winTimmer > 0f)
+		{
+            // Time goes down at slower rate
+            winTimmer -= Time.deltaTime * 0.5f;
+		}
+
+        // Lerp between colors depending on progress
+        colorChanger.color = Color.Lerp(start, end, winTimmer / timeToWin);
+	}
+
+	void FixedUpdate()
     {
         // Get cursor position relative to this object
         Vector3 pos = CursorOnTransform(transform.position);
