@@ -56,6 +56,9 @@ public class SittingController : MonoBehaviour
             if (Physics.OverlapSphereNonAlloc(transform.position, 1, res, 1 << 8) > 0)
             {
                 seat = res[0].GetComponent<SeatInfo>();
+
+                // When sitting due to transition, stand up after 2 seconds
+                Invoke("StopSiting", 2f);
             }
             //if no seat, cant sit
             else
@@ -167,8 +170,8 @@ public class SittingController : MonoBehaviour
 
 
         //stand up on space - for debug
-        if (Input.GetKeyDown(KeyCode.Space))
-        { StopSiting(); }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{ StopSiting(); }
 
 
         // Look up and down
