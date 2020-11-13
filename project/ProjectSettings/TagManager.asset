@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactable
   - Mannequin
+  - Coal
+  - Spoon
   layers:
   - Default
   - TransparentFX

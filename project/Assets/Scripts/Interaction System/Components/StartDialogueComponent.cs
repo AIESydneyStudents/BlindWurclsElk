@@ -14,5 +14,7 @@ public class StartDialogueComponent : TriggerComponentBase
     {
         // Start dialogue
         DialogueManager.instance.StartDialogue(dialogueGraph, dialoguePlayer);
+        // Destroy this script so the dialogue cant be played again
+        Destroy(this);
     }
 }

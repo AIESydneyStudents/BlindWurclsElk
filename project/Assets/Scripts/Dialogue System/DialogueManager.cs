@@ -27,12 +27,15 @@ public class DialogueManager : MonoBehaviour
     {
         // This is a singleton, with only one instance
         instance = this;
+    }
 
+	void Start()
+	{
         // Get the player's audio source
         defaultDialoguePlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<AudioSource>();
     }
 
-    void OnDestroy()
+	void OnDestroy()
     {
         // Dont keep the instance as this
         if (instance == this)
@@ -92,4 +95,14 @@ public class DialogueManager : MonoBehaviour
         // Remove graph ref
         graph = null;
     }
+
+
+	void Update()
+	{
+        // If dialogue is playing and the player presses space, skip dialogue
+		if (graph != null && Input.GetKeyDown(KeyCode.Space))
+		{
+            graph.NextNode();
+		}
+	}
 }

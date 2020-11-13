@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(RectTransform))]
+[RequireComponent(typeof(RectTransform), typeof(CanvasGroup))]
 public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     RectTransform trans;
+    CanvasGroup canvasGroup;
     Vector3 mouseOffset;
 
     // Is the object currently being moved?
@@ -27,8 +28,9 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     void Awake()
     {
-        // Get this rect transform
+        // Get this rect transform and canvas group component
         trans = GetComponent<RectTransform>();
+        canvasGroup = GetComponent<CanvasGroup>();
     }
     void Start()
     {
@@ -87,7 +89,10 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
                 // If the slot accepts this tile, lock
                 if (tileValue == slot.acceptedTileValue)
-                { canBeMoved = false; }
+                {
+                    canBeMoved = false;
+                    canvasGroup.blocksRaycasts = false;
+                }
 
                 break;
             }
