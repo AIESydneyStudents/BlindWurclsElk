@@ -9,6 +9,8 @@ public class PowderDepositTrigger : MonoBehaviour
     public GameObject teaStir;
     public GameObject bar;
 
+    public AudioSource sound;
+
     // Number of times powder needs to be collected to win
     public int numNeeded;
     // Number of times powder has been collected so far
@@ -24,6 +26,8 @@ public class PowderDepositTrigger : MonoBehaviour
             if (spoon.hasPowder)
             {
                 //play anim
+
+                sound.Play();
 
                 spoon.hasPowder = false;
                 count++;

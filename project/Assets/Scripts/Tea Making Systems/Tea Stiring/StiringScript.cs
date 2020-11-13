@@ -10,6 +10,7 @@ public class StiringScript : MonoBehaviour
     public RectTransform bar;
 
     public GameObject winText;
+    public AudioSource sound;
 
     // Distance to rotate around
     public float radius;
@@ -38,6 +39,8 @@ public class StiringScript : MonoBehaviour
         //show bar
         barObj.SetActive(true);
         barZone.SetActive(true);
+
+        sound.Play();
     }
 
 
@@ -84,6 +87,8 @@ public class StiringScript : MonoBehaviour
 
         // Lerp between colors depending on progress
         colorChanger.color = Color.Lerp(start, end, winTimmer / timeToWin);
+
+        sound.pitch = rotSpeed * 2f;
 	}
 
 	void FixedUpdate()

@@ -9,6 +9,8 @@ public class PowderGatherTrigger : MonoBehaviour
     public BarScript barScript;
     public SpoonScript spoonScript;
 
+    public AudioSource sound;
+
     bool active = false;
 
     //area the player should click
@@ -51,6 +53,8 @@ public class PowderGatherTrigger : MonoBehaviour
             if (barValue <= range / 2f)
             {
                 //play anim to get powder
+
+                sound.Play();
 
                 // Set bool on spoon script
                 spoonScript.hasPowder = true;

@@ -8,6 +8,8 @@ public class BurnerTrigger : MonoBehaviour
     public GameObject waterHeat;
     public GameObject powderPour;
 
+    public AudioSource sound;
+
     int coalCount = 0;
     float barValue = 0;
 
@@ -29,6 +31,8 @@ public class BurnerTrigger : MonoBehaviour
     {
         // Enable the bar
         barObject.SetActive(true);
+
+        sound.Play();
     }
 
     void OnTriggerEnter(Collider other)
@@ -56,6 +60,8 @@ public class BurnerTrigger : MonoBehaviour
     {
         // Update bar scale
         barScalable.localScale = new Vector3(barValue, 1, 1);
+
+        sound.pitch = barValue;
 
         // If the target count has been reached, start win timmer
         if (coalCount == goal)
