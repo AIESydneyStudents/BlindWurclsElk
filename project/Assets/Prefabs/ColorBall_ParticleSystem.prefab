@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6995778999060538051}
   - component: {fileID: 6995778999060538050}
   - component: {fileID: 6995778999060538109}
+  - component: {fileID: 602253596126666226}
   m_Layer: 0
   m_Name: ColorBall_ParticleSystem
   m_TagString: Untagged
@@ -4821,3 +4822,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &602253596126666226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6995778999060538108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ff6b7b762a8c940a8eb9e7db2478f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 1

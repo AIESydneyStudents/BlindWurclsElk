@@ -7,6 +7,8 @@ public class InteractionBase : MonoBehaviour
 {
     [Tooltip("The material used when the object is able to be interacted with")]
     public Material highlighted;
+    [Tooltip("Can be used to display prompts while hovering over object")]
+    public GameObject uiPanel;
 
     // The material used when not highlighted, and is set to the objects default
     private Material normal;
@@ -41,11 +43,19 @@ public class InteractionBase : MonoBehaviour
         {
             // Highlight the object
             render.material = highlighted;
+
+            // Show UI panel
+            if (uiPanel != null)
+            { uiPanel.SetActive(true); }
         }
         else
         {
             // Use the default material
             render.material = normal;
+
+            // Hide UI panel
+            if (uiPanel != null)
+            { uiPanel.SetActive(false); }
         }
     }
 
