@@ -5,11 +5,15 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class BurnerTrigger : MonoBehaviour
 {
+    public GameObject waterHeat;
+    public GameObject powderPour;
+
     int coalCount = 0;
     float barValue = 0;
 
     // The object to be scaled as a bar
-    public RectTransform barObject;
+    public GameObject barObject;
+    public RectTransform barScalable;
 
     [Tooltip("The total number of coals in the scene")]
     public int totalCoalCount;
@@ -19,6 +23,13 @@ public class BurnerTrigger : MonoBehaviour
     // Used to determine if the minigame has been won
     float winTimmer = 0;
 
+
+
+    void Start()
+    {
+        // Enable the bar
+        barObject.SetActive(true);
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -44,7 +55,7 @@ public class BurnerTrigger : MonoBehaviour
     void Update()
     {
         // Update bar scale
-        barObject.localScale = new Vector3(1, barValue, 1);
+        barScalable.localScale = new Vector3(barValue, 1, 1);
 
         // If the target count has been reached, start win timmer
         if (coalCount == goal)
@@ -53,8 +64,10 @@ public class BurnerTrigger : MonoBehaviour
 
             if (winTimmer >= 2f)
             {
-                //win
-                Debug.Log("Win");
+                //Game won. start next minigame
+                waterHeat.SetActive(false);
+                powderPour.SetActive(true);
+                barObject.SetActive(false);
             }
         }
         else

@@ -5,6 +5,10 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class PowderDepositTrigger : MonoBehaviour
 {
+    public GameObject powderPour;
+    public GameObject teaStir;
+    public GameObject bar;
+
     // Number of times powder needs to be collected to win
     public int numNeeded;
     // Number of times powder has been collected so far
@@ -28,7 +32,10 @@ public class PowderDepositTrigger : MonoBehaviour
                 // If full amount collected, end minigame
                 if (count == numNeeded)
                 {
-                    Debug.Log("win");
+                    //Game won. start next game
+                    powderPour.SetActive(false);
+                    teaStir.SetActive(true);
+                    bar.SetActive(false);
                 }
             }
         }

@@ -5,7 +5,11 @@ using UnityEngine.UI;
 
 public class StiringScript : MonoBehaviour
 {
+    public GameObject barObj;
+    public GameObject barZone;
     public RectTransform bar;
+
+    public GameObject winText;
 
     // Distance to rotate around
     public float radius;
@@ -28,6 +32,13 @@ public class StiringScript : MonoBehaviour
     public Color start = Color.red;
     public Color end = Color.green;
 
+
+    void Start()
+    {
+        //show bar
+        barObj.SetActive(true);
+        barZone.SetActive(true);
+    }
 
 
     // Find the cursor position in world space relative to the object position
@@ -61,7 +72,8 @@ public class StiringScript : MonoBehaviour
 
             if (winTimmer >= timeToWin)
 			{
-                Debug.Log("win");
+                //Debug.Log("win");
+                winText.SetActive(true);
 			}
 		}
         else if (winTimmer > 0f)
@@ -78,6 +90,10 @@ public class StiringScript : MonoBehaviour
     {
         // Get cursor position relative to this object
         Vector3 pos = CursorOnTransform(transform.position);
+        //world to local
+        pos = transform.InverseTransformPoint(pos);
+
+
         // Make it relative to the center point and remove the height component
         pos -= centerPoint;
         pos.y = 0f;
@@ -87,9 +103,9 @@ public class StiringScript : MonoBehaviour
         pos *= radius;
         pos += centerPoint;
 
-        
+
         // Get the angle traveled
-        float ang = Vector3.Angle(pos, transform.position);
+        float ang = Vector3.Angle(pos, transform.localPosition);
         // Get the smaller angle
         if (ang > 180)
         { ang -= 180; }
@@ -100,7 +116,7 @@ public class StiringScript : MonoBehaviour
 
 
         // Update the transform
-        transform.position = pos;
+        transform.localPosition = pos;
         // Update the bar
         bar.localScale = new Vector3(rotSpeed * 3f, 1, 1);
     }
