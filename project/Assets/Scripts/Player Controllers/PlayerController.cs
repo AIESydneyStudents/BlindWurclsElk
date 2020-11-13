@@ -71,5 +71,13 @@ public class PlayerController : MonoBehaviour
             cam.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+
+
+        //used to change speed for testing
+        if (Input.GetKeyDown(KeyCode.Equals))
+        { speed += 5; }
+        if (Input.GetKeyDown(KeyCode.Minus))
+        { speed -= 5; }
     }
 }
