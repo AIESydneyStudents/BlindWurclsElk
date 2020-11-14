@@ -5343,7 +5343,7 @@ MonoBehaviour:
     seen we had tea plants that could be cultivated to compete with the more dominant
     and more expensive Chinese monopoly of tea, and at one point we became a main
     exporter "
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 6be87942cfd78264c9d792316f72346c, type: 3}
   extraPlayTime: 1
 --- !u!1 &1375586794
 GameObject:
@@ -5696,7 +5696,7 @@ MonoBehaviour:
   output: 0
   text: Overtime we developed our own culture of tea, mixing in spices and milk,
     moving away from black tea, much to the empires displeasure
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 1636d9f15e09f5840a98a36fed5d80b7, type: 3}
   extraPlayTime: 1
 --- !u!1 &1415973216
 GameObject:
@@ -7651,7 +7651,7 @@ MonoBehaviour:
   output: 0
   text: ' long into antiquity we had grown our tea, but it was seen as a medicinal
     herb than a drink'
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 44d3d6b1fa43f2345a32a7255261e2cd, type: 3}
   extraPlayTime: 1
 --- !u!1 &1887653813
 GameObject:
@@ -7760,7 +7760,7 @@ MonoBehaviour:
   output: 0
   text: Our ties are strong with the old empire, but we did not take to tea straight
     away, at least, not back then
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 8430e7a69b42a974689cad4b2db51bfc, type: 3}
   extraPlayTime: 1
 --- !u!1 &1934502397
 GameObject:
@@ -7837,7 +7837,7 @@ MonoBehaviour:
   input: 0
   output: 0
   text: And now our Masala Chain is recognized as our national drink
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 0b49bc8f4680e314ea956c6fad98568e, type: 3}
   extraPlayTime: 1
 --- !u!1 &2135002966
 GameObject:
