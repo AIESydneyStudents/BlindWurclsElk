@@ -1301,7 +1301,7 @@ RectTransform:
   m_GameObject: {fileID: 208751675}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.75, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9606647}
   m_RootOrder: 0
@@ -2765,8 +2765,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -194.06, y: 288.7}
-  m_SizeDelta: {x: 136.18, y: 100}
+  m_AnchoredPosition: {x: -192.66, y: 288.7}
+  m_SizeDelta: {x: 90.49, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481429178
 MonoBehaviour:
@@ -4762,8 +4762,8 @@ MonoBehaviour:
   sound: {fileID: 983552854}
   radius: 0.05
   centerPoint: {x: 0.1, y: 0.1, z: 0}
-  targetSpeed: 0.2
-  targetRange: 0.05
+  targetSpeed: 0.6
+  targetRange: 0.1
   timeToWin: 3
   colorChanger: {fileID: 481429178}
   start: {r: 1, g: 0, b: 0, a: 1}

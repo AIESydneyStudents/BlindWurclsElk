@@ -41,6 +41,10 @@ public class StiringScript : MonoBehaviour
         barZone.SetActive(true);
 
         sound.Play();
+
+
+        // Get center point in world space
+        centerPoint = transform.TransformPoint(centerPoint);
     }
 
 
@@ -95,9 +99,6 @@ public class StiringScript : MonoBehaviour
     {
         // Get cursor position relative to this object
         Vector3 pos = CursorOnTransform(transform.position);
-        //world to local
-        pos = transform.InverseTransformPoint(pos);
-
 
         // Make it relative to the center point and remove the height component
         pos -= centerPoint;
@@ -109,11 +110,8 @@ public class StiringScript : MonoBehaviour
         pos += centerPoint;
 
 
-        // Get the angle traveled
-        float ang = Vector3.Angle(pos, transform.localPosition);
-        // Get the smaller angle
-        if (ang > 180)
-        { ang -= 180; }
+        // Get the angle traveled around the center
+        float ang = Vector3.Angle(pos - centerPoint, transform.position - centerPoint);
 
         // Get speed, and smooth it
         ang *= Time.fixedDeltaTime;
@@ -121,8 +119,8 @@ public class StiringScript : MonoBehaviour
 
 
         // Update the transform
-        transform.localPosition = pos;
-        // Update the bar
-        bar.localScale = new Vector3(rotSpeed * 3f, 1, 1);
+        transform.position = pos;
+        // Update the bar, clamping the value
+        bar.localScale = new Vector3(Mathf.Clamp(rotSpeed, 0, 1), 1, 1);
     }
 }
