@@ -6883,7 +6883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlighted: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 266531472}
 --- !u!65 &1433995870
 BoxCollider:
   m_ObjectHideFlags: 0
