@@ -48,6 +48,13 @@ public class HelpMessageManager : MonoBehaviour
     /// </summary>
     public void SetMessage(float delay, DialogueSceneGraph helpMessage)
     {
+        // If no help message was sent, do nothing
+        if (helpMessage == null)
+        {
+            active = false;
+            return;
+        }
+
         // Update values
         time = delay;
         this.helpMessage = helpMessage;
