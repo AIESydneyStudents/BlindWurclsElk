@@ -45,6 +45,8 @@ public class TransitionManager : MonoBehaviour
 
         //the player scene should be at index 0. this may need changing
         currentScene = SceneManager.GetSceneAt(1);
+        // Set it as the active scene to use its lighting settings
+        SceneManager.SetActiveScene(currentScene);
     }
 
 
@@ -118,8 +120,9 @@ public class TransitionManager : MonoBehaviour
         //set animator toggle
 
 
-        //get new scene
+        // Get the new scene and set it as the active scene
         currentScene = SceneManager.GetSceneAt(1);
+        SceneManager.SetActiveScene(currentScene);
         //done, remove ref
         loadOp = null;
     }
