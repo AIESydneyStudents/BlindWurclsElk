@@ -13,4 +13,10 @@ public abstract class TriggerComponentBase : MonoBehaviour
     /// Called when the attached object is triggered/interacted with
     /// </summary>
     public abstract void Activate();
+
+    /// <summary>
+    /// Called when exiting a trigger
+    /// </summary>
+    public virtual void Deactivate()
+    { }
 }
