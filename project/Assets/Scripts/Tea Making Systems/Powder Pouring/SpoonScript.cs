@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Collider), typeof(Rigidbody))]
 public class SpoonScript : MonoBehaviour
 {
-    //how high the surface is from 0
+    // Y point of the surface in world space
     public float surfHeight;
-    //how high the object should be lifted while being moved
+    // Height of object from surface while dragging
     public float dragHeight = 1f;
 
     [HideInInspector]

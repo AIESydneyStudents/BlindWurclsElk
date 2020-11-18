@@ -54,6 +54,7 @@ public class PowderGatherTrigger : MonoBehaviour
             {
                 //play anim to get powder
 
+                // Play sound effect
                 sound.Play();
 
                 // Set bool on spoon script

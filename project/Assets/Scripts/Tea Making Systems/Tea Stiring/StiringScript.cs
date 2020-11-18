@@ -6,41 +6,48 @@ using UnityEngine.UI;
 public class StiringScript : MonoBehaviour
 {
     public GameObject barObj;
-    public GameObject barZone;
-    public RectTransform bar;
+    public Image targetZone;
+    RectTransform bar;
 
     public GameObject winText;
-    public AudioSource sound;
-
-    // Distance to rotate around
-    public float radius;
+    public AudioSource soundPlayer;
+    [Space]
+    
     // Point to rotate around
     public Vector3 centerPoint;
+    // Distance to rotate around
+    public float radius;
+    [Space]
+
+    // How fast should the player be stirring?
+    public float targetSpeed;
+    //how far out can it be and still count?
+    public float targetRange;
+
 
     // Used for smoothing
     float rotSpeed = 0f;
     float vel = 0f;
 
-    public float targetSpeed;
-    //how far out can it be and still count?
-    public float targetRange;
-
     float winTimmer = 0;
+    // How long the player needs to stay in target to win
     public float timeToWin;
 
-
-    public Image colorChanger;
+    // Colors used for the target zone
     public Color start = Color.red;
     public Color end = Color.green;
 
 
     void Start()
     {
-        //show bar
+        // Show the bar
         barObj.SetActive(true);
-        barZone.SetActive(true);
+        targetZone.gameObject.SetActive(true);
+        // Get the scalable part of the bar
+        bar = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
-        sound.Play();
+
+        soundPlayer.Play();
 
 
         // Get center point in world space
@@ -77,9 +84,9 @@ public class StiringScript : MonoBehaviour
 		{
             winTimmer += Time.deltaTime;
 
+            // If timmer is done, the player wins
             if (winTimmer >= timeToWin)
 			{
-                //Debug.Log("win");
                 winText.SetActive(true);
 			}
 		}
@@ -89,10 +96,11 @@ public class StiringScript : MonoBehaviour
             winTimmer -= Time.deltaTime * 0.5f;
 		}
 
-        // Lerp between colors depending on progress
-        colorChanger.color = Color.Lerp(start, end, winTimmer / timeToWin);
+        // Lerp between colors to indicate progress
+        targetZone.color = Color.Lerp(start, end, winTimmer / timeToWin);
 
-        sound.pitch = rotSpeed * 2f;
+
+        soundPlayer.pitch = rotSpeed * 2f;
 	}
 
 	void FixedUpdate()
@@ -104,7 +112,7 @@ public class StiringScript : MonoBehaviour
         pos -= centerPoint;
         pos.y = 0f;
 
-        // Put the cursor position on a rail
+        // Clamp the position around the center point
         pos.Normalize();
         pos *= radius;
         pos += centerPoint;
@@ -118,7 +126,7 @@ public class StiringScript : MonoBehaviour
         rotSpeed = Mathf.SmoothDamp(rotSpeed, ang, ref vel, 0.2f);
 
 
-        // Update the transform
+        // Update the spoons position
         transform.position = pos;
         // Update the bar, clamping the value
         bar.localScale = new Vector3(Mathf.Clamp(rotSpeed, 0, 1), 1, 1);

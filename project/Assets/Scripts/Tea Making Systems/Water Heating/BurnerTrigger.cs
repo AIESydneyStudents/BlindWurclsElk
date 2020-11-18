@@ -5,34 +5,32 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class BurnerTrigger : MonoBehaviour
 {
-    public GameObject waterHeat;
-    public GameObject powderPour;
+    public GameObject waterHeatGroup;
+    public GameObject powderPourGroup;
 
-    public AudioSource sound;
 
     int coalCount = 0;
     float barValue = 0;
 
-    // The object to be scaled as a bar
-    public GameObject barObject;
-    public RectTransform barScalable;
+
+    public GameObject barObj;
+    RectTransform barScalable;
 
     [Tooltip("The total number of coals in the scene")]
-    public int totalCoalCount;
+    public int totalCoalCount = 3;
     [Tooltip("How many coals does the player need to win")]
-    public int goal = 3;
+    public int goalCoalCount = 2;
 
     // Used to determine if the minigame has been won
     float winTimmer = 0;
 
 
-
     void Start()
     {
         // Enable the bar
-        barObject.SetActive(true);
-
-        sound.Play();
+        barObj.SetActive(true);
+        // Get the part of the bar to scale
+        barScalable = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
     }
 
     void OnTriggerEnter(Collider other)
@@ -61,19 +59,18 @@ public class BurnerTrigger : MonoBehaviour
         // Update bar scale
         barScalable.localScale = new Vector3(barValue, 1, 1);
 
-        sound.pitch = barValue;
 
         // If the target count has been reached, start win timmer
-        if (coalCount == goal)
+        if (coalCount == goalCoalCount)
         {
             winTimmer += Time.deltaTime;
 
             if (winTimmer >= 2f)
             {
-                //Game won. start next minigame
-                waterHeat.SetActive(false);
-                powderPour.SetActive(true);
-                barObject.SetActive(false);
+                // Game won. start next minigame
+                waterHeatGroup.SetActive(false);
+                powderPourGroup.SetActive(true);
+                barObj.SetActive(false);
             }
         }
         else

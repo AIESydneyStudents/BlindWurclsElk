@@ -5,13 +5,19 @@ using UnityEngine;
 
 public class CoalDragScript : MonoBehaviour
 {
-    // Selected object to move
+    // Object being moved
     Rigidbody obj = null;
 
-    //how high the surface is from 0
+    // Y point of the surface in world space
     public float surfHeight;
-    //how high the object should be lifted while being moved
+    // Height of object from surface while dragging
     public float dragHeight = 1f;
+    [Space]
+
+    public AudioSource soundSource;
+
+    public AudioClip soundPickup;
+    public AudioClip soundDrop;
 
 
     // Find the cursor position in world space relative to the object position
@@ -52,6 +58,8 @@ public class CoalDragScript : MonoBehaviour
                 {
                     obj = hit.transform.GetComponent<Rigidbody>();
                     obj.useGravity = false;
+
+                    soundSource.PlayOneShot(soundPickup);
                 }
             }
         }
@@ -61,6 +69,8 @@ public class CoalDragScript : MonoBehaviour
         {
             obj.useGravity = true;
             obj = null;
+
+            soundSource.PlayOneShot(soundDrop);
         }
 
 

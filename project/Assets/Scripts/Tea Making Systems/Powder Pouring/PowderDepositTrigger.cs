@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class PowderDepositTrigger : MonoBehaviour
 {
-    public GameObject powderPour;
-    public GameObject teaStir;
-    public GameObject bar;
+    public GameObject powderPourGroup;
+    public GameObject teaStirGroup;
+    public GameObject barObj;
 
     public AudioSource sound;
 
@@ -27,6 +27,7 @@ public class PowderDepositTrigger : MonoBehaviour
             {
                 //play anim
 
+                // Play sound effect
                 sound.Play();
 
                 spoon.hasPowder = false;
@@ -37,9 +38,9 @@ public class PowderDepositTrigger : MonoBehaviour
                 if (count == numNeeded)
                 {
                     //Game won. start next game
-                    powderPour.SetActive(false);
-                    teaStir.SetActive(true);
-                    bar.SetActive(false);
+                    powderPourGroup.SetActive(false);
+                    teaStirGroup.SetActive(true);
+                    barObj.SetActive(false);
                 }
             }
         }
