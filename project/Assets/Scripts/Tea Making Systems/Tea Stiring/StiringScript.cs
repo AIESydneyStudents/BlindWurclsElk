@@ -9,6 +9,8 @@ public class StiringScript : MonoBehaviour
     public Image targetZone;
     RectTransform bar;
 
+    public Text helpText;
+
     public GameObject winText;
     public AudioSource soundPlayer;
     [Space]
@@ -46,12 +48,13 @@ public class StiringScript : MonoBehaviour
         // Get the scalable part of the bar
         bar = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
-
         soundPlayer.Play();
-
 
         // Get center point in world space
         centerPoint = transform.TransformPoint(centerPoint);
+
+
+        helpText.text = "Stir the whisk until the tea is ready to serve";
     }
 
 
