@@ -75,7 +75,7 @@ public class PlayerThrowScript : MonoBehaviour
         {
             this.enabled = false;
             // Transition to train with the player sitting in the booth
-            TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-7f, 1f, 1.7f), null, true);
+            TransitionManager.instance.ChangeScene("TrainCarriage", new Vector3(-8f, 1f, 1f), null, true);
         }
         else 
         {

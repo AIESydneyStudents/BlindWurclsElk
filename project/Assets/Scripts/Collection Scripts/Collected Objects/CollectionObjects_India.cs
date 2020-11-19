@@ -10,6 +10,10 @@ public class CollectionObjects_India : MonoBehaviour
     // Have all the items been collected?
     public static bool collected = false;
 
+    [Space]
+    public DialogueSceneGraph[] secondDialogue;
+    public StartDialogueComponent[] comp;
+
 
     void Start()
     {
@@ -23,6 +27,15 @@ public class CollectionObjects_India : MonoBehaviour
         {
             // Toggle if collected == true
             obj.SetActive(obj.activeSelf ^ collected);
+        }
+
+        if (collected)
+        { 
+            // Swap each dialogue graph with the second one
+            for (int i = 0; i < comp.Length; i++)
+            {
+                comp[i].dialogueGraph = secondDialogue[i];
+            }
         }
     }
 }
