@@ -36,7 +36,7 @@ public class HelpMessageManager : MonoBehaviour
 	void Update()
     {
         // Time has passed since the player collected a progression item
-        if (timeToWait <= 0f)
+        if (timeToWait <= 0f && target != null)
         {
             if (timeSinceLastAgent >= agentDelay)
 			{
