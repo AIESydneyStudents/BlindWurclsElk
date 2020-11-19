@@ -31,13 +31,13 @@ public class TransitionManager : MonoBehaviour
         // If the player scene is not loaded, hard load it
         if (SceneManager.GetSceneByName("PlayerScene").IsValid() && SceneManager.GetSceneByName("SB-TransitionBase").IsValid())
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         // If there are less than 2 scenes loaded, load the train carrage
         if (SceneManager.sceneCount < 2)
         {
-            SceneManager.LoadScene(1, LoadSceneMode.Additive);
+            SceneManager.LoadScene(2, LoadSceneMode.Additive);
         }
     }
     void Start()

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuScript : MonoBehaviour
 {
@@ -54,7 +55,9 @@ public class PauseMenuScript : MonoBehaviour
     public void OnExitClick()
     {
         Time.timeScale = 1;
+        paused = false;
 
         //show the main menu
+        SceneManager.LoadScene(0);
     }
 }
