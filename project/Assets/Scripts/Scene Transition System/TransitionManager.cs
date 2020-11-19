@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class TransitionManager : MonoBehaviour
@@ -10,6 +11,7 @@ public class TransitionManager : MonoBehaviour
     /*  work out how the anim controller will work  */
 
     GameObject player;
+    public Image img;
 
     Scene currentScene;
 
@@ -75,7 +77,17 @@ public class TransitionManager : MonoBehaviour
         //  it will call LoadNewScene
         //  if can get animation length, call func on delay
 
+        StartCoroutine(FadeOut());
+
+        
+
         //temp
+        //StartCoroutine(LoadNewScene());
+        Invoke("StartLoadNewScene", 3);
+    }
+
+    void StartLoadNewScene()
+    {
         StartCoroutine(LoadNewScene());
     }
 
@@ -118,6 +130,7 @@ public class TransitionManager : MonoBehaviour
 
 
         //set animator toggle
+        StartCoroutine(FadeIn());
 
 
         // Get the new scene and set it as the active scene
@@ -125,5 +138,30 @@ public class TransitionManager : MonoBehaviour
         SceneManager.SetActiveScene(currentScene);
         //done, remove ref
         loadOp = null;
+    }
+
+
+    private IEnumerator FadeOut()
+    {
+        img.gameObject.SetActive(true);
+
+        while (img.color.a < 1f)
+        {
+            img.color += new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+    }
+
+    private IEnumerator FadeIn()
+    {
+        while (img.color.a > 0f)
+        {
+            img.color -= new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+
+        img.gameObject.SetActive(false);
     }
 }
