@@ -107,7 +107,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.4
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -115,13 +115,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.13333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 59117ee3693c6a34997f27787becb246, type: 2}
 --- !u!1 &549809
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,8 +138,8 @@ GameObject:
   m_Name: Bush (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &549810
 Transform:
@@ -328,8 +328,8 @@ GameObject:
   m_Name: Bush (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5072076
 Transform:
@@ -613,8 +613,8 @@ GameObject:
   m_Name: Rock_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &23461708
 Transform:
@@ -873,8 +873,8 @@ GameObject:
   m_Name: Tree (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &41368088
 Transform:
@@ -1033,8 +1033,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7729cd03f0d2b4b80881a30a2050f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  helpMessage: {fileID: 0}
+  agent: {fileID: 5807200856287159479, guid: 72a8250cac0ffff4ba9136c912005743, type: 3}
+  timeToWait: 3
+  target: {fileID: 958264495}
+  agentDelay: 1
 --- !u!1 &56141119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1150,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &56664910
 MeshCollider:
@@ -3771,8 +3773,8 @@ GameObject:
   m_Name: Tree (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &84543438
 MeshCollider:
@@ -4246,8 +4248,8 @@ GameObject:
   m_Name: Rock_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &120455088
 Transform:
@@ -4340,8 +4342,8 @@ GameObject:
   m_Name: Rock_4 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &132675470
 Transform:
@@ -4575,7 +4577,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &154491752
 MeshCollider:
@@ -8226,8 +8228,8 @@ GameObject:
   m_Name: Bush (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &162684822
 MeshCollider:
@@ -8892,8 +8894,8 @@ GameObject:
   m_Name: Bush (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &180902677
 Transform:
@@ -8987,8 +8989,8 @@ GameObject:
   m_Name: Rock_2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &181301119
 Transform:
@@ -9369,8 +9371,8 @@ GameObject:
   m_Name: Rock_3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &199516665
 Transform:
@@ -9828,21 +9830,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237692337}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &244706955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 1-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1012974069}
-  current: {fileID: 0}
 --- !u!1 &268702049
 GameObject:
   m_ObjectHideFlags: 0
@@ -9955,8 +9942,8 @@ GameObject:
   m_Name: Tree (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &269832993
 Transform:
@@ -10319,7 +10306,6 @@ GameObject:
   - component: {fileID: 288555276}
   - component: {fileID: 288555277}
   - component: {fileID: 288555279}
-  - component: {fileID: 288555278}
   m_Layer: 0
   m_Name: Teapot 5
   m_TagString: Untagged
@@ -10429,19 +10415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &288555278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288555271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1454663747}
 --- !u!114 &288555279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10454,7 +10427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 288555278}
+  target: {fileID: 0}
   waitTime: 3
 --- !u!1 &295419380
 GameObject:
@@ -10663,8 +10636,8 @@ GameObject:
   m_Name: Rock_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &317759536
 Transform:
@@ -10852,8 +10825,8 @@ GameObject:
   m_Name: Bush (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &321948912
 Transform:
@@ -10947,8 +10920,8 @@ GameObject:
   m_Name: Rock_4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &353319202
 Transform:
@@ -12546,8 +12519,8 @@ GameObject:
   m_Name: Tree (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &423424465
 Transform:
@@ -12641,8 +12614,8 @@ GameObject:
   m_Name: Rock_4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &431073792
 Transform:
@@ -12735,8 +12708,8 @@ GameObject:
   m_Name: Rock_3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &438204377
 Transform:
@@ -13893,7 +13866,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28490
+  m_Name: pb_Mesh216168
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14313,49 +14286,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &488339188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1175591785}
-  position: {x: -329.8895, y: -128.0359}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 488339188}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 488339188}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: 'Through a garden we sat at a bench and looked at the most beautiful Zen
-    Garden i had ever seen, at that moment i felt calm about everything around me. '
-  audio: {fileID: 8300000, guid: ec2f4efa8daa9a440a75f2a80bd17c56, type: 3}
-  extraPlayTime: 3
 --- !u!1 &495645632
 GameObject:
   m_ObjectHideFlags: 0
@@ -14777,7 +14707,6 @@ GameObject:
   - component: {fileID: 508031448}
   - component: {fileID: 508031449}
   - component: {fileID: 508031451}
-  - component: {fileID: 508031450}
   m_Layer: 0
   m_Name: Teapot 3
   m_TagString: Untagged
@@ -14887,19 +14816,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &508031450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508031443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1367755243}
 --- !u!114 &508031451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14912,7 +14828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 508031450}
+  target: {fileID: 1029559281}
   waitTime: 3
 --- !u!1 &509348925
 GameObject:
@@ -15163,8 +15079,8 @@ GameObject:
   m_Name: Rock_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &529287573
 Transform:
@@ -15352,7 +15268,6 @@ GameObject:
   - component: {fileID: 540071788}
   - component: {fileID: 540071789}
   - component: {fileID: 540071791}
-  - component: {fileID: 540071790}
   m_Layer: 0
   m_Name: Teapot 2
   m_TagString: Untagged
@@ -15462,19 +15377,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &540071790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540071783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1858776096}
 --- !u!114 &540071791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15487,7 +15389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 540071790}
+  target: {fileID: 508031443}
   waitTime: 3
 --- !u!1 &548321155
 GameObject:
@@ -15885,8 +15787,8 @@ GameObject:
   m_Name: Rock_4 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &557552726
 Transform:
@@ -16265,8 +16167,8 @@ GameObject:
   m_Name: Rock_3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &561766431
 Transform:
@@ -16520,8 +16422,8 @@ GameObject:
   m_Name: Bush (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &572956337
 Transform:
@@ -16806,8 +16708,8 @@ GameObject:
   m_Name: Tree (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &583770382
 Transform:
@@ -16996,8 +16898,8 @@ GameObject:
   m_Name: Bush (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &592339161
 Transform:
@@ -17283,7 +17185,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &600967797
 Transform:
@@ -19441,8 +19343,8 @@ GameObject:
   m_Name: Bush (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &605395910
 Transform:
@@ -19536,8 +19438,8 @@ GameObject:
   m_Name: Bush (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &614865010
 Transform:
@@ -19615,50 +19517,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614865009}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &620113946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1858776096}
-  position: {x: -477.5, y: -86.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 620113946}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 620113946}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: An old bridge, it has been around for as long as i can remember, my mother
-    told me the bridge was older than her and grandpa combined, more than 400 years
-    old
-  audio: {fileID: 8300000, guid: 06fddb475140f7848b80ab279cf5d91a, type: 3}
-  extraPlayTime: 3
 --- !u!1 &622001944
 GameObject:
   m_ObjectHideFlags: 0
@@ -19675,8 +19533,8 @@ GameObject:
   m_Name: River (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &622001945
 MeshRenderer:
@@ -20190,8 +20048,8 @@ GameObject:
   m_Name: Bush (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &648461623
 Transform:
@@ -20959,8 +20817,8 @@ GameObject:
   m_Name: Bush (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &679997976
 Transform:
@@ -21054,8 +20912,8 @@ GameObject:
   m_Name: Tree (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &687103178
 Transform:
@@ -21750,8 +21608,8 @@ GameObject:
   m_Name: Tree (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &709043734
 Transform:
@@ -21990,8 +21848,8 @@ GameObject:
   m_Name: Bush (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &734371385
 Transform:
@@ -22545,8 +22403,8 @@ GameObject:
   m_Name: Tree (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &773844398
 Transform:
@@ -26672,8 +26530,8 @@ GameObject:
   m_Name: Tree (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &815463246
 Transform:
@@ -27434,8 +27292,8 @@ GameObject:
   m_Name: Rock_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &857438962
 Transform:
@@ -28690,8 +28548,8 @@ GameObject:
   m_Name: Tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &931011030
 MeshCollider:
@@ -30866,7 +30724,6 @@ GameObject:
   - component: {fileID: 958264501}
   - component: {fileID: 958264500}
   - component: {fileID: 958264503}
-  - component: {fileID: 958264502}
   m_Layer: 0
   m_Name: Teapot 1
   m_TagString: Untagged
@@ -30976,19 +30833,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &958264502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958264495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 244706955}
 --- !u!114 &958264503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31001,7 +30845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 958264502}
+  target: {fileID: 540071783}
   waitTime: 3
 --- !u!1 &960317081
 GameObject:
@@ -31288,8 +31132,8 @@ GameObject:
   m_Name: Tree (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &972914662
 Transform:
@@ -31480,7 +31324,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &990332102
 MeshCollider:
@@ -33039,49 +32883,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011603585}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1012974069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 244706955}
-  position: {x: -416.5, y: -178.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1012974069}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1012974069}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: There was these great arches, i later learnt they were called Torii, used
-    for entrances into temples
-  audio: {fileID: 8300000, guid: c5039dc11155daa40bf9d76fa5354111, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1019260317
 GameObject:
   m_ObjectHideFlags: 0
@@ -33192,7 +32993,6 @@ GameObject:
   - component: {fileID: 1029559286}
   - component: {fileID: 1029559287}
   - component: {fileID: 1029559289}
-  - component: {fileID: 1029559288}
   m_Layer: 0
   m_Name: Teapot 4
   m_TagString: Untagged
@@ -33302,19 +33102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &1029559288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029559281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1175591785}
 --- !u!114 &1029559289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33327,7 +33114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 1029559288}
+  target: {fileID: 288555271}
   waitTime: 3
 --- !u!1 &1035727696
 GameObject:
@@ -33770,8 +33557,8 @@ GameObject:
   m_Name: Bush (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1068547948
 Transform:
@@ -34005,8 +33792,8 @@ GameObject:
   m_Name: Bush (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1083473836
 Transform:
@@ -34290,8 +34077,8 @@ GameObject:
   m_Name: Rock_4 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1103480594
 Transform:
@@ -34765,8 +34552,8 @@ GameObject:
   m_Name: Rock_3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1118311365
 Transform:
@@ -34859,8 +34646,8 @@ GameObject:
   m_Name: Bush (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1122051616
 Transform:
@@ -35606,8 +35393,8 @@ GameObject:
   m_Name: Tree (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1152509722
 Transform:
@@ -36067,21 +35854,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173007197}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1175591785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 4-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 488339188}
-  current: {fileID: 0}
 --- !u!1 &1178231135
 GameObject:
   m_ObjectHideFlags: 0
@@ -37285,8 +37057,8 @@ GameObject:
   m_Name: Tree (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1254134025
 Transform:
@@ -37570,8 +37342,8 @@ GameObject:
   m_Name: Rock_4 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1266260936
 Transform:
@@ -37654,7 +37426,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29506
+  m_Name: pb_Mesh217182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38028,8 +37800,8 @@ GameObject:
   m_Name: Bush (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1295157616
 Transform:
@@ -38219,8 +37991,8 @@ GameObject:
   m_Name: Rock_5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1301859130
 Transform:
@@ -38408,8 +38180,8 @@ GameObject:
   m_Name: Rock_5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1314905296
 Transform:
@@ -38822,8 +38594,8 @@ GameObject:
   m_Name: Rock_1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1339488792
 Transform:
@@ -38906,7 +38678,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh30300
+  m_Name: pb_Mesh217976
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39626,21 +39398,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367172835}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1367755243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 3-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1683661269}
-  current: {fileID: 0}
 --- !u!1 &1372455122
 GameObject:
   m_ObjectHideFlags: 0
@@ -39830,8 +39587,8 @@ GameObject:
   m_Name: Rock_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1379281728
 Transform:
@@ -40009,7 +39766,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh44818
+  m_Name: pb_Mesh216274
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40477,8 +40234,8 @@ GameObject:
   m_Name: Bush (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1435183064
 Transform:
@@ -40931,8 +40688,8 @@ GameObject:
   m_Name: Bush (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1453456571
 Transform:
@@ -41010,21 +40767,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453456570}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1454663747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 5-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1560502260}
-  current: {fileID: 0}
 --- !u!1 &1460326402
 GameObject:
   m_ObjectHideFlags: 0
@@ -41993,8 +41735,8 @@ GameObject:
   m_Name: Rock_4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1537858788
 Transform:
@@ -42087,8 +41829,8 @@ GameObject:
   m_Name: Rock_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1543991059
 Transform:
@@ -42276,8 +42018,8 @@ GameObject:
   m_Name: Rock_3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1552637605
 Transform:
@@ -42544,49 +42286,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559422603}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1560502260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1454663747}
-  position: {x: -588.8895, y: -149.0359}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1560502260}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1560502260}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: 'At the end of the walk we sat beneath a Cherry Blossom tree that was in
-    full bloom in time and the leaves were falling like snow during spring. '
-  audio: {fileID: 8300000, guid: 14e6e6f6d72f6cb4999b5bb834864a2e, type: 3}
-  extraPlayTime: 3
 --- !u!1 &1569456819
 GameObject:
   m_ObjectHideFlags: 0
@@ -42778,8 +42477,8 @@ GameObject:
   m_Name: Tree (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1599322653
 Transform:
@@ -47077,49 +46776,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681134616}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1683661269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1367755243}
-  position: {x: -200.5, y: -97.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1683661269}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1683661269}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Mother would often tell me that Pagodas would hold ancient artifacts of religious
-    significance but that was many hundreds of years ago.
-  audio: {fileID: 8300000, guid: 0abec599f624903489117f36285336b8, type: 3}
-  extraPlayTime: 3
 --- !u!114 &1695335428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47370,8 +47026,8 @@ GameObject:
   m_Name: Tree (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1720516504
 Transform:
@@ -47936,8 +47592,8 @@ GameObject:
   m_Name: Rock_1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1749374672
 Transform:
@@ -48324,8 +47980,8 @@ GameObject:
   m_Name: Tree (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1764258342
 Transform:
@@ -48419,8 +48075,8 @@ GameObject:
   m_Name: Rock_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1769251547
 Transform:
@@ -48608,8 +48264,8 @@ GameObject:
   m_Name: River (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1781050846
 MeshRenderer:
@@ -49084,8 +48740,8 @@ GameObject:
   m_Name: Bush (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1789183285
 Transform:
@@ -49369,8 +49025,8 @@ GameObject:
   m_Name: Bush (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1806992143
 Transform:
@@ -49973,8 +49629,8 @@ GameObject:
   m_Name: Rock_1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1819909359
 Transform:
@@ -50067,8 +49723,8 @@ GameObject:
   m_Name: Rock_5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1823052135
 Transform:
@@ -50256,8 +49912,8 @@ GameObject:
   m_Name: Bush (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1834781775
 Transform:
@@ -50609,8 +50265,8 @@ GameObject:
   m_Name: Rock_5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1837395203
 Transform:
@@ -50795,8 +50451,8 @@ GameObject:
   m_Name: Tree (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1853813470
 Transform:
@@ -50874,21 +50530,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853813469}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1858776096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 2-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 620113946}
-  current: {fileID: 0}
 --- !u!1 &1867226198
 GameObject:
   m_ObjectHideFlags: 0
@@ -51095,8 +50736,8 @@ GameObject:
   m_Name: Bush (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1899991041
 Transform:
@@ -51527,8 +51168,8 @@ GameObject:
   m_Name: Bush (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1904460431
 Transform:
@@ -51637,8 +51278,8 @@ GameObject:
   m_Name: Tree (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1914046492
 MeshCollider:
@@ -52281,8 +51922,8 @@ GameObject:
   m_Name: Rock_1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1954741335
 Transform:
@@ -53084,8 +52725,8 @@ GameObject:
   m_Name: Tree (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1976341826
 Transform:
@@ -53806,8 +53447,8 @@ GameObject:
   m_Name: Bush (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2011673116
 Transform:
@@ -54458,8 +54099,8 @@ GameObject:
   m_Name: Rock_5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2084071862
 Transform:
@@ -58110,8 +57751,8 @@ GameObject:
   m_Name: River (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2109025798
 MeshRenderer:
@@ -58302,8 +57943,8 @@ GameObject:
   m_Name: Tree (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2115335835
 Transform:
@@ -58492,8 +58133,8 @@ GameObject:
   m_Name: Bush (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2125921686
 Transform:
@@ -58778,8 +58419,8 @@ GameObject:
   m_Name: Rock_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &532784952815527207
 MeshCollider:
@@ -58857,8 +58498,8 @@ GameObject:
   m_Name: Rock_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1060152260297783346
 MeshCollider:
@@ -58890,8 +58531,8 @@ GameObject:
   m_Name: Rock_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1233998246842126716
 MeshCollider:
@@ -58999,8 +58640,8 @@ GameObject:
   m_Name: River
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1986163248904243014
 MeshCollider:
@@ -59182,8 +58823,8 @@ GameObject:
   m_Name: Rock_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3453888737030776239
 MeshCollider:
@@ -59237,8 +58878,8 @@ GameObject:
   m_Name: Rock_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3975187384828185646
 MeshCollider:
@@ -59278,8 +58919,8 @@ GameObject:
   m_Name: TT_Japanese_Blossom_tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4103989114675067699
 MeshCollider:
@@ -59339,8 +58980,8 @@ GameObject:
   m_Name: Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4314435047400940304
 MeshCollider:
@@ -59372,8 +59013,8 @@ GameObject:
   m_Name: pasted__Torii
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4388456551643025143
 MeshCollider:
@@ -59556,7 +59197,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5630524581644765590
 MeshCollider:
@@ -59708,7 +59349,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6146482955679075371
 MeshFilter:
@@ -59872,8 +59513,8 @@ GameObject:
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6933820753775262491
 MeshCollider:
