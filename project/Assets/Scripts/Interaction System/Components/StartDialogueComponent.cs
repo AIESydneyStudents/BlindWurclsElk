@@ -9,12 +9,18 @@ public class StartDialogueComponent : TriggerComponentBase
     [Tooltip("If left empty, the DialogeManager's default dialogue player is used")]
     public AudioSource dialoguePlayer = null;
 
+    public bool playOnce = true;
+
 
     public override void Activate()
     {
         // Start dialogue
         DialogueManager.instance.StartDialogue(dialogueGraph, dialoguePlayer);
-        // Destroy this script so the dialogue cant be played again
-        Destroy(this);
+
+        if (playOnce)
+        {
+            // Destroy this script so the dialogue cant be played again
+            Destroy(this);
+        }
     }
 }

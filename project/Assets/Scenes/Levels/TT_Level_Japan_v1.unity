@@ -107,7 +107,7 @@ NavMeshSettings:
   m_BuildSettings:
     serializedVersion: 2
     agentTypeID: 0
-    agentRadius: 0.5
+    agentRadius: 0.4
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
@@ -115,13 +115,13 @@ NavMeshSettings:
     maxJumpAcrossDistance: 0
     minRegionArea: 2
     manualCellSize: 0
-    cellSize: 0.16666667
+    cellSize: 0.13333334
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 59117ee3693c6a34997f27787becb246, type: 2}
 --- !u!1 &549809
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,8 +138,8 @@ GameObject:
   m_Name: Bush (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &549810
 Transform:
@@ -328,8 +328,8 @@ GameObject:
   m_Name: Bush (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5072076
 Transform:
@@ -613,8 +613,8 @@ GameObject:
   m_Name: Rock_2 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &23461708
 Transform:
@@ -873,8 +873,8 @@ GameObject:
   m_Name: Tree (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &41368088
 Transform:
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   - {fileID: 1916431155}
   fadeTime: 1
   delayToShowObject: 1
-  delayToTransition: 2
+  delayToTransition: 10
   uiObject: {fileID: 902920088}
 --- !u!114 &45923898
 MonoBehaviour:
@@ -1033,8 +1033,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7729cd03f0d2b4b80881a30a2050f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  helpMessage: {fileID: 0}
+  agent: {fileID: 5807200856287159479, guid: 72a8250cac0ffff4ba9136c912005743, type: 3}
+  timeToWait: 3
+  target: {fileID: 958264495}
+  agentDelay: 1
 --- !u!1 &56141119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1150,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &56664910
 MeshCollider:
@@ -3012,7 +3014,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 433988747}
+  m_Mesh: {fileID: 1836111901}
 --- !u!114 &68846851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3754,7 +3756,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68846848}
-  m_Mesh: {fileID: 433988747}
+  m_Mesh: {fileID: 1836111901}
 --- !u!1 &84543437
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,8 +3773,8 @@ GameObject:
   m_Name: Tree (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &84543438
 MeshCollider:
@@ -4246,8 +4248,8 @@ GameObject:
   m_Name: Rock_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &120455088
 Transform:
@@ -4340,8 +4342,8 @@ GameObject:
   m_Name: Rock_4 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &132675470
 Transform:
@@ -4575,7 +4577,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &154491752
 MeshCollider:
@@ -8226,8 +8228,8 @@ GameObject:
   m_Name: Bush (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &162684822
 MeshCollider:
@@ -8892,8 +8894,8 @@ GameObject:
   m_Name: Bush (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &180902677
 Transform:
@@ -8987,8 +8989,8 @@ GameObject:
   m_Name: Rock_2 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &181301119
 Transform:
@@ -9369,8 +9371,8 @@ GameObject:
   m_Name: Rock_3 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &199516665
 Transform:
@@ -9828,21 +9830,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237692337}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &244706955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 1-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1012974069}
-  current: {fileID: 0}
 --- !u!1 &268702049
 GameObject:
   m_ObjectHideFlags: 0
@@ -9955,8 +9942,8 @@ GameObject:
   m_Name: Tree (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &269832993
 Transform:
@@ -10319,7 +10306,6 @@ GameObject:
   - component: {fileID: 288555276}
   - component: {fileID: 288555277}
   - component: {fileID: 288555279}
-  - component: {fileID: 288555278}
   m_Layer: 0
   m_Name: Teapot 5
   m_TagString: Untagged
@@ -10429,19 +10415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &288555278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288555271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1454663747}
 --- !u!114 &288555279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10454,7 +10427,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 288555278}
+  target: {fileID: 0}
   waitTime: 3
 --- !u!1 &295419380
 GameObject:
@@ -10663,8 +10636,8 @@ GameObject:
   m_Name: Rock_1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &317759536
 Transform:
@@ -10852,8 +10825,8 @@ GameObject:
   m_Name: Bush (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &321948912
 Transform:
@@ -10947,8 +10920,8 @@ GameObject:
   m_Name: Rock_4 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &353319202
 Transform:
@@ -12122,6 +12095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 410181170}
   dialoguePlayer: {fileID: 410181174}
+  playOnce: 1
 --- !u!114 &410181172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12545,8 +12519,8 @@ GameObject:
   m_Name: Tree (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &423424465
 Transform:
@@ -12640,8 +12614,8 @@ GameObject:
   m_Name: Rock_4 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &431073792
 Transform:
@@ -12718,169 +12692,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431073791}
   m_Mesh: {fileID: -5599637642782650490, guid: b71d1b4d48ae64644989f1806e8fe71f, type: 3}
---- !u!43 &433988747
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32280
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 132
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 72
-    localAABB:
-      m_Center: {x: -110, y: 2.5, z: 54.5}
-      m_Extent: {x: 111, y: 2.5, z: 65.5}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e001000110012001100130012001400150016001500170016001600170018001700190018001a001b001c001b001d001c001e001f0020001f00210020001100100022001000230022001800190024001900250024002600270028002700290028002a002b002c002b002d002c00220023002e0023002f002e002400250030002500310030003200330034003300350034003600370038003700390038002e002f003a002f003b003a00300031003c0031003d003c003e003f0040003f00410040004200430044004300450044003a003b0046003b0047004600
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 72
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 40
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 3456
-    _typelessdata: 00005cc300000000000030c10000000000000000000080bf0000803f0000000000000000000080bf00005cc30000000000005dc300000000000030c10000000000000000000080bf0000803f0000000000000000000080bf00005dc30000000000005cc30000a040000030c10000000000000000000080bf0000803f0000000000000000000080bf00005cc30000a04000005dc30000a040000030c10000000000000000000080bf0000803f0000000000000000000080bf00005dc30000a0400000803f000000000000da420000803f000000000000000000000000000000000000803f000080bf0000da42000000000000803f00000000000080bf0000803f000000000000000000000000000000000000803f000080bf000080bf000000000000803f0000a0400000da420000803f000000000000000000000000000000000000803f000080bf0000da420000a0400000803f0000a040000080bf0000803f000000000000000000000000000000000000803f000080bf000080bf0000a0400000803f00000000000080bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f000000000000000000000000000080bf0000000000000000000080bf0000803f0000000000000000000080bf00000000000000000000803f0000a040000080bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000a040000000000000a040000080bf0000000000000000000080bf0000803f0000000000000000000080bf000000000000a0400000000000000000000080bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000000000000000000000000000da42000080bf00000000000000000000000000000000000080bf000080bf0000dac200000000000000000000a040000080bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000a040000000000000a0400000da42000080bf00000000000000000000000000000000000080bf000080bf0000dac20000a040000000000000a0400000da42000000000000803f000000000000803f0000000000000000000080bf000000000000da420000803f0000a0400000da42000000000000803f000000000000803f0000000000000000000080bf0000803f0000da42000000000000a040000080bf000000000000803f000000000000803f0000000000000000000080bf00000000000080bf0000803f0000a040000080bf000000000000803f000000000000803f0000000000000000000080bf0000803f000080bf0000000000000000000080bf00000000000080bf00000000000080bf0000000000000000000080bf00000000000080bf0000803f00000000000080bf00000000000080bf00000000000080bf0000000000000000000080bf000080bf000080bf00000000000000000000da4200000000000080bf00000000000080bf0000000000000000000080bf000000000000da420000803f000000000000da4200000000000080bf00000000000080bf0000000000000000000080bf000080bf0000da420000a0c1000000000000ee4200000000000080bf00000000000080bf0000000000000000000080bf0000a0410000ee420000a0c1000000000000f04200000000000080bf00000000000080bf0000000000000000000080bf0000a0410000f042000000000000a0400000da422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bf31fc42c20000a04000000000000000000000da422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bf31fc42c2000000000000a0c10000a0400000ee422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bfc4368ec20000a0400000a0c1000000000000ee422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bfc4368ec2000000000000803f000000000000da425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf83c34642000000000000803f0000a0400000da425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf83c346420000a0400000a0c1000000000000f0425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf81cb9242000000000000a0c10000a0400000f0425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf81cb92420000a0400000a0c10000a0400000f042000000000000803f000000000000803f0000000000000000000080bf0000a0c10000f0420000a0c10000a0400000ee42000000000000803f000000000000803f0000000000000000000080bf0000a0c10000ee42000048c3000000000000ee4200000000000080bf00000000000080bf0000000000000000000080bf000048430000ee42000048c3000000000000f04200000000000080bf00000000000080bf0000000000000000000080bf000048430000f0420000a0c10000a0400000ee420000000000000000000080bf0000803f0000000000000000000080bf0000a0c10000a0400000a0c1000000000000ee420000000000000000000080bf0000803f0000000000000000000080bf0000a0c100000000000048c30000a0400000ee420000000000000000000080bf0000803f0000000000000000000080bf000048c30000a040000048c3000000000000ee420000000000000000000080bf0000803f0000000000000000000080bf000048c3000000000000a0c1000000000000f04200000000000000000000803f000080bf0000000000000000000080bf0000a041000000000000a0c10000a0400000f04200000000000000000000803f000080bf0000000000000000000080bf0000a0410000a040000048c3000000000000f04200000000000000000000803f000080bf0000000000000000000080bf0000484300000000000048c30000a0400000f04200000000000000000000803f000080bf0000000000000000000080bf000048430000a040000048c30000a0400000f042000000000000803f000000000000803f0000000000000000000080bf000048c30000f042000048c30000a0400000ee42000000000000803f000000000000803f0000000000000000000080bf000048c30000ee4200005cc3000000000000c64200000000000080bf00000000000080bf0000000000000000000080bf00005c430000c64200005dc3000000000000c64200000000000080bf00000000000080bf0000000000000000000080bf00005d430000c642000048c30000a0400000ee42f304353f00000000f30435bff404353f00000000f404353f000080bf441a65c20000a040000048c3000000000000ee42f304353f00000000f30435bff404353f00000000f404353f000080bf441a65c20000000000005cc30000a0400000c642f304353f00000000f30435bff404353f00000000f404353f000080bfae1eabc20000a04000005cc3000000000000c642f304353f00000000f30435bff404353f00000000f404353f000080bfae1eabc200000000000048c3000000000000f042f30435bf00000000f304353ff30435bf00000000f30435bf000080bf3046624200000000000048c30000a0400000f042f30435bf00000000f304353ff30435bf00000000f30435bf000080bf304662420000a04000005dc3000000000000c642f30435bf00000000f304353ff30435bf00000000f30435bf000080bfb888ac420000000000005dc30000a0400000c642f30435bf00000000f304353ff30435bf00000000f30435bf000080bfb888ac420000a04000005dc30000a0400000c642000000000000803f000000000000803f0000000000000000000080bf00005dc30000c64200005cc30000a0400000c642000000000000803f000000000000803f0000000000000000000080bf00005cc30000c64200005cc300000000000030c100000000000080bf00000000000080bf0000000000000000000080bf00005c43000030c100005dc300000000000030c100000000000080bf00000000000080bf0000000000000000000080bf00005d43000030c100005cc30000a0400000c6420000803f000000000000000000000000000000000000803f000080bf0000c6420000a04000005cc3000000000000c6420000803f000000000000000000000000000000000000803f000080bf0000c6420000000000005cc30000a040000030c10000803f000000000000000000000000000000000000803f000080bf000030c10000a04000005cc300000000000030c10000803f000000000000000000000000000000000000803f000080bf000030c10000000000005dc3000000000000c642000080bf00000000000000000000000000000000000080bf000080bf0000c6c20000000000005dc30000a0400000c642000080bf00000000000000000000000000000000000080bf000080bf0000c6c20000a04000005dc300000000000030c1000080bf00000000000000000000000000000000000080bf000080bf000030410000000000005dc30000a040000030c1000080bf00000000000000000000000000000000000080bf000080bf000030410000a04000005dc30000a040000030c1000000000000803f000000000000803f0000000000000000000080bf00005dc3000030c100005cc30000a040000030c1000000000000803f000000000000803f0000000000000000000080bf00005cc3000030c1
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -110, y: 2.5, z: 54.5}
-    m_Extent: {x: 111, y: 2.5, z: 65.5}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!1 &438204376
 GameObject:
   m_ObjectHideFlags: 0
@@ -12897,8 +12708,8 @@ GameObject:
   m_Name: Rock_3 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &438204377
 Transform:
@@ -14055,7 +13866,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32268
+  m_Name: pb_Mesh216168
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14315,6 +14126,7 @@ RectTransform:
   - {fileID: 566697747}
   - {fileID: 34100104}
   - {fileID: 2003664360}
+  - {fileID: 1379172616}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14474,49 +14286,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &488339188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1175591785}
-  position: {x: -329.8895, y: -128.0359}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 488339188}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 488339188}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: 'Through a garden we sat at a bench and looked at the most beautiful Zen
-    Garden i had ever seen, at that moment i felt calm about everything around me. '
-  audio: {fileID: 8300000, guid: ec2f4efa8daa9a440a75f2a80bd17c56, type: 3}
-  extraPlayTime: 3
 --- !u!1 &495645632
 GameObject:
   m_ObjectHideFlags: 0
@@ -14938,7 +14707,6 @@ GameObject:
   - component: {fileID: 508031448}
   - component: {fileID: 508031449}
   - component: {fileID: 508031451}
-  - component: {fileID: 508031450}
   m_Layer: 0
   m_Name: Teapot 3
   m_TagString: Untagged
@@ -15048,19 +14816,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &508031450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508031443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1367755243}
 --- !u!114 &508031451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15073,7 +14828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 508031450}
+  target: {fileID: 1029559281}
   waitTime: 3
 --- !u!1 &509348925
 GameObject:
@@ -15324,8 +15079,8 @@ GameObject:
   m_Name: Rock_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &529287573
 Transform:
@@ -15513,7 +15268,6 @@ GameObject:
   - component: {fileID: 540071788}
   - component: {fileID: 540071789}
   - component: {fileID: 540071791}
-  - component: {fileID: 540071790}
   m_Layer: 0
   m_Name: Teapot 2
   m_TagString: Untagged
@@ -15623,19 +15377,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &540071790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540071783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1858776096}
 --- !u!114 &540071791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15648,7 +15389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 540071790}
+  target: {fileID: 508031443}
   waitTime: 3
 --- !u!1 &548321155
 GameObject:
@@ -16046,8 +15787,8 @@ GameObject:
   m_Name: Rock_4 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &557552726
 Transform:
@@ -16426,8 +16167,8 @@ GameObject:
   m_Name: Rock_3 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &561766431
 Transform:
@@ -16681,8 +16422,8 @@ GameObject:
   m_Name: Bush (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &572956337
 Transform:
@@ -16967,8 +16708,8 @@ GameObject:
   m_Name: Tree (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &583770382
 Transform:
@@ -17157,8 +16898,8 @@ GameObject:
   m_Name: Bush (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &592339161
 Transform:
@@ -17444,7 +17185,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &600967797
 Transform:
@@ -19602,8 +19343,8 @@ GameObject:
   m_Name: Bush (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &605395910
 Transform:
@@ -19697,8 +19438,8 @@ GameObject:
   m_Name: Bush (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &614865010
 Transform:
@@ -19776,50 +19517,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614865009}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &620113946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1858776096}
-  position: {x: -477.5, y: -86.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 620113946}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 620113946}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: An old bridge, it has been around for as long as i can remember, my mother
-    told me the bridge was older than her and grandpa combined, more than 400 years
-    old
-  audio: {fileID: 8300000, guid: 06fddb475140f7848b80ab279cf5d91a, type: 3}
-  extraPlayTime: 3
 --- !u!1 &622001944
 GameObject:
   m_ObjectHideFlags: 0
@@ -19836,8 +19533,8 @@ GameObject:
   m_Name: River (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &622001945
 MeshRenderer:
@@ -20351,8 +20048,8 @@ GameObject:
   m_Name: Bush (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &648461623
 Transform:
@@ -21120,8 +20817,8 @@ GameObject:
   m_Name: Bush (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &679997976
 Transform:
@@ -21215,8 +20912,8 @@ GameObject:
   m_Name: Tree (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &687103178
 Transform:
@@ -21773,6 +21470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 707208915}
   dialoguePlayer: {fileID: 707208919}
+  playOnce: 1
 --- !u!114 &707208917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21910,8 +21608,8 @@ GameObject:
   m_Name: Tree (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &709043734
 Transform:
@@ -22150,8 +21848,8 @@ GameObject:
   m_Name: Bush (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &734371385
 Transform:
@@ -22705,8 +22403,8 @@ GameObject:
   m_Name: Tree (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &773844398
 Transform:
@@ -26232,6 +25930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 785612738}
   dialoguePlayer: {fileID: 785612742}
+  playOnce: 1
 --- !u!114 &785612740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26831,8 +26530,8 @@ GameObject:
   m_Name: Tree (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &815463246
 Transform:
@@ -27593,8 +27292,8 @@ GameObject:
   m_Name: Rock_5 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &857438962
 Transform:
@@ -28849,8 +28548,8 @@ GameObject:
   m_Name: Tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &931011030
 MeshCollider:
@@ -30558,7 +30257,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33484
+  m_Name: pb_Mesh32126
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31025,7 +30724,6 @@ GameObject:
   - component: {fileID: 958264501}
   - component: {fileID: 958264500}
   - component: {fileID: 958264503}
-  - component: {fileID: 958264502}
   m_Layer: 0
   m_Name: Teapot 1
   m_TagString: Untagged
@@ -31135,19 +30833,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &958264502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958264495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 244706955}
 --- !u!114 &958264503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31160,7 +30845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 958264502}
+  target: {fileID: 540071783}
   waitTime: 3
 --- !u!1 &960317081
 GameObject:
@@ -31264,7 +30949,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32790
+  m_Name: pb_Mesh29864
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31447,8 +31132,8 @@ GameObject:
   m_Name: Tree (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &972914662
 Transform:
@@ -31639,7 +31324,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &990332102
 MeshCollider:
@@ -32806,7 +32491,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32884
+  m_Name: pb_Mesh30188
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33198,49 +32883,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011603585}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1012974069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 244706955}
-  position: {x: -416.5, y: -178.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1012974069}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1012974069}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: There was these great arches, i later learnt they were called Torii, used
-    for entrances into temples
-  audio: {fileID: 8300000, guid: c5039dc11155daa40bf9d76fa5354111, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1019260317
 GameObject:
   m_ObjectHideFlags: 0
@@ -33351,7 +32993,6 @@ GameObject:
   - component: {fileID: 1029559286}
   - component: {fileID: 1029559287}
   - component: {fileID: 1029559289}
-  - component: {fileID: 1029559288}
   m_Layer: 0
   m_Name: Teapot 4
   m_TagString: Untagged
@@ -33461,19 +33102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &1029559288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029559281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1175591785}
 --- !u!114 &1029559289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33486,7 +33114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 1029559288}
+  target: {fileID: 288555271}
   waitTime: 3
 --- !u!1 &1035727696
 GameObject:
@@ -33929,8 +33557,8 @@ GameObject:
   m_Name: Bush (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1068547948
 Transform:
@@ -34164,8 +33792,8 @@ GameObject:
   m_Name: Bush (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1083473836
 Transform:
@@ -34449,8 +34077,8 @@ GameObject:
   m_Name: Rock_4 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1103480594
 Transform:
@@ -34924,8 +34552,8 @@ GameObject:
   m_Name: Rock_3 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1118311365
 Transform:
@@ -35018,8 +34646,8 @@ GameObject:
   m_Name: Bush (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1122051616
 Transform:
@@ -35765,8 +35393,8 @@ GameObject:
   m_Name: Tree (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1152509722
 Transform:
@@ -36226,21 +35854,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173007197}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1175591785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 4-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 488339188}
-  current: {fileID: 0}
 --- !u!1 &1178231135
 GameObject:
   m_ObjectHideFlags: 0
@@ -37444,8 +37057,8 @@ GameObject:
   m_Name: Tree (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1254134025
 Transform:
@@ -37729,8 +37342,8 @@ GameObject:
   m_Name: Rock_4 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1266260936
 Transform:
@@ -37813,7 +37426,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32622
+  m_Name: pb_Mesh217182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38187,8 +37800,8 @@ GameObject:
   m_Name: Bush (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1295157616
 Transform:
@@ -38378,8 +37991,8 @@ GameObject:
   m_Name: Rock_5 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1301859130
 Transform:
@@ -38567,8 +38180,8 @@ GameObject:
   m_Name: Rock_5 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1314905296
 Transform:
@@ -38981,8 +38594,8 @@ GameObject:
   m_Name: Rock_1 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1339488792
 Transform:
@@ -39065,7 +38678,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32946
+  m_Name: pb_Mesh217976
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -39785,21 +39398,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367172835}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1367755243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 3-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1683661269}
-  current: {fileID: 0}
 --- !u!1 &1372455122
 GameObject:
   m_ObjectHideFlags: 0
@@ -39896,6 +39494,83 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1372455122}
   m_Mesh: {fileID: -2342641250598901386, guid: 4a3496684fa5207478355c37172d8fe2, type: 3}
+--- !u!1 &1379172615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379172616}
+  - component: {fileID: 1379172618}
+  - component: {fileID: 1379172617}
+  m_Layer: 5
+  m_Name: MissionText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1379172616
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379172615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 474813430}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 156, y: -76}
+  m_SizeDelta: {x: 236.5, y: 98}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1379172617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379172615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Find the missing pieces throughout the land to complete the teapot.
+--- !u!222 &1379172618
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379172615}
+  m_CullTransparentMesh: 0
 --- !u!1 &1379281727
 GameObject:
   m_ObjectHideFlags: 0
@@ -39912,8 +39587,8 @@ GameObject:
   m_Name: Rock_3 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1379281728
 Transform:
@@ -40091,7 +39766,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32314
+  m_Name: pb_Mesh216274
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -40559,8 +40234,8 @@ GameObject:
   m_Name: Bush (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1435183064
 Transform:
@@ -41013,8 +40688,8 @@ GameObject:
   m_Name: Bush (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1453456571
 Transform:
@@ -41092,21 +40767,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453456570}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1454663747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 5-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1560502260}
-  current: {fileID: 0}
 --- !u!1 &1460326402
 GameObject:
   m_ObjectHideFlags: 0
@@ -41892,7 +41552,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-37270
+  m_Name: pb_Mesh29136
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -42075,8 +41735,8 @@ GameObject:
   m_Name: Rock_4 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1537858788
 Transform:
@@ -42169,8 +41829,8 @@ GameObject:
   m_Name: Rock_2 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1543991059
 Transform:
@@ -42358,8 +42018,8 @@ GameObject:
   m_Name: Rock_3 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1552637605
 Transform:
@@ -42626,49 +42286,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559422603}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1560502260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1454663747}
-  position: {x: -588.8895, y: -149.0359}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1560502260}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1560502260}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: 'At the end of the walk we sat beneath a Cherry Blossom tree that was in
-    full bloom in time and the leaves were falling like snow during spring. '
-  audio: {fileID: 8300000, guid: 14e6e6f6d72f6cb4999b5bb834864a2e, type: 3}
-  extraPlayTime: 3
 --- !u!1 &1569456819
 GameObject:
   m_ObjectHideFlags: 0
@@ -42860,8 +42477,8 @@ GameObject:
   m_Name: Tree (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1599322653
 Transform:
@@ -47159,49 +46776,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681134616}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1683661269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1367755243}
-  position: {x: -200.5, y: -97.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1683661269}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1683661269}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Mother would often tell me that Pagodas would hold ancient artifacts of religious
-    significance but that was many hundreds of years ago.
-  audio: {fileID: 8300000, guid: 0abec599f624903489117f36285336b8, type: 3}
-  extraPlayTime: 3
 --- !u!114 &1695335428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47452,8 +47026,8 @@ GameObject:
   m_Name: Tree (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1720516504
 Transform:
@@ -47880,6 +47454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1741144005}
   dialoguePlayer: {fileID: 1741144009}
+  playOnce: 1
 --- !u!114 &1741144007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48017,8 +47592,8 @@ GameObject:
   m_Name: Rock_1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1749374672
 Transform:
@@ -48267,6 +47842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1760321631}
   dialoguePlayer: {fileID: 1760321635}
+  playOnce: 1
 --- !u!114 &1760321633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48404,8 +47980,8 @@ GameObject:
   m_Name: Tree (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1764258342
 Transform:
@@ -48499,8 +48075,8 @@ GameObject:
   m_Name: Rock_1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1769251547
 Transform:
@@ -48688,8 +48264,8 @@ GameObject:
   m_Name: River (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1781050846
 MeshRenderer:
@@ -49164,8 +48740,8 @@ GameObject:
   m_Name: Bush (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1789183285
 Transform:
@@ -49449,8 +49025,8 @@ GameObject:
   m_Name: Bush (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1806992143
 Transform:
@@ -50053,8 +49629,8 @@ GameObject:
   m_Name: Rock_1 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1819909359
 Transform:
@@ -50147,8 +49723,8 @@ GameObject:
   m_Name: Rock_5 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1823052135
 Transform:
@@ -50336,8 +49912,8 @@ GameObject:
   m_Name: Bush (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1834781775
 Transform:
@@ -50510,6 +50086,169 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835764385}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
+--- !u!43 &1836111901
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh28502
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 132
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 72
+    localAABB:
+      m_Center: {x: -110, y: 2.5, z: 54.5}
+      m_Extent: {x: 111, y: 2.5, z: 65.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e001000110012001100130012001400150016001500170016001600170018001700190018001a001b001c001b001d001c001e001f0020001f00210020001100100022001000230022001800190024001900250024002600270028002700290028002a002b002c002b002d002c00220023002e0023002f002e002400250030002500310030003200330034003300350034003600370038003700390038002e002f003a002f003b003a00300031003c0031003d003c003e003f0040003f00410040004200430044004300450044003a003b0046003b0047004600
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 72
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 3456
+    _typelessdata: 00005cc300000000000030c10000000000000000000080bf0000803f0000000000000000000080bf00005cc30000000000005dc300000000000030c10000000000000000000080bf0000803f0000000000000000000080bf00005dc30000000000005cc30000a040000030c10000000000000000000080bf0000803f0000000000000000000080bf00005cc30000a04000005dc30000a040000030c10000000000000000000080bf0000803f0000000000000000000080bf00005dc30000a0400000803f000000000000da420000803f000000000000000000000000000000000000803f000080bf0000da42000000000000803f00000000000080bf0000803f000000000000000000000000000000000000803f000080bf000080bf000000000000803f0000a0400000da420000803f000000000000000000000000000000000000803f000080bf0000da420000a0400000803f0000a040000080bf0000803f000000000000000000000000000000000000803f000080bf000080bf0000a0400000803f00000000000080bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f000000000000000000000000000080bf0000000000000000000080bf0000803f0000000000000000000080bf00000000000000000000803f0000a040000080bf0000000000000000000080bf0000803f0000000000000000000080bf0000803f0000a040000000000000a040000080bf0000000000000000000080bf0000803f0000000000000000000080bf000000000000a0400000000000000000000080bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000000000000000000000000000da42000080bf00000000000000000000000000000000000080bf000080bf0000dac200000000000000000000a040000080bf000080bf00000000000000000000000000000000000080bf000080bf0000803f0000a040000000000000a0400000da42000080bf00000000000000000000000000000000000080bf000080bf0000dac20000a040000000000000a0400000da42000000000000803f000000000000803f0000000000000000000080bf000000000000da420000803f0000a0400000da42000000000000803f000000000000803f0000000000000000000080bf0000803f0000da42000000000000a040000080bf000000000000803f000000000000803f0000000000000000000080bf00000000000080bf0000803f0000a040000080bf000000000000803f000000000000803f0000000000000000000080bf0000803f000080bf0000000000000000000080bf00000000000080bf00000000000080bf0000000000000000000080bf00000000000080bf0000803f00000000000080bf00000000000080bf00000000000080bf0000000000000000000080bf000080bf000080bf00000000000000000000da4200000000000080bf00000000000080bf0000000000000000000080bf000000000000da420000803f000000000000da4200000000000080bf00000000000080bf0000000000000000000080bf000080bf0000da420000a0c1000000000000ee4200000000000080bf00000000000080bf0000000000000000000080bf0000a0410000ee420000a0c1000000000000f04200000000000080bf00000000000080bf0000000000000000000080bf0000a0410000f042000000000000a0400000da422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bf31fc42c20000a04000000000000000000000da422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bf31fc42c2000000000000a0c10000a0400000ee422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bfc4368ec20000a0400000a0c1000000000000ee422ef9e4be000000002ef964bf2ff9643f000000002ff9e4be000080bfc4368ec2000000000000803f000000000000da425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf83c34642000000000000803f0000a0400000da425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf83c346420000a0400000a0c1000000000000f0425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf81cb9242000000000000a0c10000a0400000f0425392ed3e00000000dbc5623fdbc562bf000000005392ed3e000080bf81cb92420000a0400000a0c10000a0400000f042000000000000803f000000000000803f0000000000000000000080bf0000a0c10000f0420000a0c10000a0400000ee42000000000000803f000000000000803f0000000000000000000080bf0000a0c10000ee42000048c3000000000000ee4200000000000080bf00000000000080bf0000000000000000000080bf000048430000ee42000048c3000000000000f04200000000000080bf00000000000080bf0000000000000000000080bf000048430000f0420000a0c10000a0400000ee420000000000000000000080bf0000803f0000000000000000000080bf0000a0c10000a0400000a0c1000000000000ee420000000000000000000080bf0000803f0000000000000000000080bf0000a0c100000000000048c30000a0400000ee420000000000000000000080bf0000803f0000000000000000000080bf000048c30000a040000048c3000000000000ee420000000000000000000080bf0000803f0000000000000000000080bf000048c3000000000000a0c1000000000000f04200000000000000000000803f000080bf0000000000000000000080bf0000a041000000000000a0c10000a0400000f04200000000000000000000803f000080bf0000000000000000000080bf0000a0410000a040000048c3000000000000f04200000000000000000000803f000080bf0000000000000000000080bf0000484300000000000048c30000a0400000f04200000000000000000000803f000080bf0000000000000000000080bf000048430000a040000048c30000a0400000f042000000000000803f000000000000803f0000000000000000000080bf000048c30000f042000048c30000a0400000ee42000000000000803f000000000000803f0000000000000000000080bf000048c30000ee4200005cc3000000000000c64200000000000080bf00000000000080bf0000000000000000000080bf00005c430000c64200005dc3000000000000c64200000000000080bf00000000000080bf0000000000000000000080bf00005d430000c642000048c30000a0400000ee42f304353f00000000f30435bff404353f00000000f404353f000080bf441a65c20000a040000048c3000000000000ee42f304353f00000000f30435bff404353f00000000f404353f000080bf441a65c20000000000005cc30000a0400000c642f304353f00000000f30435bff404353f00000000f404353f000080bfae1eabc20000a04000005cc3000000000000c642f304353f00000000f30435bff404353f00000000f404353f000080bfae1eabc200000000000048c3000000000000f042f30435bf00000000f304353ff30435bf00000000f30435bf000080bf3046624200000000000048c30000a0400000f042f30435bf00000000f304353ff30435bf00000000f30435bf000080bf304662420000a04000005dc3000000000000c642f30435bf00000000f304353ff30435bf00000000f30435bf000080bfb888ac420000000000005dc30000a0400000c642f30435bf00000000f304353ff30435bf00000000f30435bf000080bfb888ac420000a04000005dc30000a0400000c642000000000000803f000000000000803f0000000000000000000080bf00005dc30000c64200005cc30000a0400000c642000000000000803f000000000000803f0000000000000000000080bf00005cc30000c64200005cc300000000000030c100000000000080bf00000000000080bf0000000000000000000080bf00005c43000030c100005dc300000000000030c100000000000080bf00000000000080bf0000000000000000000080bf00005d43000030c100005cc30000a0400000c6420000803f000000000000000000000000000000000000803f000080bf0000c6420000a04000005cc3000000000000c6420000803f000000000000000000000000000000000000803f000080bf0000c6420000000000005cc30000a040000030c10000803f000000000000000000000000000000000000803f000080bf000030c10000a04000005cc300000000000030c10000803f000000000000000000000000000000000000803f000080bf000030c10000000000005dc3000000000000c642000080bf00000000000000000000000000000000000080bf000080bf0000c6c20000000000005dc30000a0400000c642000080bf00000000000000000000000000000000000080bf000080bf0000c6c20000a04000005dc300000000000030c1000080bf00000000000000000000000000000000000080bf000080bf000030410000000000005dc30000a040000030c1000080bf00000000000000000000000000000000000080bf000080bf000030410000a04000005dc30000a040000030c1000000000000803f000000000000803f0000000000000000000080bf00005dc3000030c100005cc30000a040000030c1000000000000803f000000000000803f0000000000000000000080bf00005cc3000030c1
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -110, y: 2.5, z: 54.5}
+    m_Extent: {x: 111, y: 2.5, z: 65.5}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1837395202
 GameObject:
   m_ObjectHideFlags: 0
@@ -50526,8 +50265,8 @@ GameObject:
   m_Name: Rock_5 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1837395203
 Transform:
@@ -50712,8 +50451,8 @@ GameObject:
   m_Name: Tree (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1853813470
 Transform:
@@ -50791,21 +50530,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853813469}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1858776096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 2-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 620113946}
-  current: {fileID: 0}
 --- !u!1 &1867226198
 GameObject:
   m_ObjectHideFlags: 0
@@ -51012,8 +50736,8 @@ GameObject:
   m_Name: Bush (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1899991041
 Transform:
@@ -51444,8 +51168,8 @@ GameObject:
   m_Name: Bush (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1904460431
 Transform:
@@ -51554,8 +51278,8 @@ GameObject:
   m_Name: Tree (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1914046492
 MeshCollider:
@@ -52198,8 +51922,8 @@ GameObject:
   m_Name: Rock_1 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1954741335
 Transform:
@@ -53001,8 +52725,8 @@ GameObject:
   m_Name: Tree (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1976341826
 Transform:
@@ -53086,7 +52810,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33424
+  m_Name: pb_Mesh31928
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -53723,8 +53447,8 @@ GameObject:
   m_Name: Bush (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2011673116
 Transform:
@@ -54375,8 +54099,8 @@ GameObject:
   m_Name: Rock_5 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2084071862
 Transform:
@@ -54649,7 +54373,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh33230
+  m_Name: pb_Mesh31354
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -58027,8 +57751,8 @@ GameObject:
   m_Name: River (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &2109025798
 MeshRenderer:
@@ -58219,8 +57943,8 @@ GameObject:
   m_Name: Tree (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2115335835
 Transform:
@@ -58409,8 +58133,8 @@ GameObject:
   m_Name: Bush (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2125921686
 Transform:
@@ -58695,8 +58419,8 @@ GameObject:
   m_Name: Rock_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &532784952815527207
 MeshCollider:
@@ -58774,8 +58498,8 @@ GameObject:
   m_Name: Rock_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1060152260297783346
 MeshCollider:
@@ -58807,8 +58531,8 @@ GameObject:
   m_Name: Rock_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1233998246842126716
 MeshCollider:
@@ -58916,8 +58640,8 @@ GameObject:
   m_Name: River
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1986163248904243014
 MeshCollider:
@@ -59099,8 +58823,8 @@ GameObject:
   m_Name: Rock_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3453888737030776239
 MeshCollider:
@@ -59154,8 +58878,8 @@ GameObject:
   m_Name: Rock_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3975187384828185646
 MeshCollider:
@@ -59195,8 +58919,8 @@ GameObject:
   m_Name: TT_Japanese_Blossom_tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4103989114675067699
 MeshCollider:
@@ -59256,8 +58980,8 @@ GameObject:
   m_Name: Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4314435047400940304
 MeshCollider:
@@ -59289,8 +59013,8 @@ GameObject:
   m_Name: pasted__Torii
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4388456551643025143
 MeshCollider:
@@ -59473,7 +59197,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5630524581644765590
 MeshCollider:
@@ -59625,7 +59349,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &6146482955679075371
 MeshFilter:
@@ -59789,8 +59513,8 @@ GameObject:
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6933820753775262491
 MeshCollider:

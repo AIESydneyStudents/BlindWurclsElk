@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider))]
 public class PowderGatherTrigger : MonoBehaviour
@@ -8,6 +9,9 @@ public class PowderGatherTrigger : MonoBehaviour
     public GameObject bar;
     public BarScript barScript;
     public SpoonScript spoonScript;
+
+    public Text helpText;
+    [Space]
 
     public AudioSource sound;
 
@@ -18,6 +22,10 @@ public class PowderGatherTrigger : MonoBehaviour
     public float range = 0.2f;
 
 
+    void Start()
+    {
+        helpText.text = "Collect tea powder and put it inot the bowl";
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -25,6 +33,9 @@ public class PowderGatherTrigger : MonoBehaviour
         {
             bar.SetActive(true);
             active = true;
+
+            //change help message
+            helpText.text = "Click at the right time to collect the tea powder";
         }
     }
 
@@ -34,6 +45,9 @@ public class PowderGatherTrigger : MonoBehaviour
         {
             bar.SetActive(false);
             active = false;
+
+            //change help message
+            helpText.text = "Collect tea powder and put it inot the bowl";
         }
     }
 

@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider))]
 public class BurnerTrigger : MonoBehaviour
 {
     public GameObject waterHeatGroup;
     public GameObject powderPourGroup;
+
+    public Text helpText;
+    [Space]
 
 
     int coalCount = 0;
@@ -31,6 +35,10 @@ public class BurnerTrigger : MonoBehaviour
         barObj.SetActive(true);
         // Get the part of the bar to scale
         barScalable = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
+
+        // Set help text
+        helpText.text = "Place the appropriate ammount of coals into the hot plate to heat the teapot";
+        helpText.gameObject.SetActive(true);
     }
 
     void OnTriggerEnter(Collider other)

@@ -8,7 +8,7 @@ public class ProgressionItemComponent : TriggerComponentBase
     bool active = true;
 
 
-    public DialogueSceneGraph helpMessage;
+    public GameObject target;
 
     [Min(0)]
     public float waitTime;
@@ -18,8 +18,8 @@ public class ProgressionItemComponent : TriggerComponentBase
     {
         if (active)
         {
-            // Set the help message
-            HelpMessageManager.instance.SetMessage(waitTime, helpMessage);
+            // Set the new target
+            HelpMessageManager.instance.SetTarget(waitTime, target);
             active = false;
         }
     }
