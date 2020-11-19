@@ -3358,7 +3358,7 @@ GameObject:
   - component: {fileID: 606405661}
   - component: {fileID: 606405660}
   - component: {fileID: 606405659}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Burner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9271,7 +9271,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822750729}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76687c9ccd983d34a957e913742cb5c6, type: 3}
   m_Name: 
