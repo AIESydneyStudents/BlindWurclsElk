@@ -165,7 +165,7 @@ public class SittingController : MonoBehaviour
     void Update()
     {
         // If still animating, the player cant do anything
-        if (!isSitting)
+        if (!isSitting || PauseMenuScript.paused)
         { return; }
 
 
