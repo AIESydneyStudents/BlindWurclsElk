@@ -19,4 +19,17 @@ public class TriggerBase : MonoBehaviour
             }
         }
     }
+
+    void OnTriggerExit(Collider other)
+    {
+        // If the player exits the trigger, deactivate
+        if (other.CompareTag("Player"))
+        {
+            // Deactivate each attached component
+            foreach (TriggerComponentBase comp in GetComponents<TriggerComponentBase>())
+            {
+                comp.Deactivate();
+            }
+        }
+    }
 }
