@@ -2569,7 +2569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 449570648}
-  - {fileID: 449570650}
   delay: 2
 --- !u!114 &449570650
 MonoBehaviour:
@@ -2580,10 +2579,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 449570639}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 131301e9200bd2d4c8e5734d1daf51dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fc54d6068c5f7042a0368f68310963b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 449570639}
 --- !u!1 &453631787
 GameObject:
   m_ObjectHideFlags: 0
@@ -7322,7 +7320,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 1433995865}
-  - {fileID: 1433995875}
   delay: 2
 --- !u!114 &1433995867
 MonoBehaviour:
@@ -7461,10 +7458,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1433995863}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 131301e9200bd2d4c8e5734d1daf51dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fc54d6068c5f7042a0368f68310963b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 1433995863}
 --- !u!1 &1459829764
 GameObject:
   m_ObjectHideFlags: 0
@@ -9257,6 +9253,7 @@ GameObject:
   - component: {fileID: 1822750731}
   - component: {fileID: 1822750732}
   - component: {fileID: 1822750733}
+  - component: {fileID: 1822750730}
   m_Layer: 0
   m_Name: TeaMakingInteraction
   m_TagString: Untagged
@@ -9264,6 +9261,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1822750730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822750729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fc54d6068c5f7042a0368f68310963b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1822750731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10844,7 +10853,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 2085085520}
-  - {fileID: 2085085530}
   delay: 2
 --- !u!114 &2085085522
 MonoBehaviour:
@@ -10983,10 +10991,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2085085518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 131301e9200bd2d4c8e5734d1daf51dc, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fc54d6068c5f7042a0368f68310963b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 2085085518}
 --- !u!1 &2142974390
 GameObject:
   m_ObjectHideFlags: 0
