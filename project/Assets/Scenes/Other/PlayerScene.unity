@@ -381,7 +381,7 @@ MonoBehaviour:
   firePoint: {fileID: 1115842220}
   projectile: {fileID: 3131727699296735341, guid: 2b35f4595d6e9ca42a8a6f18ec355bc7,
     type: 3}
-  throwForce: 5
+  throwForce: 10
   colors:
   - {r: 1, g: 0, b: 0, a: 1}
   - {r: 0, g: 1, b: 0, a: 1}

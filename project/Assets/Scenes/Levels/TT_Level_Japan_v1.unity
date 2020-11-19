@@ -1005,7 +1005,7 @@ MonoBehaviour:
   - {fileID: 1916431155}
   fadeTime: 1
   delayToShowObject: 1
-  delayToTransition: 2
+  delayToTransition: 10
   uiObject: {fileID: 902920088}
 --- !u!114 &45923898
 MonoBehaviour:
@@ -12122,6 +12122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 410181170}
   dialoguePlayer: {fileID: 410181174}
+  playOnce: 1
 --- !u!114 &410181172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21611,6 +21612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 707208915}
   dialoguePlayer: {fileID: 707208919}
+  playOnce: 1
 --- !u!114 &707208917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26070,6 +26072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 785612738}
   dialoguePlayer: {fileID: 785612742}
+  playOnce: 1
 --- !u!114 &785612740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47795,6 +47798,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1741144005}
   dialoguePlayer: {fileID: 1741144009}
+  playOnce: 1
 --- !u!114 &1741144007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48182,6 +48186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1760321631}
   dialoguePlayer: {fileID: 1760321635}
+  playOnce: 1
 --- !u!114 &1760321633
 MonoBehaviour:
   m_ObjectHideFlags: 0
