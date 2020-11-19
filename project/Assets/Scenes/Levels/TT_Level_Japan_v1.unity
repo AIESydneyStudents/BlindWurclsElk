@@ -9830,21 +9830,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237692337}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &244706955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 1-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1012974069}
-  current: {fileID: 0}
 --- !u!1 &268702049
 GameObject:
   m_ObjectHideFlags: 0
@@ -10321,7 +10306,6 @@ GameObject:
   - component: {fileID: 288555276}
   - component: {fileID: 288555277}
   - component: {fileID: 288555279}
-  - component: {fileID: 288555278}
   m_Layer: 0
   m_Name: Teapot 5
   m_TagString: Untagged
@@ -10431,19 +10415,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &288555278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 288555271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1454663747}
 --- !u!114 &288555279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14315,49 +14286,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &488339188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1175591785}
-  position: {x: -329.8895, y: -128.0359}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 488339188}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 488339188}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: 'Through a garden we sat at a bench and looked at the most beautiful Zen
-    Garden i had ever seen, at that moment i felt calm about everything around me. '
-  audio: {fileID: 8300000, guid: ec2f4efa8daa9a440a75f2a80bd17c56, type: 3}
-  extraPlayTime: 3
 --- !u!1 &495645632
 GameObject:
   m_ObjectHideFlags: 0
@@ -14779,7 +14707,6 @@ GameObject:
   - component: {fileID: 508031448}
   - component: {fileID: 508031449}
   - component: {fileID: 508031451}
-  - component: {fileID: 508031450}
   m_Layer: 0
   m_Name: Teapot 3
   m_TagString: Untagged
@@ -14889,19 +14816,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &508031450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 508031443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1367755243}
 --- !u!114 &508031451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15354,7 +15268,6 @@ GameObject:
   - component: {fileID: 540071788}
   - component: {fileID: 540071789}
   - component: {fileID: 540071791}
-  - component: {fileID: 540071790}
   m_Layer: 0
   m_Name: Teapot 2
   m_TagString: Untagged
@@ -15464,19 +15377,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &540071790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540071783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1858776096}
 --- !u!114 &540071791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19617,50 +19517,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614865009}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &620113946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1858776096}
-  position: {x: -477.5, y: -86.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 620113946}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 620113946}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: An old bridge, it has been around for as long as i can remember, my mother
-    told me the bridge was older than her and grandpa combined, more than 400 years
-    old
-  audio: {fileID: 8300000, guid: 06fddb475140f7848b80ab279cf5d91a, type: 3}
-  extraPlayTime: 3
 --- !u!1 &622001944
 GameObject:
   m_ObjectHideFlags: 0
@@ -30868,7 +30724,6 @@ GameObject:
   - component: {fileID: 958264501}
   - component: {fileID: 958264500}
   - component: {fileID: 958264503}
-  - component: {fileID: 958264502}
   m_Layer: 0
   m_Name: Teapot 1
   m_TagString: Untagged
@@ -30978,19 +30833,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &958264502
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958264495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 244706955}
 --- !u!114 &958264503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33041,49 +32883,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1011603585}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1012974069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 244706955}
-  position: {x: -416.5, y: -178.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1012974069}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1012974069}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: There was these great arches, i later learnt they were called Torii, used
-    for entrances into temples
-  audio: {fileID: 8300000, guid: c5039dc11155daa40bf9d76fa5354111, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1019260317
 GameObject:
   m_ObjectHideFlags: 0
@@ -33194,7 +32993,6 @@ GameObject:
   - component: {fileID: 1029559286}
   - component: {fileID: 1029559287}
   - component: {fileID: 1029559289}
-  - component: {fileID: 1029559288}
   m_Layer: 0
   m_Name: Teapot 4
   m_TagString: Untagged
@@ -33304,19 +33102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highlighted: {fileID: 2100000, guid: c9ccf9bb31f37b748a80911bb8694e84, type: 2}
   uiPanel: {fileID: 0}
---- !u!114 &1029559288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1029559281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1175591785}
 --- !u!114 &1029559289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36069,21 +35854,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173007197}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1175591785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 4-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 488339188}
-  current: {fileID: 0}
 --- !u!1 &1178231135
 GameObject:
   m_ObjectHideFlags: 0
@@ -39628,21 +39398,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367172835}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1367755243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 3-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1683661269}
-  current: {fileID: 0}
 --- !u!1 &1372455122
 GameObject:
   m_ObjectHideFlags: 0
@@ -41012,21 +40767,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453456570}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1454663747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 5-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1560502260}
-  current: {fileID: 0}
 --- !u!1 &1460326402
 GameObject:
   m_ObjectHideFlags: 0
@@ -42546,49 +42286,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559422603}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1560502260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1454663747}
-  position: {x: -588.8895, y: -149.0359}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1560502260}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1560502260}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: 'At the end of the walk we sat beneath a Cherry Blossom tree that was in
-    full bloom in time and the leaves were falling like snow during spring. '
-  audio: {fileID: 8300000, guid: 14e6e6f6d72f6cb4999b5bb834864a2e, type: 3}
-  extraPlayTime: 3
 --- !u!1 &1569456819
 GameObject:
   m_ObjectHideFlags: 0
@@ -47079,49 +46776,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1681134616}
   m_Mesh: {fileID: 5958362384829529401, guid: e89544e4b8e3b6a438740567e504d781, type: 3}
---- !u!114 &1683661269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1367755243}
-  position: {x: -200.5, y: -97.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1683661269}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1683661269}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Mother would often tell me that Pagodas would hold ancient artifacts of religious
-    significance but that was many hundreds of years ago.
-  audio: {fileID: 8300000, guid: 0abec599f624903489117f36285336b8, type: 3}
-  extraPlayTime: 3
 --- !u!114 &1695335428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50876,21 +50530,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853813469}
   m_Mesh: {fileID: 2494185979427425891, guid: cd05e0c80caae844585657d611ac6cc7, type: 3}
---- !u!114 &1858776096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Teapot 2-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 620113946}
-  current: {fileID: 0}
 --- !u!1 &1867226198
 GameObject:
   m_ObjectHideFlags: 0
