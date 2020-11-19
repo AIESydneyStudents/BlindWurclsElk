@@ -121,7 +121,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 4aa585c41e8e750448c451394882d280, type: 2}
 --- !u!1 &24920528
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,8 +138,8 @@ GameObject:
   m_Name: Rose_bush (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &24920529
 Transform:
@@ -406,8 +406,8 @@ GameObject:
   m_Name: Tree (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &47397021
 Transform:
@@ -503,7 +503,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &55796479
 Transform:
@@ -1191,8 +1191,8 @@ GameObject:
   m_Name: maze_Single (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &102584917
 Transform:
@@ -1275,7 +1275,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5420
+  m_Name: pb_Mesh254546
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1590,8 +1590,8 @@ GameObject:
   m_Name: maze_Single (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &277685218
 Transform:
@@ -1684,8 +1684,8 @@ GameObject:
   m_Name: Tree (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &307967756
 Transform:
@@ -1779,8 +1779,8 @@ GameObject:
   m_Name: maze_Single (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &310937620
 Transform:
@@ -1873,8 +1873,8 @@ GameObject:
   m_Name: Rose_bush (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &345174176
 MeshCollider:
@@ -1970,8 +1970,8 @@ GameObject:
   m_Name: maze_Single (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &367922157
 Transform:
@@ -2064,8 +2064,8 @@ GameObject:
   m_Name: Tree (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &374322353
 Transform:
@@ -2159,8 +2159,8 @@ GameObject:
   m_Name: Bush (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &389616640
 Transform:
@@ -2388,7 +2388,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 424946987}
+  target: {fileID: 1005648525}
   waitTime: 20
 --- !u!114 &483667773
 MonoBehaviour:
@@ -2555,7 +2555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 525760548}
+  target: {fileID: 424946980}
   waitTime: 20
 --- !u!1 &537604027
 GameObject:
@@ -2573,8 +2573,8 @@ GameObject:
   m_Name: Tree (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &537604028
 Transform:
@@ -2704,8 +2704,8 @@ GameObject:
   m_Name: maze_Single (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &559273420
 Transform:
@@ -2798,8 +2798,8 @@ GameObject:
   m_Name: maze_Single (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &590572963
 Transform:
@@ -2882,7 +2882,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26564
+  m_Name: pb_Mesh254382
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3080,8 +3080,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7729cd03f0d2b4b80881a30a2050f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  helpMessage: {fileID: 0}
+  agent: {fileID: 5807200856287159479, guid: 72a8250cac0ffff4ba9136c912005743, type: 3}
+  timeToWait: 3
+  target: {fileID: 525760541}
+  agentDelay: 1
 --- !u!4 &628405776
 Transform:
   m_ObjectHideFlags: 0
@@ -3189,8 +3191,8 @@ GameObject:
   m_Name: maze_Single (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &696031422
 Transform:
@@ -3326,8 +3328,8 @@ GameObject:
   m_Name: maze_Single (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &706064831
 Transform:
@@ -3517,8 +3519,8 @@ GameObject:
   m_Name: Tree (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &726661077
 Transform:
@@ -3716,8 +3718,8 @@ GameObject:
   m_Name: Tree (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &775203852
 Transform:
@@ -3811,8 +3813,8 @@ GameObject:
   m_Name: maze_Single (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &787509848
 Transform:
@@ -3922,7 +3924,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &869271722
 Transform:
@@ -4381,7 +4383,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &872755724
 MeshCollider:
@@ -5690,8 +5692,8 @@ GameObject:
   m_Name: maze_Single (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &879700046
 Transform:
@@ -5784,8 +5786,8 @@ GameObject:
   m_Name: Tree (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &881945547
 Transform:
@@ -5967,6 +5969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 945871078}
   dialoguePlayer: {fileID: 0}
+  playOnce: 1
 --- !u!114 &945871080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6053,6 +6056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 951744181}
   dialoguePlayer: {fileID: 0}
+  playOnce: 1
 --- !u!114 &951744183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6129,8 +6133,8 @@ GameObject:
   m_Name: maze_Single (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &986805682
 Transform:
@@ -6223,8 +6227,8 @@ GameObject:
   m_Name: maze_Single (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &991387847
 Transform:
@@ -6451,7 +6455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edeae7296fcddd142a79775a8e5423eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  helpMessage: {fileID: 1005648532}
+  target: {fileID: 0}
   waitTime: 20
 --- !u!1 &1021229565
 GameObject:
@@ -6469,8 +6473,8 @@ GameObject:
   m_Name: Bush (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1021229566
 Transform:
@@ -6620,8 +6624,8 @@ GameObject:
   m_Name: maze_Single (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1068766445
 Transform:
@@ -6714,8 +6718,8 @@ GameObject:
   m_Name: maze_Single (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1089048669
 Transform:
@@ -6900,8 +6904,8 @@ GameObject:
   m_Name: Bush (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1120645076
 Transform:
@@ -6995,8 +6999,8 @@ GameObject:
   m_Name: maze_Single (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1143559909
 Transform:
@@ -7135,7 +7139,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1189981839
 Transform:
@@ -7629,8 +7633,8 @@ GameObject:
   m_Name: maze_Single (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1223789131
 Transform:
@@ -7796,8 +7800,8 @@ GameObject:
   m_Name: Bush (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1237544311
 Transform:
@@ -7981,6 +7985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1295639245}
   dialoguePlayer: {fileID: 0}
+  playOnce: 1
 --- !u!65 &1295639247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8022,8 +8027,8 @@ GameObject:
   m_Name: maze_Single (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1308303999
 Transform:
@@ -8161,6 +8166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1311923477}
   dialoguePlayer: {fileID: 0}
+  playOnce: 1
 --- !u!114 &1311923479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8202,8 +8208,8 @@ GameObject:
   m_Name: Tree (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1346217544
 Transform:
@@ -8341,8 +8347,8 @@ GameObject:
   m_Name: maze_Single (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1367377252
 Transform:
@@ -8508,8 +8514,8 @@ GameObject:
   m_Name: Bush (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1388162766
 Transform:
@@ -8603,8 +8609,8 @@ GameObject:
   m_Name: Rose_bush (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1389766159
 Transform:
@@ -8756,8 +8762,8 @@ GameObject:
   m_Name: Rose_bush (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1471915598
 MeshCollider:
@@ -8950,8 +8956,8 @@ GameObject:
   m_Name: maze_Single (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1490084751
 Transform:
@@ -9089,6 +9095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 1533590513}
   dialoguePlayer: {fileID: 0}
+  playOnce: 1
 --- !u!114 &1533590515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9221,8 +9228,8 @@ GameObject:
   m_Name: Bush (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1572747077
 Transform:
@@ -9306,7 +9313,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5362
+  m_Name: pb_Mesh254104
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9489,8 +9496,8 @@ GameObject:
   m_Name: Rose_bush (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1616984822
 MeshCollider:
@@ -9586,8 +9593,8 @@ GameObject:
   m_Name: maze_Single (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1622517111
 Transform:
@@ -9680,8 +9687,8 @@ GameObject:
   m_Name: maze_Single (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1626251573
 Transform:
@@ -9808,7 +9815,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5746
+  m_Name: pb_Mesh254370
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9991,8 +9998,8 @@ GameObject:
   m_Name: maze_Single (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1678579808
 Transform:
@@ -10085,8 +10092,8 @@ GameObject:
   m_Name: maze_Single (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1681996187
 Transform:
@@ -10179,8 +10186,8 @@ GameObject:
   m_Name: Tree (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1687548319
 Transform:
@@ -10274,8 +10281,8 @@ GameObject:
   m_Name: maze_Single (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1696100709
 Transform:
@@ -10663,8 +10670,8 @@ GameObject:
   m_Name: Bush (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1739589660
 Transform:
@@ -10760,7 +10767,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1743257689
 Transform:
@@ -11322,8 +11329,8 @@ GameObject:
   m_Name: Bush (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1757307332
 Transform:
@@ -11417,8 +11424,8 @@ GameObject:
   m_Name: Tree (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1811003599
 Transform:
@@ -11527,8 +11534,8 @@ GameObject:
   m_Name: maze_Single (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1843724574
 Transform:
@@ -11626,7 +11633,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-5000
+  m_Name: pb_Mesh254856
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11942,6 +11949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueGraph: {fileID: 2069533851}
   dialoguePlayer: {fileID: 0}
+  playOnce: 1
 --- !u!114 &2069533853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12367,8 +12375,8 @@ GameObject:
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2413493922138286946
 MeshCollider:
@@ -12400,8 +12408,8 @@ GameObject:
   m_Name: Fountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2530041545496803794
 MeshCollider:
@@ -12441,8 +12449,8 @@ GameObject:
   m_Name: Cottage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3030104096020228231
 MeshCollider:
@@ -12576,8 +12584,8 @@ GameObject:
   m_Name: British_chair_and_Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5116978500688592220
 MeshCollider:
@@ -12609,8 +12617,8 @@ GameObject:
   m_Name: Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5435694392988563317
 MeshCollider:
@@ -12742,8 +12750,8 @@ GameObject:
   m_Name: Rock_Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7022099767240377885
 MeshCollider:
@@ -13040,8 +13048,8 @@ GameObject:
   m_Name: maze_Single
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9010134397596334085
 MeshCollider:
@@ -13073,8 +13081,8 @@ GameObject:
   m_Name: Rose_bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9179954242823956975
 MeshCollider:
