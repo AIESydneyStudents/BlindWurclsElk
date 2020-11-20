@@ -6,6 +6,8 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Collider))]
 public class BurnerTrigger : MonoBehaviour
 {
+    public Transform camPos;
+    
     public GameObject waterHeatGroup;
     public GameObject powderPourGroup;
 
@@ -31,6 +33,10 @@ public class BurnerTrigger : MonoBehaviour
 
     void Start()
     {
+        //move cam
+        StartCoroutine(MoveCam());
+
+
         // Enable the bar
         barObj.SetActive(true);
         // Get the part of the bar to scale
@@ -76,9 +82,7 @@ public class BurnerTrigger : MonoBehaviour
             if (winTimmer >= 2f)
             {
                 // Game won. start next minigame
-                waterHeatGroup.SetActive(false);
-                powderPourGroup.SetActive(true);
-                barObj.SetActive(false);
+                StartCoroutine(FinishMinigame());
             }
         }
         else
@@ -107,6 +111,35 @@ public class BurnerTrigger : MonoBehaviour
             if (targetCoalCount != coalCount)
             { break; }
 
+            yield return null;
+        }
+    }
+
+    private IEnumerator FinishMinigame()
+    {
+        yield return new WaitForSeconds(1);
+
+        waterHeatGroup.SetActive(false);
+        powderPourGroup.SetActive(true);
+        barObj.SetActive(false);
+    }
+
+    private IEnumerator MoveCam()
+    {
+        float timePassed = 0f;
+
+        Vector3 startPos = Camera.main.transform.position;
+        Quaternion startRot = Camera.main.transform.rotation;
+
+        Transform cam = Camera.main.transform;
+
+
+        while (timePassed < 1f)
+        {
+            cam.position = Vector3.Lerp(startPos, camPos.position, timePassed);
+            cam.rotation = Quaternion.Lerp(startRot, camPos.rotation, timePassed);
+
+            timePassed += Time.deltaTime;
             yield return null;
         }
     }
