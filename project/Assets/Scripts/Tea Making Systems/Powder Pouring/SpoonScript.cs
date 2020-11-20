@@ -13,6 +13,8 @@ public class SpoonScript : MonoBehaviour
     [HideInInspector]
     public bool hasPowder = false;
 
+    public GameObject teaObj;
+
 
 
     // Find the cursor position in world space relative to the object position
@@ -44,13 +46,13 @@ public class SpoonScript : MonoBehaviour
         pos.y = surfHeight + dragHeight;
 
         // Set the object's position
-        transform.position = pos;
+        transform.position = pos + new Vector3(0, 0, 0.04f);
 
 
         //temp make it green if has powder
         if (hasPowder)
-        { GetComponent<MeshRenderer>().material.color = Color.green; }
+        { teaObj.SetActive(true); }
         else 
-        { GetComponent<MeshRenderer>().material.color = Color.white; }
+        { teaObj.SetActive(false); }
     }
 }

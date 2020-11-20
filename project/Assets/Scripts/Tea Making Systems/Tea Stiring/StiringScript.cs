@@ -1,17 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StiringScript : MonoBehaviour
 {
+    public Transform camPos;
+    public Transform endCamPos;
+
     public GameObject barObj;
     public Image targetZone;
     RectTransform bar;
 
+    public ParticleSystem particleSys;
+    ParticleSystem.EmissionModule emissionModule;
+    ParticleSystem.MainModule mainModule;
+    float baseEmissionRate;
+    float baseStartSize;
+
+    public Image blackFadeImg;
+    public GameObject endGameStuff;
+    public GameObject teaMakingStuff;
+
+    bool active = true;
+
     public Text helpText;
 
-    public GameObject winText;
     public AudioSource soundPlayer;
     [Space]
     
@@ -42,11 +57,21 @@ public class StiringScript : MonoBehaviour
 
     void Start()
     {
+        //move cam
+        StartCoroutine(MoveCam());
+
         // Show the bar
         barObj.SetActive(true);
         targetZone.gameObject.SetActive(true);
         // Get the scalable part of the bar
         bar = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
+
+        // Get main and emission modules from particle system
+        emissionModule = particleSys.emission;
+        mainModule = particleSys.main;
+
+        baseEmissionRate = emissionModule.rateOverTimeMultiplier;
+        baseStartSize = mainModule.startSizeMultiplier;
 
         soundPlayer.Play();
 
@@ -82,6 +107,9 @@ public class StiringScript : MonoBehaviour
 
 	void Update()
 	{
+        if (!active)
+        { return; }
+
         // If the roatation speed is within the target
 		if (rotSpeed >= targetSpeed - targetRange && rotSpeed <= targetSpeed + targetRange)
 		{
@@ -90,7 +118,10 @@ public class StiringScript : MonoBehaviour
             // If timmer is done, the player wins
             if (winTimmer >= timeToWin)
 			{
-                winText.SetActive(true);
+                //fade to black for end sequence
+                CoroutineRunner.RunCoroutine(EndGame());
+
+                active = false;
 			}
 		}
         else if (winTimmer > 0f)
@@ -102,9 +133,13 @@ public class StiringScript : MonoBehaviour
         // Lerp between colors to indicate progress
         targetZone.color = Color.Lerp(start, end, winTimmer / timeToWin);
 
-
+        //modify sound effect's pitch by speed
         soundPlayer.pitch = rotSpeed * 2f;
-	}
+
+        //change particle emission rate and size
+        emissionModule.rateOverTimeMultiplier = baseEmissionRate * rotSpeed;
+        mainModule.startSizeMultiplier = baseStartSize * rotSpeed;
+    }
 
 	void FixedUpdate()
     {
@@ -133,5 +168,86 @@ public class StiringScript : MonoBehaviour
         transform.position = pos;
         // Update the bar, clamping the value
         bar.localScale = new Vector3(Mathf.Clamp(rotSpeed, 0, 1), 1, 1);
+    }
+
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(1);
+
+        blackFadeImg.gameObject.SetActive(true);
+
+        //fade out
+
+        while (blackFadeImg.color.a < 1f)
+        {
+            blackFadeImg.color += new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+
+        //*****************************************
+        //show tea masters, remove minigame
+
+        endGameStuff.SetActive(true);
+        teaMakingStuff.SetActive(false);
+        helpText.gameObject.SetActive(false);
+        barObj.SetActive(false);
+
+        //make the player look slightly downward to be able to see the table
+        Camera.main.transform.position = endCamPos.position;
+        Camera.main.transform.rotation = endCamPos.rotation;
+
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+
+        yield return new WaitForSeconds(0.1f);
+
+        //***********************************
+        //fade in
+
+        while (blackFadeImg.color.a > 0f)
+        {
+            blackFadeImg.color -= new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+
+        blackFadeImg.gameObject.SetActive(false);
+
+        //dialogue
+        DialogueManager.instance.StartDialogue(endGameStuff.GetComponent<DialogueSceneGraph>());
+
+        //********************************
+        //exit game to menu
+
+        yield return new WaitForSeconds(10);
+
+        //return to menu
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene(0);
+    }
+
+    private IEnumerator MoveCam()
+    {
+        float timePassed = 0f;
+
+        Vector3 startPos = Camera.main.transform.position;
+        Quaternion startRot = Camera.main.transform.rotation;
+
+        Transform cam = Camera.main.transform;
+
+
+        while (timePassed < 1f)
+        {
+            cam.position = Vector3.Lerp(startPos, camPos.position, timePassed);
+            cam.rotation = Quaternion.Lerp(startRot, camPos.rotation, timePassed);
+
+            timePassed += Time.deltaTime;
+            yield return null;
+        }
     }
 }
