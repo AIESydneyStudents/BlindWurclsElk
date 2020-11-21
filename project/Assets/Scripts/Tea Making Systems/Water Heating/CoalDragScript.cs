@@ -97,6 +97,10 @@ public class CoalDragScript : MonoBehaviour
             // Set hight to the surface + set drag height
             pos.y = surfHeight + dragHeight;
 
+            // Clamp coal position to prevent it from going off screen
+            pos.x = Mathf.Clamp(pos.x, -11.57f, -11.15f);
+            pos.z = Mathf.Clamp(pos.z, -4.25f, -3.48f);
+
             // Set the object's position
             obj.position = pos;
         }
