@@ -14,6 +14,9 @@ public class BurnerTrigger : MonoBehaviour
     public Text helpText;
     [Space]
 
+    public ParticleSystem particleSys;
+    ParticleSystem.MainModule particleMain;
+    Material particleMat;
 
     int coalCount = 0;
     float barValue = 0;
@@ -42,6 +45,9 @@ public class BurnerTrigger : MonoBehaviour
         // Get the part of the bar to scale
         barScalable = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
+        particleMain = particleSys.main;
+        particleMat = particleSys.GetComponent<ParticleSystemRenderer>().material;
+
         // Set help text
         helpText.text = "Place the appropriate ammount of coals into the hot plate to heat the teapot";
         helpText.gameObject.SetActive(true);
@@ -54,6 +60,12 @@ public class BurnerTrigger : MonoBehaviour
         {
             coalCount++;
             StartCoroutine(EaseBar(1));
+
+            //snap coal
+
+            // Make particles grow orange
+            particleMain.startColor = new Color(1, .58f, 0f);
+            particleMat.EnableKeyword("_EMISSION");
         }
     }
 
@@ -64,6 +76,13 @@ public class BurnerTrigger : MonoBehaviour
         {
             coalCount--;
             StartCoroutine(EaseBar(1));
+
+            if (coalCount == 0)
+			{
+                // Reset particles to red
+                particleMain.startColor = new Color(1, 0, 0);
+                particleMat.DisableKeyword("_EMISSION");
+            }
         }
     }
 
