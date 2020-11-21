@@ -12,6 +12,7 @@ public class TeaPotScript : MonoBehaviour
     public float dragHeight = 1f;
 
     bool locked = false;
+    bool selected = false;
 
     public Text helpText;
 
@@ -48,12 +49,16 @@ public class TeaPotScript : MonoBehaviour
 
 	void Start()
 	{
-        helpText.text = "Pour water into the bowl";
+        helpText.text = "Grab the tea pot";
 	}
 
 	void Update()
     {
-        if (!locked)
+        if (locked)
+        { return; }
+
+        //move
+        if (selected)
         {
             // Get the cursor pos relative to the object transform
             Vector3 pos = CursorOnTransform(transform.position);
@@ -68,6 +73,27 @@ public class TeaPotScript : MonoBehaviour
 
             // Set the object's position
             transform.position = pos + new Vector3(0, 0, 0.04f);
+        }
+        //check for selection
+        else
+		{
+            // Find clicked object
+            if (Input.GetMouseButtonDown(0))
+            {
+                // Cast ray from the cursor on the screen
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out RaycastHit hit, 100))
+                {
+                    // If this object has been clicked
+                    if (hit.transform == transform)
+                    {
+                        selected = true;
+
+                        helpText.text = "Pour water into the bowl";
+                    }
+                }
+            }
         }
     }
     
