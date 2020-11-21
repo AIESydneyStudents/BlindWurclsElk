@@ -1893,9 +1893,9 @@ MonoBehaviour:
   output: 0
   sceneName: TT_Level_India
   changePos: 1
-  pos: {x: 0, y: 1, z: 0}
+  pos: {x: -2.5, y: 1, z: 3}
   changeRot: 1
-  rot: {x: 0, y: 0, z: 0}
+  rot: {x: 0, y: 90, z: 0}
   useSitting: 0
 --- !u!1 &336179790
 GameObject:
@@ -3896,9 +3896,9 @@ MonoBehaviour:
   output: 0
   sceneName: TT_Level_Britain
   changePos: 1
-  pos: {x: 0, y: 1, z: 0}
+  pos: {x: -56, y: 2.5, z: -13.5}
   changeRot: 1
-  rot: {x: 0, y: 0, z: 0}
+  rot: {x: 0, y: 57, z: 0}
   useSitting: 0
 --- !u!1001 &711202645
 PrefabInstance:
