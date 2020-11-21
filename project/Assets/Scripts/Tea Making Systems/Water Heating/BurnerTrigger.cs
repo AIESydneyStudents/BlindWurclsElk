@@ -14,6 +14,12 @@ public class BurnerTrigger : MonoBehaviour
     public Text helpText;
     [Space]
 
+    public ParticleSystem emberParticleSys;
+    ParticleSystem.MainModule emberParticleMain;
+    Material emberParticleMat;
+
+    public ParticleSystem steamParticleSys;
+    ParticleSystem.MainModule steamParticleMain;
 
     int coalCount = 0;
     float barValue = 0;
@@ -42,6 +48,11 @@ public class BurnerTrigger : MonoBehaviour
         // Get the part of the bar to scale
         barScalable = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
+        //get particle system variables
+        emberParticleMain = emberParticleSys.main;
+        emberParticleMat = emberParticleSys.GetComponent<ParticleSystemRenderer>().material;
+        steamParticleMain = steamParticleSys.main;
+
         // Set help text
         helpText.text = "Place the appropriate ammount of coals into the hot plate to heat the teapot";
         helpText.gameObject.SetActive(true);
@@ -54,6 +65,17 @@ public class BurnerTrigger : MonoBehaviour
         {
             coalCount++;
             StartCoroutine(EaseBar(1));
+
+            //snap coal
+
+            // Make particles grow orange
+            emberParticleMain.startColor = new Color(1, .58f, 0f);
+            emberParticleMat.EnableKeyword("_EMISSION");
+
+            // Make coals glow
+            other.GetComponent<CoalScript>().SetGlow(true);
+            // Update steam
+            StartCoroutine(SetSteamVisiblity());
         }
     }
 
@@ -64,6 +86,18 @@ public class BurnerTrigger : MonoBehaviour
         {
             coalCount--;
             StartCoroutine(EaseBar(1));
+
+            if (coalCount == 0)
+			{
+                // Reset particles to red
+                emberParticleMain.startColor = new Color(1, 0, 0);
+                emberParticleMat.DisableKeyword("_EMISSION");
+            }
+
+            // Make coal stop glowing
+            other.GetComponent<CoalScript>().SetGlow(false);
+            // Update steam
+            StartCoroutine(SetSteamVisiblity());
         }
     }
 
@@ -140,6 +174,21 @@ public class BurnerTrigger : MonoBehaviour
             cam.rotation = Quaternion.Lerp(startRot, camPos.rotation, timePassed);
 
             timePassed += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    private IEnumerator SetSteamVisiblity()
+	{
+        float time = 0f;
+        Color startCol = steamParticleMain.startColor.color;
+        Color endCol = new Color(1, 1, 1, 0.1f * coalCount);
+
+        while (time < 1f)
+        {
+            steamParticleMain.startColor = Color.Lerp(startCol, endCol, time);
+
+            time += Time.deltaTime;
             yield return null;
         }
     }

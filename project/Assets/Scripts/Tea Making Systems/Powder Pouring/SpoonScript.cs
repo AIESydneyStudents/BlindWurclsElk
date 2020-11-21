@@ -12,6 +12,7 @@ public class SpoonScript : MonoBehaviour
 
     [HideInInspector]
     public bool hasPowder = false;
+    bool locked = false;
 
     public GameObject teaObj;
 
@@ -40,19 +41,71 @@ public class SpoonScript : MonoBehaviour
 
     void Update()
     {
-        // Get the cursor pos relative to the object transform
-        Vector3 pos = CursorOnTransform(transform.position);
-        // Set hight to the surface + set drag height
-        pos.y = surfHeight + dragHeight;
+        if (!locked)
+		{
+            // Get the cursor pos relative to the object transform
+            Vector3 pos = CursorOnTransform(transform.position);
+            // Set hight to the surface + set drag height
+            pos.y = surfHeight + dragHeight;
 
-        // Set the object's position
-        transform.position = pos + new Vector3(0, 0, 0.04f);
+            // Set the object's position
+            transform.position = pos + new Vector3(0, 0, 0.04f);
+        }
 
 
-        //temp make it green if has powder
+        // Show tea when the spoon has powder
         if (hasPowder)
         { teaObj.SetActive(true); }
         else 
         { teaObj.SetActive(false); }
+    }
+
+    public void GetPowder()
+	{
+        locked = true;
+
+        // Play anim. Will also set hasPowder and locked
+        StartCoroutine(AngleDown());
+	}
+
+    private IEnumerator AngleDown()
+	{
+        float time = 0;
+        Quaternion start = transform.rotation;
+        //rotate down
+        Quaternion end = start * Quaternion.Euler(0, 0, 45);
+
+        
+        while (time < 1)
+		{
+            transform.rotation = Quaternion.Lerp(start, end, time);
+
+            time += Time.deltaTime;
+            yield return null;
+		}
+
+        // Show powder and start next animation
+        hasPowder = true;
+        StartCoroutine(AngleUp());
+	}
+
+    private IEnumerator AngleUp()
+	{
+        float time = 0;
+        Quaternion start = transform.rotation;
+        //rotate up
+        Quaternion end = start * Quaternion.Euler(0, 0, -45);
+
+
+        while (time < 1)
+        {
+            transform.rotation = Quaternion.Lerp(start, end, time);
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+        // Unlock spoon
+        locked = false;
     }
 }
