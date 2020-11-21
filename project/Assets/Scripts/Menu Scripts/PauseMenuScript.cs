@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class PauseMenuScript : MonoBehaviour
 {
     public static bool paused = false;
+    // When in tea making minigames, the cursor should not be locked
+    [HideInInspector]
+    public bool inMinigame = false;
 
     public GameObject pauseMenu;
 
@@ -20,8 +23,11 @@ public class PauseMenuScript : MonoBehaviour
                 //hide pause menu
                 pauseMenu.SetActive(false);
 
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
+                if (!inMinigame)
+				{
+                    Cursor.lockState = CursorLockMode.Locked;
+                    Cursor.visible = false;
+                }
 
                 Time.timeScale = 1;
                 paused = false;
@@ -45,8 +51,11 @@ public class PauseMenuScript : MonoBehaviour
         //hide pause menu
         pauseMenu.SetActive(false);
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (!inMinigame)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
 
         Time.timeScale = 1;
         paused = false;

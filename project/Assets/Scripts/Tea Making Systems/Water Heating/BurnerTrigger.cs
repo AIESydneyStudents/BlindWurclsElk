@@ -42,6 +42,9 @@ public class BurnerTrigger : MonoBehaviour
 
     void Start()
     {
+        // Make it so the cursor isnt locked after unpausing
+        FindObjectOfType<PauseMenuScript>().inMinigame = true;
+
         //move cam
         StartCoroutine(MoveCam());
 
