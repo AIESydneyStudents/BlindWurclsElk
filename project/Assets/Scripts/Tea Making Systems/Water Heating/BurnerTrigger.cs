@@ -66,6 +66,9 @@ public class BurnerTrigger : MonoBehaviour
             // Make particles grow orange
             particleMain.startColor = new Color(1, .58f, 0f);
             particleMat.EnableKeyword("_EMISSION");
+
+            // Make coals glow
+            other.GetComponent<CoalScript>().SetGlow(true);
         }
     }
 
@@ -83,6 +86,9 @@ public class BurnerTrigger : MonoBehaviour
                 particleMain.startColor = new Color(1, 0, 0);
                 particleMat.DisableKeyword("_EMISSION");
             }
+
+            // Make coal stop glowing
+            other.GetComponent<CoalScript>().SetGlow(false);
         }
     }
 
