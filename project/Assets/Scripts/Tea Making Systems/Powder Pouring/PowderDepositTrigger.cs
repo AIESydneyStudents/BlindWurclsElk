@@ -6,8 +6,8 @@ using UnityEngine;
 public class PowderDepositTrigger : MonoBehaviour
 {
     public GameObject powderPourGroup;
-    public GameObject teaStirGroup;
-    public GameObject teaObj;
+    public GameObject waterPourGroup;
+    public TeaPotScript teapotScript;
     public GameObject barObj;
 
     public GameObject teaPowderObj;
@@ -57,14 +57,13 @@ public class PowderDepositTrigger : MonoBehaviour
         //hide bar
         barObj.SetActive(false);
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2.5f);
 
-        //show tea in bowl
-        teaObj.SetActive(true);
-        teaPowderObj.SetActive(false);
+        
+        teapotScript.enabled = true;
 
         //change active group
         powderPourGroup.SetActive(false);
-        teaStirGroup.SetActive(true);
+        waterPourGroup.SetActive(true);
     }
 }

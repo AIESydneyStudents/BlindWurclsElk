@@ -3186,8 +3186,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powderPourGroup: {fileID: 790395781}
-  teaStirGroup: {fileID: 1388070097}
-  teaObj: {fileID: 1905351863}
+  waterPourGroup: {fileID: 866601580}
+  teapotScript: {fileID: 1249542797}
   barObj: {fileID: 753220556}
   teaPowderObj: {fileID: 1807100779}
   sound: {fileID: 484382222}
@@ -5022,7 +5022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &866601581
 Transform:
   m_ObjectHideFlags: 0
@@ -11680,7 +11680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1189987224
 Transform:
   m_ObjectHideFlags: 0
@@ -12019,13 +12019,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249542795}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a20da5cb89b2af848abdd8a18f0b809e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   surfHeight: 0.68
   dragHeight: 0.05
+  helpText: {fileID: 1367445819}
   waterParticleEffect: {fileID: 1955875217}
   teaPowderObj: {fileID: 1807100779}
   teaObj: {fileID: 1905351863}
@@ -20133,7 +20134,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 18b2e9f31263f2c4fa78772889b40a9a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18b2e9f31263f2c4fa78772889b40a9a, type: 3}
@@ -20730,7 +20731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905351863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00090026855, y: 0.0643754, z: -0.00029993057}
+  m_LocalPosition: {x: 0.0042, y: 0.0604, z: 0.0002}
   m_LocalScale: {x: 0.13, y: 0.001, z: 0.13}
   m_Children:
   - {fileID: 2114880088}
@@ -31344,7 +31345,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: f29691e62baa4564a886da7a556d01bc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29691e62baa4564a886da7a556d01bc, type: 3}

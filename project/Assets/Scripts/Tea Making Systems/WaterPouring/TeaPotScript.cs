@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Collider), typeof(Rigidbody))]
 public class TeaPotScript : MonoBehaviour
@@ -12,6 +13,7 @@ public class TeaPotScript : MonoBehaviour
 
     bool locked = false;
 
+    public Text helpText;
 
     public ParticleSystem waterParticleEffect;
 
@@ -44,7 +46,12 @@ public class TeaPotScript : MonoBehaviour
             (Vector3.Dot(Camera.main.transform.forward, camToTrans) / Vector3.Dot(Camera.main.transform.forward, CameraToCursor()));
     }
 
-    void Update()
+	void Start()
+	{
+        helpText.text = "Pour water into the bowl";
+	}
+
+	void Update()
     {
         if (!locked)
         {
@@ -119,8 +126,9 @@ public class TeaPotScript : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        //move teapot
-
         //next minigame
+        waterPouringObjects.SetActive(false);
+        gameObject.SetActive(false);
+        teaStirringObjects.SetActive(true);
     }
 }

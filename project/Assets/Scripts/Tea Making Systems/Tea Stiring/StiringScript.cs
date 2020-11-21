@@ -66,6 +66,7 @@ public class StiringScript : MonoBehaviour
         // Get the scalable part of the bar
         bar = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
+        particleSys.gameObject.SetActive(true);
         // Get main and emission modules from particle system
         emissionModule = particleSys.emission;
         mainModule = particleSys.main;
