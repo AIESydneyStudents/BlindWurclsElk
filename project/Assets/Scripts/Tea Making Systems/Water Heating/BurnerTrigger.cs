@@ -9,7 +9,9 @@ public class BurnerTrigger : MonoBehaviour
     public Transform camPos;
     
     public GameObject waterHeatGroup;
+    public GameObject teaPot;
     public GameObject powderPourGroup;
+    public GameObject mixingBowl;
 
     public Text helpText;
     [Space]
@@ -117,6 +119,7 @@ public class BurnerTrigger : MonoBehaviour
             {
                 // Game won. start next minigame
                 StartCoroutine(FinishMinigame());
+                this.enabled = false;
             }
         }
         else
@@ -151,11 +154,35 @@ public class BurnerTrigger : MonoBehaviour
 
     private IEnumerator FinishMinigame()
     {
-        yield return new WaitForSeconds(1);
+        //hide bar
+        barObj.SetActive(false);
 
+        // move teapot back
+        float time = 0;
+        while (time < 0.5f)
+		{
+            teaPot.transform.localPosition -= new Vector3(0.26f * (Time.deltaTime * 2), 0, 0);
+
+            time += Time.deltaTime;
+            yield return null;
+		}
+
+        //move teapot down
+        time = 0;
+        while (time < 0.5f)
+		{
+            teaPot.transform.localPosition -= new Vector3(0, 0.1157f * (Time.deltaTime * 2), 0);
+
+            time += Time.deltaTime;
+            yield return null;
+        }
+
+
+        //change active group
         waterHeatGroup.SetActive(false);
         powderPourGroup.SetActive(true);
-        barObj.SetActive(false);
+        //show bowl for powder pouring
+        mixingBowl.SetActive(true);
     }
 
     private IEnumerator MoveCam()

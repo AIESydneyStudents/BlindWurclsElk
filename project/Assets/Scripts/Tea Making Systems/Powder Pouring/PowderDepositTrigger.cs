@@ -7,9 +7,10 @@ public class PowderDepositTrigger : MonoBehaviour
 {
     public GameObject powderPourGroup;
     public GameObject teaStirGroup;
+    public GameObject teaObj;
     public GameObject barObj;
 
-    public GameObject teaObj;
+    public GameObject teaPowderObj;
     public ParticleSystem particleEffect;
 
     public AudioSource sound;
@@ -37,10 +38,10 @@ public class PowderDepositTrigger : MonoBehaviour
                 spoon.hasPowder = false;
                 count++;
 
-                teaObj.SetActive(true);
+                teaPowderObj.SetActive(true);
 
                 //make larger
-                teaObj.transform.localScale += new Vector3(0.25f, 0.25f, 0.25f);
+                teaPowderObj.transform.localScale += new Vector3(0.25f, 0.25f, 0.25f);
 
 
                 // If full amount collected, end minigame
@@ -55,10 +56,17 @@ public class PowderDepositTrigger : MonoBehaviour
 
     private IEnumerator FinishMinigame()
     {
+        //hide bar
+        barObj.SetActive(false);
+
         yield return new WaitForSeconds(1);
 
+        //show tea in bowl
+        teaObj.SetActive(true);
+        teaPowderObj.SetActive(false);
+
+        //change active group
         powderPourGroup.SetActive(false);
         teaStirGroup.SetActive(true);
-        barObj.SetActive(false);
     }
 }
