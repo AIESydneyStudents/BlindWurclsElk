@@ -11,7 +11,6 @@ public class PowderDepositTrigger : MonoBehaviour
     public GameObject barObj;
 
     public GameObject teaPowderObj;
-    public ParticleSystem particleEffect;
 
     public AudioSource sound;
 
@@ -29,13 +28,12 @@ public class PowderDepositTrigger : MonoBehaviour
 
             if (spoon.hasPowder)
             {
-                //play anim
-                particleEffect.Play();
+                // Play anim
+                spoon.AnimatePowder(true);
 
                 // Play sound effect
                 sound.Play();
 
-                spoon.hasPowder = false;
                 count++;
 
                 teaPowderObj.SetActive(true);

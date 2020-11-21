@@ -72,7 +72,7 @@ public class PowderGatherTrigger : MonoBehaviour
             if (barValue <= range / 2f)
             {
                 // Make spoon play anim and update state
-                spoonScript.GetPowder();
+                spoonScript.AnimatePowder();
 
                 // Play sound effect
                 sound.Play();
