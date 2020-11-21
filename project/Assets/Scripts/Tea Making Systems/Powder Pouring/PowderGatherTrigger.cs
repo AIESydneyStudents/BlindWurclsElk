@@ -71,13 +71,15 @@ public class PowderGatherTrigger : MonoBehaviour
             // Hit the 'sweet spot'
             if (barValue <= range / 2f)
             {
-                //play anim to get powder
+                // Make spoon play anim and update state
+                spoonScript.GetPowder();
 
                 // Play sound effect
                 sound.Play();
 
-                // Set bool on spoon script
-                spoonScript.hasPowder = true;
+                // Disable bar and trigger; the spoon has powder
+                bar.SetActive(false);
+                active = false;
             }
             // Missed it
             else
