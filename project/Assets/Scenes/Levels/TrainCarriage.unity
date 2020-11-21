@@ -1528,6 +1528,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -90.00001}
+--- !u!1 &182777537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 182777538}
+  m_Layer: 0
+  m_Name: CoalPos2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &182777538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182777537}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0773, y: 0, z: -0.241}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1189987224}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &208751675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3416,6 +3446,7 @@ MonoBehaviour:
   helpText: {fileID: 1367445819}
   emberParticleSys: {fileID: 1660685902}
   steamParticleSys: {fileID: 925048887}
+  coalCount: 0
   barObj: {fileID: 9606646}
   totalCoalCount: 3
   goalCoalCount: 2
@@ -3762,6 +3793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7d07a82421c764eb18a7e537a7f407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBurner: 0
 --- !u!114 &678981946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10465,6 +10497,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047520757}
   m_CullTransparentMesh: 0
+--- !u!1 &1048887672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048887673}
+  m_Layer: 0
+  m_Name: CoalPos1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1048887673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048887672}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.039, y: 0, z: -0.279}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1189987224}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052782710
 GameObject:
   m_ObjectHideFlags: 0
@@ -11605,6 +11667,9 @@ Transform:
   - {fileID: 1581005821}
   - {fileID: 671694351}
   - {fileID: 2018167431}
+  - {fileID: 1048887673}
+  - {fileID: 182777538}
+  - {fileID: 1694040594}
   m_Father: {fileID: 969943071}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11620,6 +11685,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83adb308f66055a49a11112ca87007ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coalSnapPos:
+  - {fileID: 182777538}
+  - {fileID: 1048887673}
+  - {fileID: 1694040594}
+  burner: {fileID: 606405659}
   surfHeight: 0.68
   dragHeight: 0.02
   soundSource: {fileID: 1189987226}
@@ -13463,6 +13533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7d07a82421c764eb18a7e537a7f407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBurner: 0
 --- !u!1001 &1623402837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18389,6 +18460,36 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1694040593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1694040594}
+  m_Layer: 0
+  m_Name: CoalPos3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1694040594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694040593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.0657, y: 0, z: -0.18}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1189987224}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1695457884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18811,6 +18912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7d07a82421c764eb18a7e537a7f407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBurner: 0
 --- !u!1 &1772346349
 GameObject:
   m_ObjectHideFlags: 0
@@ -19930,7 +20032,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822750729}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76687c9ccd983d34a957e913742cb5c6, type: 3}
   m_Name: 

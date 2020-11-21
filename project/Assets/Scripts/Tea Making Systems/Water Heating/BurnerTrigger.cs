@@ -23,7 +23,8 @@ public class BurnerTrigger : MonoBehaviour
     public ParticleSystem steamParticleSys;
     ParticleSystem.MainModule steamParticleMain;
 
-    int coalCount = 0;
+    [HideInInspector]
+    public int coalCount = 0;
     float barValue = 0;
 
 
@@ -67,8 +68,6 @@ public class BurnerTrigger : MonoBehaviour
         {
             coalCount++;
             StartCoroutine(EaseBar(1));
-
-            //snap coal
 
             // Make particles grow orange
             emberParticleMain.startColor = new Color(1, .58f, 0f);

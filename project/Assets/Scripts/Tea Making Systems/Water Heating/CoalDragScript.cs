@@ -8,6 +8,11 @@ public class CoalDragScript : MonoBehaviour
     // Object being moved
     Rigidbody obj = null;
 
+    [Tooltip("The positions caols will be snapped to")]
+    public Transform[] coalSnapPos;
+
+    public BurnerTrigger burner;
+
     // Y point of the surface in world space
     public float surfHeight;
     // Height of object from surface while dragging
@@ -67,9 +72,19 @@ public class CoalDragScript : MonoBehaviour
         // Drop object
         if (Input.GetMouseButtonUp(0) && obj != null)
         {
-            obj.useGravity = true;
-            obj = null;
+            if (obj.GetComponent<CoalScript>().inBurner)
+			{
+                //snap coal into place
+                obj.transform.position = coalSnapPos[burner.coalCount - 1].position;
+			}
+            else
+			{
+                // The coal should drop onto the table
+                obj.useGravity = true;
+            }
 
+            // Remove ref to object and play sound
+            obj = null;
             soundSource.PlayOneShot(soundDrop);
         }
 
