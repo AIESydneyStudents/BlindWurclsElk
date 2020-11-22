@@ -56,6 +56,8 @@ public class PowderDepositTrigger : MonoBehaviour
     {
         //hide bar
         barObj.SetActive(false);
+        //disable spoon so it cant move after animation
+        FindObjectOfType<SpoonScript>().enabled = false;
 
         yield return new WaitForSeconds(2.5f);
 
