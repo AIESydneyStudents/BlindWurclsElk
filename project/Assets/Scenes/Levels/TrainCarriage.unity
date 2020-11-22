@@ -63605,6 +63605,7 @@ GameObject:
   - component: {fileID: 2239122575261074674}
   - component: {fileID: 6306075216183053745}
   - component: {fileID: 7626086522351106894}
+  - component: {fileID: 7626086522351106895}
   m_Layer: 0
   m_Name: Train_Carriage
   m_TagString: Untagged
@@ -63626,3 +63627,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5170328896136476279, guid: 1d26bc2b7403eb6488db22fa24ecd744, type: 3}
+--- !u!114 &7626086522351106895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626086522351106893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d31a3885641a1545a421bf28171f47f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 1, g: 0.6, b: 0, a: 1}
+  material: {fileID: 2915956612438938666, guid: 1d26bc2b7403eb6488db22fa24ecd744,
+    type: 3}
