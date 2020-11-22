@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TeaPouringScript : MonoBehaviour
 {
     public Transform camPos;
+    public Transform endCamPos;
 
     // Y point of the surface in world space
     public float surfHeight;
@@ -28,6 +30,11 @@ public class TeaPouringScript : MonoBehaviour
     public AudioSource soundEffect;
 
     private TeaCupScript teacup;
+
+
+    public Image blackFadeImg;
+    public GameObject endGameStuff;
+    public GameObject teaMakingStuff;
 
 
     void Start()
@@ -119,6 +126,65 @@ public class TeaPouringScript : MonoBehaviour
         }
     }
 
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(1);
+
+        blackFadeImg.gameObject.SetActive(true);
+
+        //fade out
+
+        while (blackFadeImg.color.a < 1f)
+        {
+            blackFadeImg.color += new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+
+        //*****************************************
+        //show tea masters, remove minigame
+
+        endGameStuff.SetActive(true);
+        teaMakingStuff.SetActive(false);
+        helpText.gameObject.SetActive(false);
+
+        //make the player look slightly downward to be able to see the table
+        Camera.main.transform.position = endCamPos.position;
+        Camera.main.transform.rotation = endCamPos.rotation;
+
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+
+        yield return new WaitForSeconds(0.1f);
+
+        //***********************************
+        //fade in
+
+        while (blackFadeImg.color.a > 0f)
+        {
+            blackFadeImg.color -= new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+
+        blackFadeImg.gameObject.SetActive(false);
+
+        //dialogue
+        DialogueManager.instance.StartDialogue(endGameStuff.GetComponent<DialogueSceneGraph>());
+
+        //********************************
+        //exit game to menu
+
+        yield return new WaitForSeconds(10);
+
+        //return to menu
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        SceneManager.LoadScene(0);
+    }
+
     private IEnumerator Anim()
 	{
         Quaternion start = transform.rotation;
@@ -178,7 +244,8 @@ public class TeaPouringScript : MonoBehaviour
         }
         else
 		{
-            //next minigame
+            //end tea making process
+            CoroutineRunner.RunCoroutine(EndGame());
         }
     }
 

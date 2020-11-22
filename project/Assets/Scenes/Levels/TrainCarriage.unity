@@ -1293,7 +1293,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &148564234
 Transform:
   m_ObjectHideFlags: 0
@@ -5585,13 +5585,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camPos: {fileID: 54429609}
-  endCamPos: {fileID: 1233773822}
   barObj: {fileID: 9606646}
   targetZone: {fileID: 481429178}
   particleSys: {fileID: 2114880090}
-  blackFadeImg: {fileID: 1181520173}
-  endGameStuff: {fileID: 1442438943}
-  teaMakingStuff: {fileID: 969943070}
+  teaStirringObjects: {fileID: 1388070097}
+  teaPourScript: {fileID: 779556612}
+  teaPouringObjects: {fileID: 148564233}
   helpText: {fileID: 1367445819}
   soundPlayer: {fileID: 748114603}
   centerPoint: {x: 0, y: 0, z: 0}
@@ -6019,12 +6018,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779556610}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eac0ee24a0e2d2a469a849395c819532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   camPos: {fileID: 1259297866}
+  endCamPos: {fileID: 1233773822}
   surfHeight: 0.68
   dragHeight: 0.05
   helpText: {fileID: 1367445819}
@@ -6034,6 +6034,9 @@ MonoBehaviour:
   pourOffset: {x: 0, y: 0, z: -0.15}
   pouringEffect: {fileID: 1827882990}
   soundEffect: {fileID: 779556611}
+  blackFadeImg: {fileID: 1181520173}
+  endGameStuff: {fileID: 1442438943}
+  teaMakingStuff: {fileID: 969943070}
 --- !u!54 &779556613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14157,7 +14160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1189987224
 Transform:
   m_ObjectHideFlags: 0
@@ -16487,7 +16490,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 7eb9c17e9da54e64a922ade32932c517,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eb9c17e9da54e64a922ade32932c517, type: 3}
@@ -28416,7 +28419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1905351864
 Transform:
   m_ObjectHideFlags: 0
@@ -28425,8 +28428,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905351863}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.057748973, z: 0}
-  m_LocalScale: {x: 0.13781123, y: 0.001, z: 0.13781123}
+  m_LocalPosition: {x: 0, y: 0.0099, z: 0}
+  m_LocalScale: {x: 0.078, y: 0.001, z: 0.078}
   m_Children:
   - {fileID: 2114880088}
   m_Father: {fileID: 1351110258}
@@ -39069,7 +39072,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: f29691e62baa4564a886da7a556d01bc,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f29691e62baa4564a886da7a556d01bc, type: 3}
