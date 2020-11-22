@@ -29,6 +29,7 @@ public class BurnerTrigger : MonoBehaviour
 
 
     public GameObject barObj;
+    public GameObject barIndicator;
     RectTransform barScalable;
 
     [Tooltip("The total number of coals in the scene")]
@@ -51,6 +52,7 @@ public class BurnerTrigger : MonoBehaviour
 
         // Enable the bar
         barObj.SetActive(true);
+        barIndicator.SetActive(true);
         // Get the part of the bar to scale
         barScalable = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
@@ -70,7 +72,7 @@ public class BurnerTrigger : MonoBehaviour
         if (other.CompareTag("Coal"))
         {
             coalCount++;
-            StartCoroutine(EaseBar(1));
+            StartCoroutine(EaseBar(2));
 
             // Make particles grow orange
             emberParticleMain.startColor = new Color(1, .58f, 0f);
@@ -89,7 +91,7 @@ public class BurnerTrigger : MonoBehaviour
         if (other.CompareTag("Coal"))
         {
             coalCount--;
-            StartCoroutine(EaseBar(1));
+            StartCoroutine(EaseBar(2));
 
             if (coalCount == 0)
 			{
@@ -117,7 +119,7 @@ public class BurnerTrigger : MonoBehaviour
         {
             winTimmer += Time.deltaTime;
 
-            if (winTimmer >= 2f)
+            if (winTimmer >= 4f)
             {
                 // Game won. start next minigame
                 StartCoroutine(FinishMinigame());
@@ -158,6 +160,7 @@ public class BurnerTrigger : MonoBehaviour
     {
         //hide bar
         barObj.SetActive(false);
+        barIndicator.SetActive(false);
 
         // move teapot back
         float time = 0;
