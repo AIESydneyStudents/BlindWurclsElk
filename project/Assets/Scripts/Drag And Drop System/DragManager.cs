@@ -22,6 +22,8 @@ public class DragManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = false;
+
+        FindObjectOfType<PauseMenuScript>().inMinigame = true;
     }
 
     public void CheckTiles()
@@ -52,6 +54,8 @@ public class DragManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
+
+        FindObjectOfType<PauseMenuScript>().inMinigame = false;
 
 
         //hide UI, display anim for getting tea piece

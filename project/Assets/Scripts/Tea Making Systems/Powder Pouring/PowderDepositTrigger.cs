@@ -6,11 +6,11 @@ using UnityEngine;
 public class PowderDepositTrigger : MonoBehaviour
 {
     public GameObject powderPourGroup;
-    public GameObject teaStirGroup;
+    public GameObject waterPourGroup;
+    public TeaPotScript teapotScript;
     public GameObject barObj;
 
-    public GameObject teaObj;
-    public ParticleSystem particleEffect;
+    public GameObject teaPowderObj;
 
     public AudioSource sound;
 
@@ -28,19 +28,18 @@ public class PowderDepositTrigger : MonoBehaviour
 
             if (spoon.hasPowder)
             {
-                //play anim
-                particleEffect.Play();
+                // Play anim
+                spoon.AnimatePowder(true);
 
                 // Play sound effect
                 sound.Play();
 
-                spoon.hasPowder = false;
                 count++;
 
-                teaObj.SetActive(true);
+                teaPowderObj.SetActive(true);
 
                 //make larger
-                teaObj.transform.localScale += new Vector3(0.25f, 0.25f, 0.25f);
+                teaPowderObj.transform.localScale += new Vector3(0.12f, 0.12f, 0.12f);
 
 
                 // If full amount collected, end minigame
@@ -55,10 +54,18 @@ public class PowderDepositTrigger : MonoBehaviour
 
     private IEnumerator FinishMinigame()
     {
-        yield return new WaitForSeconds(1);
-
-        powderPourGroup.SetActive(false);
-        teaStirGroup.SetActive(true);
+        //hide bar
         barObj.SetActive(false);
+        //disable spoon so it cant move after animation
+        FindObjectOfType<SpoonScript>().enabled = false;
+
+        yield return new WaitForSeconds(2.5f);
+
+        
+        teapotScript.enabled = true;
+
+        //change active group
+        powderPourGroup.SetActive(false);
+        waterPourGroup.SetActive(true);
     }
 }

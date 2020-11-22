@@ -1,13 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StiringScript : MonoBehaviour
 {
     public Transform camPos;
-    public Transform endCamPos;
 
     public GameObject barObj;
     public Image targetZone;
@@ -19,9 +17,9 @@ public class StiringScript : MonoBehaviour
     float baseEmissionRate;
     float baseStartSize;
 
-    public Image blackFadeImg;
-    public GameObject endGameStuff;
-    public GameObject teaMakingStuff;
+    public GameObject teaStirringObjects;
+    public TeaPouringScript teaPourScript;
+    public GameObject teaPouringObjects;
 
     bool active = true;
 
@@ -66,6 +64,7 @@ public class StiringScript : MonoBehaviour
         // Get the scalable part of the bar
         bar = barObj.transform.Find("BarScalable").GetComponent<RectTransform>();
 
+        particleSys.gameObject.SetActive(true);
         // Get main and emission modules from particle system
         emissionModule = particleSys.emission;
         mainModule = particleSys.main;
@@ -118,10 +117,8 @@ public class StiringScript : MonoBehaviour
             // If timmer is done, the player wins
             if (winTimmer >= timeToWin)
 			{
-                //fade to black for end sequence
-                CoroutineRunner.RunCoroutine(EndGame());
-
-                active = false;
+                //start next minigame
+                CoroutineRunner.RunCoroutine(FinishMinigame());
 			}
 		}
         else if (winTimmer > 0f)
@@ -170,65 +167,21 @@ public class StiringScript : MonoBehaviour
         bar.localScale = new Vector3(Mathf.Clamp(rotSpeed, 0, 1), 1, 1);
     }
 
-
-    private IEnumerator EndGame()
+    private IEnumerator FinishMinigame()
     {
-        yield return new WaitForSeconds(1);
-
-        blackFadeImg.gameObject.SetActive(true);
-
-        //fade out
-
-        while (blackFadeImg.color.a < 1f)
-        {
-            blackFadeImg.color += new Color(0, 0, 0, Time.deltaTime * 0.5f);
-
-            yield return null;
-        }
-
-        //*****************************************
-        //show tea masters, remove minigame
-
-        endGameStuff.SetActive(true);
-        teaMakingStuff.SetActive(false);
-        helpText.gameObject.SetActive(false);
+        //hide bar
         barObj.SetActive(false);
+        targetZone.gameObject.SetActive(false);
 
-        //make the player look slightly downward to be able to see the table
-        Camera.main.transform.position = endCamPos.position;
-        Camera.main.transform.rotation = endCamPos.rotation;
-
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        yield return new WaitForSeconds(0.5f);
 
 
-        yield return new WaitForSeconds(0.1f);
+        particleSys.Stop();
+        teaPourScript.enabled = true;
 
-        //***********************************
-        //fade in
-
-        while (blackFadeImg.color.a > 0f)
-        {
-            blackFadeImg.color -= new Color(0, 0, 0, Time.deltaTime * 0.5f);
-
-            yield return null;
-        }
-
-        blackFadeImg.gameObject.SetActive(false);
-
-        //dialogue
-        DialogueManager.instance.StartDialogue(endGameStuff.GetComponent<DialogueSceneGraph>());
-
-        //********************************
-        //exit game to menu
-
-        yield return new WaitForSeconds(10);
-
-        //return to menu
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        SceneManager.LoadScene(0);
+        //change active group
+        teaStirringObjects.SetActive(false);
+        teaPouringObjects.SetActive(true);
     }
 
     private IEnumerator MoveCam()

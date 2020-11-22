@@ -17,7 +17,7 @@ public class PowderGatherTrigger : MonoBehaviour
 
     public AudioSource sound;
 
-    bool active = false;
+    bool insideTrigger = false;
 
     //area the player should click
     [Range(0, 1)]
@@ -37,7 +37,7 @@ public class PowderGatherTrigger : MonoBehaviour
         if (other.CompareTag("Spoon"))
         {
             bar.SetActive(true);
-            active = true;
+            insideTrigger = true;
 
             //change help message
             helpText.text = "Click at the right time to collect the tea powder";
@@ -49,7 +49,7 @@ public class PowderGatherTrigger : MonoBehaviour
         if (other.CompareTag("Spoon"))
         {
             bar.SetActive(false);
-            active = false;
+            insideTrigger = false;
 
             //change help message
             helpText.text = "Collect tea powder and put it inot the bowl";
@@ -60,7 +60,7 @@ public class PowderGatherTrigger : MonoBehaviour
     void Update()
     {
         // Dont run if the trigger is not active
-        if (!active)
+        if (!insideTrigger)
         { return; }
 
         if (Input.GetMouseButtonDown(0))
@@ -72,14 +72,14 @@ public class PowderGatherTrigger : MonoBehaviour
             if (barValue <= range / 2f)
             {
                 // Make spoon play anim and update state
-                spoonScript.GetPowder();
+                spoonScript.AnimatePowder();
 
                 // Play sound effect
                 sound.Play();
 
                 // Disable bar and trigger; the spoon has powder
                 bar.SetActive(false);
-                active = false;
+                insideTrigger = false;
             }
             // Missed it
             else

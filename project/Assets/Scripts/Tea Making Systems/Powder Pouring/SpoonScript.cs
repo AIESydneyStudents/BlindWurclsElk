@@ -15,6 +15,7 @@ public class SpoonScript : MonoBehaviour
     bool locked = false;
 
     public GameObject teaObj;
+    public ParticleSystem particleEffect;
 
 
 
@@ -60,15 +61,15 @@ public class SpoonScript : MonoBehaviour
         { teaObj.SetActive(false); }
     }
 
-    public void GetPowder()
+    public void AnimatePowder(bool useEffect = false)
 	{
         locked = true;
 
         // Play anim. Will also set hasPowder and locked
-        StartCoroutine(AngleDown());
+        StartCoroutine(AngleDown(useEffect));
 	}
 
-    private IEnumerator AngleDown()
+    private IEnumerator AngleDown(bool useEffect)
 	{
         float time = 0;
         Quaternion start = transform.rotation;
@@ -84,8 +85,11 @@ public class SpoonScript : MonoBehaviour
             yield return null;
 		}
 
+        // Play particle effect if being used
+        if (useEffect)
+        { particleEffect.Play(); }
         // Show powder and start next animation
-        hasPowder = true;
+        hasPowder = !hasPowder;
         StartCoroutine(AngleUp());
 	}
 

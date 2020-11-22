@@ -6,6 +6,10 @@ public class CoalScript : MonoBehaviour
 {
     Material mat;
 
+	// Used by CoalDragScript to snap into the burner
+	[HideInInspector]
+	public bool inBurner = false;
+
 	bool active = false;
 	Color lastCol;
 	Color newCol;
@@ -21,6 +25,8 @@ public class CoalScript : MonoBehaviour
 
 	public void SetGlow(bool makeGlow)
 	{
+		inBurner = makeGlow;
+
 		// Setup variables
 		active = true;
 		time = 0;
