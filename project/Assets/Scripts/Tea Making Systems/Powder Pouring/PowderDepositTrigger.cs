@@ -39,7 +39,7 @@ public class PowderDepositTrigger : MonoBehaviour
                 teaPowderObj.SetActive(true);
 
                 //make larger
-                teaPowderObj.transform.localScale += new Vector3(0.25f, 0.25f, 0.25f);
+                teaPowderObj.transform.localScale += new Vector3(0.12f, 0.12f, 0.12f);
 
 
                 // If full amount collected, end minigame
