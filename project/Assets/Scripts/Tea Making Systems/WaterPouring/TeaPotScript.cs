@@ -17,6 +17,9 @@ public class TeaPotScript : MonoBehaviour
     public Text helpText;
 
     public ParticleSystem waterParticleEffect;
+    public AudioSource sound;
+
+    public Transform teaObjFull;
 
     public GameObject teaPowderObj;
     public GameObject teaObj;
@@ -113,38 +116,37 @@ public class TeaPotScript : MonoBehaviour
         Quaternion end = start * Quaternion.Euler(0, 0, 15);
         float time = 0;
 
-        while (time < 1)
+        while (time < 2)
 		{
-            //play water effect halfway through
-            if (time > 0.5f && !waterParticleEffect.isPlaying)
+            //play water effect and make tea rise halfway through
+            if (time > 1 && !waterParticleEffect.isPlaying)
 			{
                 waterParticleEffect.Play();
+                sound.Play();
+                StartCoroutine(RaiseWater());
             }
 
             //tilt down
-            transform.rotation = Quaternion.Lerp(start, end, time);
+            transform.rotation = Quaternion.Lerp(start, end, time * 0.5f);
 
             time += Time.deltaTime;
             yield return null;
 		}
+        
 
-        //swap powder for tea
-        teaPowderObj.SetActive(false);
-        teaObj.SetActive(true);
-
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
 
         time = 0;
-        while (time < 1)
+        while (time < 2)
         {
             //stop water effect halfway through
-            if (time > 0.5f && waterParticleEffect.isPlaying)
+            if (time > 1f && waterParticleEffect.isPlaying)
             {
                 waterParticleEffect.Stop();
             }
 
             //tilt up
-            transform.rotation = Quaternion.Lerp(end, start, time);
+            transform.rotation = Quaternion.Lerp(end, start, time * 0.5f);
 
             time += Time.deltaTime;
             yield return null;
@@ -156,5 +158,32 @@ public class TeaPotScript : MonoBehaviour
         waterPouringObjects.SetActive(false);
         gameObject.SetActive(false);
         teaStirringObjects.SetActive(true);
+    }
+
+    private IEnumerator RaiseWater()
+	{
+        //show tea
+        teaObj.SetActive(true);
+
+        float time = 0;
+        float scale = 1f / 3f;
+
+        Vector3 startPos = teaObj.transform.position;
+        Vector3 startScale = teaObj.transform.localScale;
+        //teaObjFull for end
+
+        while (time < 3)
+		{
+            //lerp pos and scale
+            teaObj.transform.position = Vector3.Lerp(startPos, teaObjFull.position, time * scale);
+            teaObj.transform.localScale = Vector3.Lerp(startScale, teaObjFull.localScale, time * scale);
+
+
+            time += Time.deltaTime;
+            yield return null;
+		}
+
+        //hide powder
+        teaPowderObj.SetActive(false);
     }
 }
