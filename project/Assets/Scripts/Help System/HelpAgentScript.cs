@@ -10,11 +10,19 @@ public class HelpAgentScript : MonoBehaviour
     [Tooltip("When the object is this far from the target, it will be destroyed")]
     public float distance;
 
+    NavMeshAgent agent;
+    float speed;
+
 
     void Start()
     {
         // Set the AI target
-        GetComponent<NavMeshAgent>().SetDestination(targetPos);
+        agent = GetComponent<NavMeshAgent>();
+        agent.SetDestination(targetPos);
+
+        speed = agent.speed;
+        agent.angularSpeed = 0;
+        agent.speed = 0;
     }
 
     void Update()
@@ -23,6 +31,10 @@ public class HelpAgentScript : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPos) < distance)
 		{
             Destroy(gameObject);
+            return;
 		}
+
+        // Move agent manualy to prevent overshooting
+        agent.Move((agent.steeringTarget - transform.position).normalized * speed * Time.deltaTime);
     }
 }
