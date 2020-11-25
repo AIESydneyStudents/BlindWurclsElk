@@ -43,7 +43,9 @@ public class DragManager : MonoBehaviour
 
         // If all tiles are locked, game over
         if (allLocked)
-        { GameOver(); }
+        {
+            Invoke("GameOver", 1f);
+        }
     }
 
 

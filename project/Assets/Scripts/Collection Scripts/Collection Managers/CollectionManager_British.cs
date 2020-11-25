@@ -6,15 +6,19 @@ using UnityEngine.SceneManagement;
 public class CollectionManager_British : CollectionManagerBase
 {
     public float fadeTime = 1f;
-    public float delayToShowObject = 1f;
-    public float delayToTransition = 2f;
+    public float delayToMinigame = 2f;
 
 
     protected override void AllCollected()
     {
+        Invoke("StartMinigame", delayToMinigame);
+    }
+
+    private void StartMinigame()
+	{
         // Stat minigame
         SceneManager.LoadScene("Britain_PuzzleScene", LoadSceneMode.Additive);
-        
+
         // Enable the collected object in the train carrage
         CollectionObjects_British.collected = true;
     }
