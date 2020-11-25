@@ -642,6 +642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e1dd2cf48a64bd468113cae8daf4677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   img: {fileID: 436701736}
 --- !u!114 &706088897
 MonoBehaviour:
@@ -939,7 +940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.224, y: 0.79666746}
   m_AnchorMax: {x: 0.77861595, y: 0.943335}
-  m_AnchoredPosition: {x: -0.5000076, y: 1}
+  m_AnchoredPosition: {x: -0.50001526, y: 1}
   m_SizeDelta: {x: 2.699997, y: 2.199997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1148022586
@@ -1033,7 +1034,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.01
   far clip plane: 1000
   field of view: 60
   orthographic: 0

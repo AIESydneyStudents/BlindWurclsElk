@@ -7896,6 +7896,8 @@ MonoBehaviour:
   changeRot: 1
   rot: {x: 0, y: 90, z: 0}
   useSitting: 0
+  useCup: 1
+  cup: {fileID: 6588740657948324562, guid: f0c1b3c0b299dd344ad7b83889a854b6, type: 3}
 --- !u!1 &319828999
 GameObject:
   m_ObjectHideFlags: 0
@@ -20191,6 +20193,8 @@ MonoBehaviour:
   changeRot: 1
   rot: {x: 0, y: 57, z: 0}
   useSitting: 0
+  useCup: 1
+  cup: {fileID: 7436975165256414366, guid: 47090a84d116ff64980dfb4d4aa49756, type: 3}
 --- !u!1001 &711202645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43402,6 +43406,8 @@ MonoBehaviour:
   changeRot: 1
   rot: {x: 0, y: 0, z: 0}
   useSitting: 0
+  useCup: 1
+  cup: {fileID: 1926917968959774851, guid: a8788f8c3dee08642b09a99eb1859527, type: 3}
 --- !u!1 &1174121325
 GameObject:
   m_ObjectHideFlags: 0

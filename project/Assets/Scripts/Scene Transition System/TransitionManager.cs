@@ -8,7 +8,8 @@ public class TransitionManager : MonoBehaviour
 {
     public static TransitionManager instance;
 
-    /*  work out how the anim controller will work  */
+    [HideInInspector]
+    public Animator anim;
 
     GameObject player;
     public Image img;
@@ -16,7 +17,7 @@ public class TransitionManager : MonoBehaviour
     Scene currentScene;
 
 
-    //  used by 2nd func
+    //used by 2nd func
     AsyncOperation loadOp;
     Vector3 pos;
     Vector3 rot;
@@ -52,7 +53,7 @@ public class TransitionManager : MonoBehaviour
     }
 
 
-    public void ChangeScene(string sceneName, /*enum for anim,*/ Vector3? position = null, Vector3? rotation = null, bool useSitting = false)
+    public void ChangeScene(string sceneName, Vector3? position = null, Vector3? rotation = null, bool useSitting = false)
     {
         //stop dialogue
         if (DialogueManager.instance != null)
@@ -73,17 +74,24 @@ public class TransitionManager : MonoBehaviour
         this.useSitting = useSitting;
 
 
-        //start anim
-        //  it will call LoadNewScene
-        //  if can get animation length, call func on delay
+        //determine delay for unloading current scene
+        float transDelay;
+        if (anim == null)
+		{
+            //use fade to black
+            StartCoroutine(FadeOut());
+            transDelay = 3;
+        }
+		else
+		{
+            //start animation
+            anim.enabled = true;
+            //get animation clip length
+            transDelay = anim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
+        }
 
-        StartCoroutine(FadeOut());
-
-        
-
-        //temp
-        //StartCoroutine(LoadNewScene());
-        Invoke("StartLoadNewScene", 3);
+        //start transition after delay
+        Invoke("StartLoadNewScene", transDelay);
     }
 
     void StartLoadNewScene()
@@ -95,6 +103,7 @@ public class TransitionManager : MonoBehaviour
     public IEnumerator LoadNewScene()
     {
         //anim loop has started
+
 
         //start unloading currentScene
         AsyncOperation unloadOp = SceneManager.UnloadSceneAsync(currentScene);
@@ -129,14 +138,24 @@ public class TransitionManager : MonoBehaviour
         }
 
 
-        //set animator toggle
-        StartCoroutine(FadeIn());
-
-
+        //end animation
+        if (anim == null)
+		{
+            //fade in
+            StartCoroutine(FadeIn());
+        }
+        else
+		{
+            //set animator toggle and remove ref
+            anim.SetTrigger("EndLoop");
+            anim = null;
+		}
+        
+        
         // Get the new scene and set it as the active scene
         currentScene = SceneManager.GetSceneAt(1);
         SceneManager.SetActiveScene(currentScene);
-        //done, remove ref
+        // Remove ref to async operation
         loadOp = null;
     }
 
