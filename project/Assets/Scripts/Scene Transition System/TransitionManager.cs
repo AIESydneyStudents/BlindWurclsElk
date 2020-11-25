@@ -83,7 +83,7 @@ public class TransitionManager : MonoBehaviour
         if (anim == null)
 		{
             //use blink transition
-            StartCoroutine(BlinkOut());
+            
             transDelay = 2;
         }
 		else
@@ -91,9 +91,11 @@ public class TransitionManager : MonoBehaviour
             //start animation
             anim.enabled = true;
             //get animation clip length
-            transDelay = anim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
-        }
+            //transDelay = anim.GetCurrentAnimatorClipInfo(0)[0].clip.length;
 
+            transDelay = 2.5f;
+        }
+        StartCoroutine(BlinkOut());
         //start transition after delay
         Invoke("StartLoadNewScene", transDelay);
     }
@@ -146,16 +148,17 @@ public class TransitionManager : MonoBehaviour
         if (anim == null)
 		{
             //open eyes
-            StartCoroutine(BlinkIn());
+            
         }
         else
 		{
+            Destroy(anim.gameObject);
             //set animator toggle and remove ref
-            anim.SetTrigger("EndLoop");
+            //anim.SetTrigger("EndLoop");
             anim = null;
 		}
-        
-        
+        StartCoroutine(BlinkIn());
+
         // Get the new scene and set it as the active scene
         currentScene = SceneManager.GetSceneAt(1);
         SceneManager.SetActiveScene(currentScene);
@@ -166,6 +169,8 @@ public class TransitionManager : MonoBehaviour
 
     private IEnumerator BlinkOut()
 	{
+        yield return new WaitForSeconds(0.5f);
+
         //activate objects
         eyetop.gameObject.SetActive(true);
         eyebot.gameObject.SetActive(true);
@@ -183,6 +188,8 @@ public class TransitionManager : MonoBehaviour
 	}
     private IEnumerator BlinkIn()
 	{
+        yield return new WaitForSeconds(0.5f);
+
         for (float time = 0; time < 1f; time += Time.deltaTime)
         {
             //scale y from 1.3 to 0

@@ -4,6 +4,7 @@
         _Color("Left Color", Color) = (1,1,1,1)
         _Color2("Right Color", Color) = (1,1,1,1)
         _Scale("Scale", Float) = 1
+        _Horizontal("Is Horizontal", Int) = 1
 
         _StencilComp("Stencil Comparison", Float) = 8
         _Stencil("Stencil ID", Float) = 0
@@ -63,6 +64,7 @@
 
     fixed4 _Color;
     fixed4 _Color2;
+    fixed _Horizontal;
 
     v2f vert(appdata_t IN)
     {
@@ -72,7 +74,7 @@
 #ifdef UNITY_HALF_TEXEL_OFFSET
         OUT.vertex.xy += (_ScreenParams.zw - 1.0) * float2(-1,1);
 #endif
-        OUT.color = lerp(_Color, _Color2, IN.texcoord.x);
+        OUT.color = lerp(_Color, _Color2, (_Horizontal) ? IN.texcoord.x : IN.texcoord.y);
         return OUT;
     }
 
