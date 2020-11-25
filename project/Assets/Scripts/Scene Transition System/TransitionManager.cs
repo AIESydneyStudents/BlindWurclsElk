@@ -14,6 +14,10 @@ public class TransitionManager : MonoBehaviour
     GameObject player;
     public Image img;
 
+    public RectTransform eyetop;
+    public RectTransform eyebot;
+
+
     Scene currentScene;
 
 
@@ -78,9 +82,9 @@ public class TransitionManager : MonoBehaviour
         float transDelay;
         if (anim == null)
 		{
-            //use fade to black
-            StartCoroutine(FadeOut());
-            transDelay = 3;
+            //use blink transition
+            StartCoroutine(BlinkOut());
+            transDelay = 2;
         }
 		else
 		{
@@ -141,8 +145,8 @@ public class TransitionManager : MonoBehaviour
         //end animation
         if (anim == null)
 		{
-            //fade in
-            StartCoroutine(FadeIn());
+            //open eyes
+            StartCoroutine(BlinkIn());
         }
         else
 		{
@@ -160,6 +164,40 @@ public class TransitionManager : MonoBehaviour
     }
 
 
+    private IEnumerator BlinkOut()
+	{
+        //activate objects
+        eyetop.gameObject.SetActive(true);
+        eyebot.gameObject.SetActive(true);
+
+
+        for (float time = 0; time < 1f; time += Time.deltaTime)
+		{
+            //scale y from 0 to 1.3
+            Vector3 scale = new Vector3(1, Mathf.Lerp(0, 1.3f, time), 1);
+            eyetop.localScale = scale;
+            eyebot.localScale = scale;
+
+            yield return null;
+		}
+	}
+    private IEnumerator BlinkIn()
+	{
+        for (float time = 0; time < 1f; time += Time.deltaTime)
+        {
+            //scale y from 1.3 to 0
+            Vector3 scale = new Vector3(1, Mathf.Lerp(1.3f, 0, time), 1);
+            eyetop.localScale = scale;
+            eyebot.localScale = scale;
+
+            yield return null;
+        }
+
+        //activate objects
+        eyetop.gameObject.SetActive(false);
+        eyebot.gameObject.SetActive(false);
+    }
+
     private IEnumerator FadeOut()
     {
         img.gameObject.SetActive(true);
@@ -171,7 +209,6 @@ public class TransitionManager : MonoBehaviour
             yield return null;
         }
     }
-
     private IEnumerator FadeIn()
     {
         while (img.color.a > 0f)
