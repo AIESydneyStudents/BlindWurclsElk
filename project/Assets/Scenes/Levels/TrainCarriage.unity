@@ -781,7 +781,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh784628
+  m_Name: pb_Mesh114006
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19337,7 +19337,7 @@ Transform:
   m_GameObject: {fileID: 484382216}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.003, y: 0.1, z: 0.26}
-  m_LocalScale: {x: 0.075, y: 0.015, z: 0.075}
+  m_LocalScale: {x: 0.1, y: 0.015, z: 0.1}
   m_Children: []
   m_Father: {fileID: 790395782}
   m_RootOrder: 1
@@ -19358,7 +19358,6 @@ MonoBehaviour:
   waterPourGroup: {fileID: 866601580}
   teapotScript: {fileID: 1249542797}
   barObj: {fileID: 753220556}
-  teaPowderObj: {fileID: 1807100779}
   sound: {fileID: 484382222}
   numNeeded: 3
 --- !u!136 &484382219
@@ -26212,7 +26211,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh783822
+  m_Name: pb_Mesh113182
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37942,7 +37941,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh783894
+  m_Name: pb_Mesh113254
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43018,7 +43017,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh784744
+  m_Name: pb_Mesh114122
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -89111,6 +89110,7 @@ MonoBehaviour:
   hasPowder: 0
   teaObj: {fileID: 1326377426}
   particleEffect: {fileID: 2071254906}
+  teaPowderObj: {fileID: 1807100779}
 --- !u!54 &6911615302031411876
 Rigidbody:
   m_ObjectHideFlags: 0

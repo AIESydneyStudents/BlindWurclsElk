@@ -10,8 +10,6 @@ public class PowderDepositTrigger : MonoBehaviour
     public TeaPotScript teapotScript;
     public GameObject barObj;
 
-    public GameObject teaPowderObj;
-
     public AudioSource sound;
 
     // Number of times powder needs to be collected to win
@@ -36,12 +34,7 @@ public class PowderDepositTrigger : MonoBehaviour
 
                 count++;
 
-                teaPowderObj.SetActive(true);
-
-                //make larger
-                teaPowderObj.transform.localScale += new Vector3(0.12f, 0.12f, 0.12f);
-
-
+                
                 // If full amount collected, end minigame
                 if (count == numNeeded)
                 {

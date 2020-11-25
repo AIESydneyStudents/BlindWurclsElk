@@ -17,6 +17,8 @@ public class SpoonScript : MonoBehaviour
     public GameObject teaObj;
     public ParticleSystem particleEffect;
 
+    public GameObject teaPowderObj;
+
 
 
     // Find the cursor position in world space relative to the object position
@@ -52,13 +54,6 @@ public class SpoonScript : MonoBehaviour
             // Set the object's position
             transform.position = pos + new Vector3(0, 0, 0.04f);
         }
-
-
-        // Show tea when the spoon has powder
-        if (hasPowder)
-        { teaObj.SetActive(true); }
-        else 
-        { teaObj.SetActive(false); }
     }
 
     public void AnimatePowder(bool useEffect = false)
@@ -87,9 +82,19 @@ public class SpoonScript : MonoBehaviour
 
         // Play particle effect if being used
         if (useEffect)
-        { particleEffect.Play(); }
+        {
+            particleEffect.Play();
+
+            //show powder in bowl and make it larger
+            teaPowderObj.SetActive(true);
+            teaPowderObj.transform.localScale += new Vector3(0.12f, 0.12f, 0.12f);
+        }
+
+
         // Show powder and start next animation
         hasPowder = !hasPowder;
+        teaObj.SetActive(hasPowder);
+
         StartCoroutine(AngleUp());
 	}
 
