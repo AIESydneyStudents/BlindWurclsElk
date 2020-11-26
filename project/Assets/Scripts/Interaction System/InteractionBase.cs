@@ -21,8 +21,10 @@ public class InteractionBase : MonoBehaviour
         tag = "Interactable";
 
         // Get the mesh renderer and the current material
-        render = GetComponent<MeshRenderer>();
-        normal = render.material;
+        if (TryGetComponent<MeshRenderer>(out render))
+        {
+            normal = render.material;
+        }
 
         // If a highlighted material is not selected, use the default
         if (highlighted == null)
@@ -39,6 +41,9 @@ public class InteractionBase : MonoBehaviour
     /// <param name="highlight">If true, the object is highlighted</param>
     public void SetHighlight(bool highlight = true)
     {
+        if (render == null)
+        { return; }
+
         if (highlight)
         {
             // Highlight the object
