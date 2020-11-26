@@ -53,7 +53,7 @@ public class SittingController : MonoBehaviour
             Collider[] res = new Collider[1];
 
             //do a sphere cast with a layer mask for 'Seats' layer
-            if (Physics.OverlapSphereNonAlloc(transform.position, 1, res, 1 << 8) > 0)
+            if (Physics.OverlapSphereNonAlloc(transform.position, 1.5f, res, 1 << 8) > 0)
             {
                 seat = res[0].GetComponent<SeatInfo>();
 
