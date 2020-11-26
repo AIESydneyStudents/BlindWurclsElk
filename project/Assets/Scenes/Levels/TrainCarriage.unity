@@ -781,7 +781,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26874
+  m_Name: pb_Mesh889264
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5840,17 +5840,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 7d13c081f26715641be89801b24f2b1e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.012
+      value: -1.093
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7d13c081f26715641be89801b24f2b1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.7259355
+      value: 0.211
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7d13c081f26715641be89801b24f2b1e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.084
+      value: 3.601
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7d13c081f26715641be89801b24f2b1e,
         type: 3}
@@ -6021,7 +6021,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: 1955351424}
+        node: {fileID: 294019794}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -6029,8 +6029,8 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: We mix our ingredients in and add 1-part milk, sometimes water buffalo milk,
-    to two parts water and heat just before boiling
+  text: I always prefer to mix it with 1 part water buffalo milk to 2 parts water
+    and heat it just before it boils
   audio: {fileID: 8300000, guid: e749b9ba7e9cb10459381f1b8ad40ac7, type: 3}
   extraPlayTime: 1
 --- !u!1 &148564233
@@ -6536,8 +6536,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: "In the kingdom, we use a napkin, and never! Do we call it a serviette, we
-    dab, never wipe\u2026 this is civility after all."
+  text: Now, Remember these two things. One, we only move the spoon back and forth
+    to stir and two, when we use a napkin, we dab to clean, and on more thing, we
+    never call it a serviette
   audio: {fileID: 8300000, guid: 3f2835226701ac84a819973a55e72bb7, type: 3}
   extraPlayTime: 1
 --- !u!1 &178073239
@@ -7872,7 +7873,7 @@ MonoBehaviour:
   m_Name: Scene Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 1182799219}
-  position: {x: 840, y: -136}
+  position: {x: 584, y: -136}
   ports:
     keys:
     - input
@@ -7884,7 +7885,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 1955351424}
+        node: {fileID: 148047536}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -8366,7 +8367,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Maaf Kiijiye! (Excuse Me!) Rest here for a moment
+  text: Maaf Kiijiye if you have a moment
   audio: {fileID: 0}
   extraPlayTime: 1
 --- !u!1 &337034253
@@ -13620,9 +13621,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Welcome traveller, take a seat and let me prepare tea for you.
+  text: Yuokoso, thank you for joining me, I was about to prepare tea
   audio: {fileID: 8300000, guid: 5510c0649afcd9241bf6bce472e017fb, type: 3}
-  extraPlayTime: 2
+  extraPlayTime: 1
 --- !u!114 &394558697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13710,9 +13711,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: We do enjoy our tea, and only loose-leaf of course! We take pride in our
-    traditions and we observe our protocols for proper tea drinking, at least for
-    us proper British people
+  text: First things first, I only use loose leaf, I proudly observe our traditions
   audio: {fileID: 8300000, guid: 1e6c75b4a0dc6364cb7bd67819f48a7b, type: 3}
   extraPlayTime: 1
 --- !u!1 &408616981
@@ -19194,17 +19193,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cd1c18a0b1b68174f8dbeed1fdfe6fb1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.013
+      value: -1.087
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd1c18a0b1b68174f8dbeed1fdfe6fb1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.6624
+      value: 0.213
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd1c18a0b1b68174f8dbeed1fdfe6fb1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.325
+      value: 3.893
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cd1c18a0b1b68174f8dbeed1fdfe6fb1,
         type: 3}
@@ -19905,7 +19904,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Ano! (Excuse me!) Over here, sit with me.
+  text: Ano! Over here! Sit
   audio: {fileID: 0}
   extraPlayTime: 1
 --- !u!114 &646495687
@@ -19950,7 +19949,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Namaste, please relax for a bit, have tea with me
+  text: Namaste, have some tea with me while you relax
   audio: {fileID: 8300000, guid: 0ab148d6aa165404989b5a3e4fe3a92d, type: 3}
   extraPlayTime: 1
 --- !u!1001 &653629829
@@ -20276,7 +20275,7 @@ MonoBehaviour:
   m_Name: Scene Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 1164025479}
-  position: {x: 728, y: -136}
+  position: {x: 488, y: -136}
   ports:
     keys:
     - input
@@ -20288,7 +20287,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 1901025149}
+        node: {fileID: 870029688}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -20401,7 +20400,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 1402475193}
-  position: {x: 200, y: -152}
+  position: {x: 72, y: -152}
   ports:
     keys:
     - input
@@ -20433,11 +20432,11 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: This wooden spoon is called a chashaku, and i use it to scoop out the powder
-    in careful measure and place the Matcha in the bowl which is called chawan and
-    add water, just below boiling point.
+  text: We have tools that we use for our tea ceremonies; there is a wooden spoon
+    called a Chashaku, we use it to pour the powder. The bowl we use is called a
+    Chawan and we mix it all together with a whisk called a Chasen
   audio: {fileID: 8300000, guid: b5126f8caf110a342bf1adec59ea5741, type: 3}
-  extraPlayTime: 2
+  extraPlayTime: 1
 --- !u!1001 &748114599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26330,7 +26329,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26036
+  m_Name: pb_Mesh888424
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26556,7 +26555,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: 1901025149}
+        node: {fileID: 699253103}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -26564,8 +26563,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: If you are stirring your tea, please only move your spoon, back and forth,
-    avoid around and around, it is messy and we are not stirring a cauldron
+  text: And here, take this Earl Grey and dream of starry nights in the English countryside
   audio: {fileID: 8300000, guid: ca8783cb35ff77b4fb7b41e9543984ad, type: 3}
   extraPlayTime: 1
 --- !u!1 &871101991
@@ -36386,7 +36384,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Salutations! Would you care to join me?
+  text: Salutations! Take a seat if you will
   audio: {fileID: 0}
   extraPlayTime: 1
 --- !u!1001 &964653544
@@ -38022,7 +38020,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26112
+  m_Name: pb_Mesh888500
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43098,7 +43096,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh26982
+  m_Name: pb_Mesh889368
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43496,7 +43494,6 @@ MonoBehaviour:
   - {fileID: 396662022}
   - {fileID: 157611573}
   - {fileID: 870029688}
-  - {fileID: 1901025149}
   current: {fileID: 0}
 --- !u!114 &1169052990
 MonoBehaviour:
@@ -43511,7 +43508,7 @@ MonoBehaviour:
   m_Name: Scene Transition
   m_EditorClassIdentifier: 
   graph: {fileID: 1402475193}
-  position: {x: 1176, y: -152}
+  position: {x: 600, y: -152}
   ports:
     keys:
     - input
@@ -43523,7 +43520,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: output
-        node: {fileID: 2028474252}
+        node: {fileID: 1376276770}
         reroutePoints: []
       _direction: 0
       _connectionType: 1
@@ -43712,7 +43709,6 @@ MonoBehaviour:
   - {fileID: 1377510342}
   - {fileID: 1470273605}
   - {fileID: 148047536}
-  - {fileID: 1955351424}
   current: {fileID: 0}
 --- !u!1 &1189987223
 GameObject:
@@ -44008,7 +44004,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 1402475193}
-  position: {x: -104, y: -152}
+  position: {x: -168, y: -152}
   ports:
     keys:
     - input
@@ -44040,10 +44036,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: This is a special tea from my region of Japan, it is called Matcha tea, this
-    tea is unique in that it does not use leaves... it is a powder instead.
+  text: I am making tea from my homeland called Matcha Tea, it is a powdered tea
   audio: {fileID: 8300000, guid: 0fca775f4bac46549a894c26f82eaedf, type: 3}
-  extraPlayTime: 2
+  extraPlayTime: 1
 --- !u!1 &1249542795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7eb9c17e9da54e64a922ade32932c517,
@@ -44801,7 +44796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ba2bbd93cf58243af6753cdc1316ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sittingPos: {x: 1, y: 0, z: 1}
+  sittingPos: {x: 1, y: -0.5, z: 1}
   standingPos: {x: 0, y: 0, z: -1}
   forwardRotation: 90
 --- !u!4 &1366824384
@@ -49784,7 +49779,7 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   graph: {fileID: 1402475193}
-  position: {x: 536, y: -152}
+  position: {x: 312, y: -152}
   ports:
     keys:
     - input
@@ -49808,7 +49803,7 @@ MonoBehaviour:
         PublicKeyToken=b77a5c561934e089
       connections:
       - fieldName: input
-        node: {fileID: 2028474252}
+        node: {fileID: 1169052990}
         reroutePoints: []
       _direction: 1
       _connectionType: 0
@@ -49816,10 +49811,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: and as you can see here, this is a chasen, this whisk looking thing and i
-    will add water then begin to stir until it is a smooth consistency.
+  text: Drink the tea and dream yourself to a faraway land, my home of Japan
   audio: {fileID: 8300000, guid: f536dc29bca5c1f4dae709f7b762388b, type: 3}
-  extraPlayTime: 2
+  extraPlayTime: 1
 --- !u!114 &1377510342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49865,8 +49859,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Chai means tea, what I am making here for you is called Masala Chai, it has
-    many ingredients, and it all depends on the family making it
+  text: Let me tell you a little about this tea, In India Chai just means tea, so
+    what I am sharing with you is called Masala Chai, each family learns to make
+    it with different ingredients, so no two masalas are the same
   audio: {fileID: 8300000, guid: 0cd4b0f4d0a1ed84e97803d13b973c84, type: 3}
   extraPlayTime: 1
 --- !u!1 &1388070097
@@ -49918,7 +49913,6 @@ MonoBehaviour:
   - {fileID: 1234266911}
   - {fileID: 747652795}
   - {fileID: 1376276770}
-  - {fileID: 2028474252}
   - {fileID: 1169052990}
   current: {fileID: 0}
 --- !u!1 &1433995863
@@ -50244,9 +50238,8 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: My family favours the mix of Cardamom, Cinnamon, Cloves, Ginger, and Black
-    Pepper... There are areas in India in which some of these ingredients are avoided,
-    some may use lemon grass or mint to substitute
+  text: "My own family\u2019s ingredients are, Cardamom, Cinnamon, Cloves, Ginger
+    and Black Pepper, you can substitute ingredients with Lemongrass or Mint"
   audio: {fileID: 8300000, guid: 7f78ac1dce2eae54099a58804bbced7d, type: 3}
   extraPlayTime: 1
 --- !u!1001 &1476855798
@@ -67166,7 +67159,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795544316}
   m_LocalRotation: {x: 0.70710576, y: -0, z: -0, w: 0.70710784}
-  m_LocalPosition: {x: -1.25, y: 0.67, z: 0.95000005}
+  m_LocalPosition: {x: -1.177, y: 0.219, z: 1.842}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -72401,54 +72394,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000030517578, y: 15.569998}
   m_SizeDelta: {x: -21.2, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1901025149
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
-  position: {x: 472, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1901025149}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 870029688}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1901025149}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 699253103}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: and here you are, Earl Grey, a proud and proper tea for most.
-  audio: {fileID: 8300000, guid: ca6b29c86ff990d4fa289f60b4f80238, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1901791832
 GameObject:
   m_ObjectHideFlags: 0
@@ -72622,54 +72567,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905351863}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1955351424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
-  position: {x: 568, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1955351424}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 148047536}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1955351424}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 294019794}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: We filter out while we pour into the cup and add honey, enjoy
-  audio: {fileID: 8300000, guid: 4b37409226a3d07459a5a7687bcf4d04, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1955875214
 GameObject:
   m_ObjectHideFlags: 0
@@ -78443,60 +78340,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2020501488}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.121, y: 0.6624, z: 1.393}
+  m_LocalPosition: {x: -1.051, y: 0.2074, z: 2.219}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2028474252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
-  position: {x: 856, y: -152}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 2028474252}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1376276770}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 2028474252}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1169052990}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Drink this tea, it represents my culture.
-  audio: {fileID: 8300000, guid: be9188f4dd2277d4394a2001af4d86bb, type: 3}
-  extraPlayTime: 2
 --- !u!1 &2032903106
 GameObject:
   m_ObjectHideFlags: 0
@@ -78569,7 +78418,7 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: "Hullo Ma\u2019am, if you will, join me for a spot of tea! Jolly good!"
+  text: Welcome! I am terribly excited to share this experience with you
   audio: {fileID: 8300000, guid: b0d75dde76fd1f747a1b7a2f3f9ed4a7, type: 3}
   extraPlayTime: 1
 --- !u!1001 &2048105164
