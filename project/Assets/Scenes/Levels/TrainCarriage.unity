@@ -781,7 +781,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh889264
+  m_Name: pb_Mesh61536
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18612,6 +18612,7 @@ GameObject:
   - component: {fileID: 449570648}
   - component: {fileID: 449570647}
   - component: {fileID: 449570650}
+  - component: {fileID: 449570640}
   m_Layer: 0
   m_Name: JapanInteraction
   m_TagString: Untagged
@@ -18619,6 +18620,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &449570640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449570639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80ef0b30b9108644b0efc5248a41abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 576940663}
 --- !u!114 &449570641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26437,7 +26451,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh888424
+  m_Name: pb_Mesh60688
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -38128,7 +38142,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh888500
+  m_Name: pb_Mesh60764
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43204,7 +43218,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh889368
+  m_Name: pb_Mesh61640
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
