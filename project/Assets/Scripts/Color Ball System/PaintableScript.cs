@@ -18,14 +18,16 @@ public class PaintableScript : MonoBehaviour
     void Start()
     {
         Renderer renderer = GetComponent<Renderer>();
-        if (null == renderer)
+        if (renderer == null)
         { return; }
 
-        foreach (Material material in renderer.materials)
+
+        Material[] mats = renderer.materials;
+        for (int i = 0; i < mats.Length; i++)
         {
-            if (material.shader.name.Contains("Custom/DecalShader"))
+            if (mats[i].shader.name.Contains("Custom/DecalShader"))
             {
-                this.material = material;
+                material = mats[i];
                 break;
             }
         }

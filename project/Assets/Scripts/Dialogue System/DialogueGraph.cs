@@ -38,17 +38,16 @@ public class DialogueGraph : NodeGraph
 		NodePort output = current.GetPort("output");
 		current = null;
 
-
-		// Get each connected port (the output port can be connected to multiple input ports)
-		foreach (var port in output.GetConnections())
+		// Get an array of of the connected nodes as base nodes
+		BaseNode[] outNodes = output.GetConnections().ConvertAll(port => port.node as BaseNode).ToArray();
+		for (int i = 0; i < outNodes.Length; i++)
 		{
-			// Get the connected node and activate it
-			BaseNode node = port.node as BaseNode;
-			node.Activate();
+			// Activate the node
+			outNodes[i].Activate();
 
 			// If there is a connected dialogue node, it becomes current
-			if (node is DialogueNode)
-			{ current = node as DialogueNode; }
+			if (outNodes[i] is DialogueNode)
+			{ current = outNodes[i] as DialogueNode; }
 		}
 
 

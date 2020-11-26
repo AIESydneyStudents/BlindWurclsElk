@@ -14,6 +14,8 @@ public class InteractionBase : MonoBehaviour
     private Material normal;
     private MeshRenderer render;
 
+    private TriggerComponentBase[] components;
+
 
     void Awake()
     {
@@ -33,6 +35,12 @@ public class InteractionBase : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        // Get attached component scripts
+        components = GetComponents<TriggerComponentBase>();
+    }
+
 
     /// <summary>
     /// Highlight or un-highlight the object.
@@ -41,27 +49,15 @@ public class InteractionBase : MonoBehaviour
     /// <param name="highlight">If true, the object is highlighted</param>
     public void SetHighlight(bool highlight = true)
     {
-        if (render == null)
-        { return; }
-
-        if (highlight)
+        // Set object material
+        if (render != null)
         {
-            // Highlight the object
-            render.material = highlighted;
-
-            // Show UI panel
-            if (uiPanel != null)
-            { uiPanel.SetActive(true); }
+            render.material = highlight ? highlighted : normal;
         }
-        else
-        {
-            // Use the default material
-            render.material = normal;
 
-            // Hide UI panel
-            if (uiPanel != null)
-            { uiPanel.SetActive(false); }
-        }
+        // Show or hide UI panel
+        if (uiPanel != null)
+        { uiPanel.SetActive(highlight); }
     }
 
     /// <summary>
@@ -70,11 +66,11 @@ public class InteractionBase : MonoBehaviour
     public void Use()
     {
         // Activate each attached component if it is enabled
-        foreach (TriggerComponentBase comp in GetComponents<TriggerComponentBase>())
+        for (int i = 0; i < components.Length; i++)
         {
-            if (comp.enabled)
+            if (components[i].enabled)
             {
-                comp.Activate();
+                components[i].Activate();
             }
         }
     }

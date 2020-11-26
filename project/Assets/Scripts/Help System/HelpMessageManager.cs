@@ -41,7 +41,7 @@ public class HelpMessageManager : MonoBehaviour
             if (timeSinceLastAgent >= agentDelay)
 			{
                 // Create the agent at the player
-                GameObject agentObj = Instantiate(agent, player.position, player.rotation);
+                GameObject agentObj = Instantiate(agent, player.localPosition, player.localRotation);
                 // Set the target to pathfind to
                 agentObj.GetComponent<HelpAgentScript>().targetPos = target.transform.position;
 

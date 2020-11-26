@@ -28,7 +28,7 @@ public class ColorBallScript : MonoBehaviour
         if (particleEffect != null)
         {
             // Instantiate particle effect facing away from collision normal
-            GameObject effect = Instantiate(particleEffect, transform.position, Quaternion.Euler(collision.GetContact(0).normal + new Vector3(-90, 0, 0)));
+            GameObject effect = Instantiate(particleEffect, transform.localPosition, Quaternion.Euler(collision.GetContact(0).normal + new Vector3(-90, 0, 0)));
 
             // Scale the effect to the size of the projectile
             effect.transform.localScale = transform.localScale;
@@ -39,7 +39,7 @@ public class ColorBallScript : MonoBehaviour
 
 
         //paint surf
-        if (Physics.Raycast(transform.position, -collision.GetContact(0).normal, out RaycastHit hit))
+        if (Physics.Raycast(transform.localPosition, -collision.GetContact(0).normal, out RaycastHit hit))
         {
             if (hit.collider is MeshCollider)
             {

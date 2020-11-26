@@ -5,7 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(Collider)), DisallowMultipleComponent]
 public class TriggerBase : MonoBehaviour
 {
-    
+    private TriggerComponentBase[] components;
+
+
+    void Start()
+    {
+        // Get attached component scripts
+        components = GetComponents<TriggerComponentBase>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -13,9 +20,9 @@ public class TriggerBase : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Activate each attached component
-            foreach (TriggerComponentBase comp in GetComponents<TriggerComponentBase>())
+            for (int i = 0; i < components.Length; i++)
             {
-                comp.Activate();
+                components[i].Activate();
             }
         }
     }
@@ -26,9 +33,9 @@ public class TriggerBase : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Deactivate each attached component
-            foreach (TriggerComponentBase comp in GetComponents<TriggerComponentBase>())
+            for (int i = 0; i < components.Length; i++)
             {
-                comp.Deactivate();
+                components[i].Deactivate();
             }
         }
     }

@@ -32,16 +32,12 @@ public class CollectionManager_British : CollectionManagerBase
     private IEnumerator FadeIn(int itemID, float time)
     {
         //used to set color
-        float num = 0;
         float scale = (1f / time);
 
-
-        while (num != 1f)
+        for (float timePassed = 0; timePassed < 1f; timePassed += Time.deltaTime * scale)
         {
-            num += Time.deltaTime * scale;
-
             // Change color
-            uiElements[itemID].color = new Color(num, num, num);
+            uiElements[itemID].color = new Color(timePassed, timePassed, timePassed);
 
             yield return null;
         }

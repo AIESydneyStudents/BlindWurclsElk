@@ -52,7 +52,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             }
 
             // Get the offset for where the player has clicked the object
-            mouseOffset = trans.position - (Vector3)eventData.position;
+            mouseOffset = trans.localPosition - (Vector3)eventData.position;
             // Allow the object to be moved
             moving = true;
         }
@@ -63,7 +63,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // If the object is being moved, move it
         if (moving)
         {
-            transform.position = Input.mousePosition + mouseOffset;
+            transform.localPosition = Input.mousePosition + mouseOffset;
         }
     }
 
@@ -76,19 +76,20 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // Get range from manager
         float radius = DragManager.instance.slotSnapRange;
 
-        // Get slots and itterate
-        foreach (var slot in FindObjectsOfType<DragSlotScript>())
+        // Get all slots
+        DragSlotScript[] slots = FindObjectsOfType<DragSlotScript>();
+        for (int i = 0; i < slots.Length; i++)
         {
             // If slot is not being used and is in range
-            if (!slot.used && Vector3.Distance(slot.transform.position, trans.position) < radius)
+            if (!slots[i].used && Vector3.Distance(slots[i].transform.localPosition, trans.localPosition) < radius)
             {
                 // Use the slot
-                trans.position = slot.transform.position;
-                usedSlot = slot;
-                slot.used = true;
+                trans.localPosition = slots[i].transform.localPosition;
+                usedSlot = slots[i];
+                slots[i].used = true;
 
                 // If the slot accepts this tile, lock
-                if (tileValue == slot.acceptedTileValue)
+                if (tileValue == slots[i].acceptedTileValue)
                 {
                     canBeMoved = false;
                     canvasGroup.blocksRaycasts = false;
@@ -97,6 +98,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                 break;
             }
         }
+
 
         // Get manager to check for game over
         DragManager.instance.CheckTiles();

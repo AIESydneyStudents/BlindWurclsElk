@@ -21,6 +21,6 @@ public class BarScript : MonoBehaviour
         scaledPos = Mathf.PingPong(Time.time * period, 1);
 
         // Move indicator over the length of the bar
-        indicator.localPosition = new Vector3(scaledPos * length - (length/2f), 0, 0);
+        indicator.localPosition = new Vector3(scaledPos * length - (length*0.5f), 0, 0);
     }
 }

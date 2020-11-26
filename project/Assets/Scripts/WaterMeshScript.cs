@@ -18,7 +18,7 @@ public class WaterMeshScript : MonoBehaviour
 	{
         mesh = GetComponent<MeshFilter>().mesh;
 
-        baseHeight = transform.position.y;
+        baseHeight = transform.localPosition.y;
 
         //find the verticies on the edge of the mesh, and store their index
         Edge[] edges = BuildManifoldEdges(mesh);

@@ -23,7 +23,7 @@ public class PlayerInteraction : MonoBehaviour
     void Update()
     {
         // If the player is looking at an interactable object in range
-        if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, interactableDistance) && hit.transform.CompareTag("Interactable"))
+        if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, interactableDistance, ~(1 << 3)) && hit.transform.CompareTag("Interactable"))
         {
             // Get the objects interaction script
             InteractionBase newSelection = hit.transform.GetComponent<InteractionBase>();

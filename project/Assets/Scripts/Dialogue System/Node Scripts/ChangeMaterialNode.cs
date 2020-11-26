@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class ChangeMaterialNode : BaseNode
 {
-
 	public GameObject obj;
-
 	public Material mat;
-
 
 
 	public override void Activate()

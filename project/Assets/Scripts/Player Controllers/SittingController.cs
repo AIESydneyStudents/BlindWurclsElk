@@ -111,13 +111,13 @@ public class SittingController : MonoBehaviour
     // Placeholder for proper animation to move player into seat
     private IEnumerator EaseToSit(float tStandPos, float tSitPos)
     {
-        Vector3 initPos = transform.position;
+        Vector3 initPos = transform.localPosition;
 
         //run for tStandPos
         for (float timePassed = 0f; timePassed < tStandPos; timePassed += Time.deltaTime)
         {
             //lerp from where the player is standing to the seats standing pos
-            transform.position = Vector3.Lerp(initPos, seat.standingPos, timePassed);
+            transform.localPosition = Vector3.Lerp(initPos, seat.standingPos, timePassed);
 
             yield return null;
         }
@@ -125,16 +125,16 @@ public class SittingController : MonoBehaviour
         //*************************************************
 
         //lerp rotation vars
-        Quaternion startRot = transform.rotation;
+        Quaternion startRot = transform.localRotation;
         Quaternion endRot = Quaternion.Euler(new Vector3(0, -seat.forwardRotation, 0));
 
         //run for tSitPos
         for (float timePassed = 0f; timePassed < tSitPos; timePassed += Time.deltaTime)
         {
             //lerp from standing to sitting
-            transform.position = Vector3.Lerp(seat.standingPos, seat.sittingPos, timePassed);
+            transform.localPosition = Vector3.Lerp(seat.standingPos, seat.sittingPos, timePassed);
             //lerp from where the player is looking to forward int the seat
-            transform.rotation = Quaternion.Lerp(startRot, endRot, timePassed);
+            transform.localRotation = Quaternion.Lerp(startRot, endRot, timePassed);
 
             yield return null;
         }
@@ -150,7 +150,7 @@ public class SittingController : MonoBehaviour
         //run for time
         for (float timePassed = 0f; timePassed < time; timePassed += Time.deltaTime)
         {
-            transform.position = Vector3.Lerp(seat.sittingPos, seat.standingPos, timePassed);
+            transform.localPosition = Vector3.Lerp(seat.sittingPos, seat.standingPos, timePassed);
 
             yield return null;
         }
@@ -169,11 +169,6 @@ public class SittingController : MonoBehaviour
         { return; }
 
 
-        //stand up on space - for debug
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{ StopSiting(); }
-
-
         // Look up and down
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
@@ -183,6 +178,6 @@ public class SittingController : MonoBehaviour
 
         // Apply rotation
         cam.localRotation = Quaternion.Euler(rotationX, 0, 0);
-        transform.rotation = Quaternion.Euler(0, -rotationY, 0);
+        transform.localRotation = Quaternion.Euler(0, -rotationY, 0);
     }
 }

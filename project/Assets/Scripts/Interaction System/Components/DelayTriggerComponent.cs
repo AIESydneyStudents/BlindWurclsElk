@@ -13,9 +13,9 @@ public class DelayTriggerComponent : TriggerComponentBase
     void Start()
     {
         // Disable each component
-        foreach (var comp in components)
+        for (int i = 0; i < components.Length; i++)
         {
-            comp.enabled = false;
+            components[i].enabled = false;
         }
     }
 
@@ -30,9 +30,9 @@ public class DelayTriggerComponent : TriggerComponentBase
         yield return new WaitForSeconds(delay);
 
         // Activate the components
-        foreach (var comp in components)
+        for (int i = 0; i < components.Length; i++)
         {
-            comp.Activate();
+            components[i].Activate();
         }
     }
 }

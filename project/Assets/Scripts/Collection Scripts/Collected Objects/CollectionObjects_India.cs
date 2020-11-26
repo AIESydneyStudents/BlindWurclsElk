@@ -23,14 +23,14 @@ public class CollectionObjects_India : MonoBehaviour
 
     private void Toggle()
     {
-        foreach (var obj in objects)
+        for (int i = 0; i < objects.Length; i++)
         {
             // Toggle if collected == true
-            obj.SetActive(obj.activeSelf ^ collected);
+            objects[i].SetActive(objects[i].activeSelf ^ collected);
         }
 
         if (collected)
-        { 
+        {
             // Swap each dialogue graph with the second one
             for (int i = 0; i < comp.Length; i++)
             {

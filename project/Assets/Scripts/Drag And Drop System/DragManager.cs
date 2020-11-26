@@ -31,15 +31,16 @@ public class DragManager : MonoBehaviour
         bool allLocked = true;
 
         // Itterate through each tile
-        foreach(var tile in tiles)
+        for (int i = 0; i < tiles.Count; i++)
         {
-            if (tile.canBeMoved)
+            if (tiles[i].canBeMoved)
             {
                 // A tile is not locked, toggle bool
                 allLocked = false;
                 break;
             }
         }
+
 
         // If all tiles are locked, game over
         if (allLocked)
@@ -58,9 +59,6 @@ public class DragManager : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().enabled = true;
 
         FindObjectOfType<PauseMenuScript>().inMinigame = false;
-
-
-        //hide UI, display anim for getting tea piece
 
 
         // Unload this scene, and return to train with the player sitting in the booth

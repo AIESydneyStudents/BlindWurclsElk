@@ -69,7 +69,7 @@ public class PowderGatherTrigger : MonoBehaviour
             float barValue = Mathf.Abs(barScript.scaledPos - 0.5f);
 
             // Hit the 'sweet spot'
-            if (barValue <= range / 2f)
+            if (barValue <= range * 0.5f)
             {
                 // Make spoon play anim and update state
                 spoonScript.AnimatePowder();

@@ -30,16 +30,12 @@ public class CollectionManager_Japan : CollectionManagerBase
     private IEnumerator FadeIn(int itemID, float time)
     {
         //used to set color
-        float num = 0;
         float scale = (1f / time);
 
-
-        while (num != 1f)
+        for (float timePassed = 0; timePassed < 1f; timePassed += Time.deltaTime * scale)
         {
-            num += Time.deltaTime * scale;
-
             // Change color
-            uiElements[itemID].color = new Color(num, num, num);
+            uiElements[itemID].color = new Color(timePassed, timePassed, timePassed);
 
             yield return null;
         }
@@ -49,9 +45,11 @@ public class CollectionManager_Japan : CollectionManagerBase
     {
         yield return new WaitForSeconds(time);
 
-        // Hide the UI elements
-        foreach (var elem in uiElements)
-        { elem.gameObject.SetActive(false); }
+        for (int i = 0; i < uiElements.Length; i++)
+        {
+            uiElements[i].gameObject.SetActive(false);
+        }
+
         // Show the UI object
         uiObject.SetActive(true);
     }

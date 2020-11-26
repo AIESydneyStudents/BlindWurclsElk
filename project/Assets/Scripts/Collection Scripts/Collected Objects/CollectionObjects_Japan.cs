@@ -23,10 +23,10 @@ public class CollectionObjects_Japan : MonoBehaviour
 
     private void Toggle()
     {
-        foreach (var obj in objects)
+        for (int i = 0; i < objects.Length; i++)
         {
             // Toggle if collected == true
-            obj.SetActive(obj.activeSelf ^ collected);
+            objects[i].SetActive(objects[i].activeSelf ^ collected);
         }
 
         if (collected)
