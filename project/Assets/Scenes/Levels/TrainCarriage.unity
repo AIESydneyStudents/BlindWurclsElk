@@ -212,7 +212,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -27.87, y: -30, z: 0}
 --- !u!1 &9606646
 GameObject:
@@ -5984,55 +5984,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 124011539}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &148047536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
-  position: {x: 328, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 148047536}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1470273605}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 148047536}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 294019794}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: I always prefer to mix it with 1 part water buffalo milk to 2 parts water
-    and heat it just before it boils
-  audio: {fileID: 8300000, guid: e749b9ba7e9cb10459381f1b8ad40ac7, type: 3}
-  extraPlayTime: 1
 --- !u!1 &148564233
 GameObject:
   m_ObjectHideFlags: 0
@@ -6491,56 +6442,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154010224}
   m_Mesh: {fileID: 226502802}
---- !u!114 &157611573
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
-  position: {x: -8, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 157611573}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 396662022}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 157611573}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 870029688}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Now, Remember these two things. One, we only move the spoon back and forth
-    to stir and two, when we use a napkin, we dab to clean, and on more thing, we
-    never call it a serviette
-  audio: {fileID: 8300000, guid: 3f2835226701ac84a819973a55e72bb7, type: 3}
-  extraPlayTime: 1
 --- !u!1 &178073239
 GameObject:
   m_ObjectHideFlags: 0
@@ -7333,7 +7234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: -90.00001}
 --- !u!1 &182777537
 GameObject:
@@ -7665,7 +7566,7 @@ Transform:
   m_LocalScale: {x: 2.889179, y: 2.1441, z: 0.028226}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &231302290
 GameObject:
@@ -7723,10 +7624,9 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 3431280071251070046}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &276241545
 GameObject:
@@ -7761,7 +7661,7 @@ Transform:
   m_Children:
   - {fileID: 1122693453}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &276241547
 BoxCollider:
@@ -7800,7 +7700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 678981946}
+  graph: {fileID: 0}
 --- !u!114 &276241552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7859,57 +7759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1065014748}
---- !u!114 &294019794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eaa3ebfbe828094fbeb266cf25a89d6, type: 3}
-  m_Name: Scene Transition
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
-  position: {x: 584, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 294019794}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 148047536}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 294019794}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  sceneName: TT_Level_India
-  changePos: 1
-  pos: {x: -2.5, y: 1, z: 3}
-  changeRot: 1
-  rot: {x: 0, y: 90, z: 0}
-  useSitting: 0
-  useCup: 1
-  cup: {fileID: 6588740657948324562, guid: f0c1b3c0b299dd344ad7b83889a854b6, type: 3}
+  graph: {fileID: 0}
 --- !u!1 &319828999
 GameObject:
   m_ObjectHideFlags: 0
@@ -8326,50 +8176,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &336776151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1065014748}
-  position: {x: -92.5, y: 45}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 336776151}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 336776151}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Maaf Kiijiye if you have a moment
-  audio: {fileID: 0}
-  extraPlayTime: 1
 --- !u!1 &337034253
 GameObject:
   m_ObjectHideFlags: 0
@@ -13579,141 +13387,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338469582}
   m_Mesh: {fileID: 1647197899}
---- !u!114 &371805076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
-  position: {x: -408, y: -152}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 371805076}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 371805076}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1234266911}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Yuokoso, thank you for joining me, I was about to prepare tea
-  audio: {fileID: 8300000, guid: 5510c0649afcd9241bf6bce472e017fb, type: 3}
-  extraPlayTime: 1
---- !u!114 &394558697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 905358920}
-  position: {x: -306.5, y: -71}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 394558697}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 394558697}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: I am not hosting for tea
-  audio: {fileID: 0}
-  extraPlayTime: 1
---- !u!114 &396662022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
-  position: {x: -248, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 396662022}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 2033398408}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 396662022}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 157611573}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: First things first, I only use loose leaf, I proudly observe our traditions
-  audio: {fileID: 8300000, guid: 1e6c75b4a0dc6364cb7bd67819f48a7b, type: 3}
-  extraPlayTime: 1
 --- !u!1 &408616981
 GameObject:
   m_ObjectHideFlags: 0
@@ -13744,21 +13417,6 @@ Transform:
   m_Father: {fileID: 1351110258}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &413409063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: BritishPromptTrigger-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 945042297}
-  current: {fileID: 0}
 --- !u!1 &444357560
 GameObject:
   m_ObjectHideFlags: 0
@@ -18588,7 +18246,7 @@ Transform:
   m_LocalScale: {x: 2.4622467, y: 2.0235739, z: 0.15573141}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &449570647
 MonoBehaviour:
@@ -18602,7 +18260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
+  graph: {fileID: 0}
 --- !u!114 &449570648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18964,7 +18622,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &472437945
 PrefabInstance:
@@ -19462,48 +19120,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &572844740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1809959828}
-  position: {x: -136, y: -88}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 572844740}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 572844740}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: I am not hosting for tea
-  audio: {fileID: 0}
-  extraPlayTime: 1
 --- !u!1001 &576940661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19819,7 +19435,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &625190328
 PrefabInstance:
@@ -19890,93 +19506,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75734550e298800409b6d433285d4833, type: 3}
---- !u!114 &640096674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 678981946}
-  position: {x: -350.5, y: -98}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 640096674}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 640096674}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Ano! Over here! Sit
-  audio: {fileID: 0}
-  extraPlayTime: 1
---- !u!114 &646495687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
-  position: {x: -392, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 646495687}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 646495687}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1377510342}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Namaste, have some tea with me while you relax
-  audio: {fileID: 8300000, guid: 0ab148d6aa165404989b5a3e4fe3a92d, type: 3}
-  extraPlayTime: 1
 --- !u!1001 &653629829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20180,21 +19709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inBurner: 0
---- !u!114 &678981946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: JapanPromptTrigger-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 640096674}
-  current: {fileID: 0}
 --- !u!1 &686699256
 GameObject:
   m_ObjectHideFlags: 0
@@ -20287,56 +19801,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &699253103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eaa3ebfbe828094fbeb266cf25a89d6, type: 3}
-  m_Name: Scene Transition
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
-  position: {x: 488, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 699253103}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 870029688}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 699253103}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  sceneName: TT_Level_Britain
-  changePos: 1
-  pos: {x: -56, y: 2.5, z: -13.5}
-  changeRot: 1
-  rot: {x: 0, y: 57, z: 0}
-  useSitting: 0
-  useCup: 1
-  cup: {fileID: 7436975165256414366, guid: 47090a84d116ff64980dfb4d4aa49756, type: 3}
 --- !u!1001 &711202645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20412,56 +19876,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 711202645}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &747652795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
-  position: {x: 72, y: -152}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 747652795}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1234266911}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 747652795}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1376276770}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: We have tools that we use for our tea ceremonies; there is a wooden spoon
-    called a Chashaku, we use it to pour the powder. The bowl we use is called a
-    Chawan and we mix it all together with a whisk called a Chasen
-  audio: {fileID: 8300000, guid: b5126f8caf110a342bf1adec59ea5741, type: 3}
-  extraPlayTime: 1
 --- !u!1001 &748114599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20900,21 +20314,6 @@ MonoBehaviour:
   length: 500
   period: 1
   scaledPos: 0
---- !u!114 &766733590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: IndiaPromptTrigger-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1701280349}
-  current: {fileID: 0}
 --- !u!1 &779556610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f29691e62baa4564a886da7a556d01bc,
@@ -26543,54 +25942,6 @@ Transform:
   m_Father: {fileID: 969943071}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &870029688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
-  position: {x: 232, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 870029688}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 157611573}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 870029688}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 699253103}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: And here, take this Earl Grey and dream of starry nights in the English countryside
-  audio: {fileID: 8300000, guid: ca8783cb35ff77b4fb7b41e9543984ad, type: 3}
-  extraPlayTime: 1
 --- !u!1 &871101991
 GameObject:
   m_ObjectHideFlags: 0
@@ -26623,7 +25974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 766733590}
+  graph: {fileID: 0}
 --- !u!114 &871101993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26677,7 +26028,7 @@ Transform:
   m_Children:
   - {fileID: 290924043}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &884427891
 GameObject:
@@ -31431,23 +30782,8 @@ Transform:
   m_LocalScale: {x: 0.075, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
---- !u!114 &905358920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: BritishPromptTrigger-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 394558697}
-  current: {fileID: 0}
 --- !u!1 &919134337
 GameObject:
   m_ObjectHideFlags: 0
@@ -36370,48 +35706,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &945042297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 413409063}
-  position: {x: -362.5, y: -185}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 945042297}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 945042297}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Salutations! Take a seat if you will
-  audio: {fileID: 0}
-  extraPlayTime: 1
 --- !u!1001 &964653544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36522,7 +35816,7 @@ Transform:
   - {fileID: 1388070098}
   - {fileID: 148564234}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &970906233
 PrefabInstance:
@@ -36653,7 +35947,7 @@ Transform:
   m_LocalScale: {x: 2.889179, y: 2.1441, z: 0.035716}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &972840390
 BoxCollider:
@@ -37464,7 +36758,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1052782710
 GameObject:
@@ -37590,7 +36884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 905358920}
+  graph: {fileID: 0}
 --- !u!114 &1053276663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37644,7 +36938,7 @@ Transform:
   m_Children:
   - {fileID: 2083697737}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1063008443
 GameObject:
@@ -37738,21 +37032,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1065014748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: IndiaPromptTrigger-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 336776151}
-  current: {fileID: 0}
 --- !u!1001 &1066813787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42999,7 +42278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1809959828}
+  graph: {fileID: 0}
 --- !u!1 &1127282045
 GameObject:
   m_ObjectHideFlags: 0
@@ -43323,7 +42602,7 @@ Transform:
   m_LocalScale: {x: 2.6827025, y: 2.0971, z: 0.082402}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1146398567
 BoxCollider:
@@ -43501,75 +42780,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &1164025479
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Interaction2-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 2033398408}
-  - {fileID: 699253103}
-  - {fileID: 396662022}
-  - {fileID: 157611573}
-  - {fileID: 870029688}
-  current: {fileID: 0}
---- !u!114 &1169052990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5eaa3ebfbe828094fbeb266cf25a89d6, type: 3}
-  m_Name: Scene Transition
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
-  position: {x: 600, y: -152}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1169052990}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1376276770}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1169052990}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  sceneName: TT_Level_Japan_v1
-  changePos: 1
-  pos: {x: 55, y: 1, z: -15}
-  changeRot: 1
-  rot: {x: 0, y: 0, z: 0}
-  useSitting: 0
-  useCup: 1
-  cup: {fileID: 1926917968959774851, guid: a8788f8c3dee08642b09a99eb1859527, type: 3}
 --- !u!1001 &1170009533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43810,25 +43020,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181520171}
   m_CullTransparentMesh: 0
---- !u!114 &1182799219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Interaction3-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 646495687}
-  - {fileID: 294019794}
-  - {fileID: 1377510342}
-  - {fileID: 1470273605}
-  - {fileID: 148047536}
-  current: {fileID: 0}
 --- !u!1 &1189987223
 GameObject:
   m_ObjectHideFlags: 0
@@ -44110,54 +43301,6 @@ Transform:
   m_Father: {fileID: 1442438944}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1234266911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
-  position: {x: -168, y: -152}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1234266911}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 371805076}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1234266911}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 747652795}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: I am making tea from my homeland called Matcha Tea, it is a powdered tea
-  audio: {fileID: 8300000, guid: 0fca775f4bac46549a894c26f82eaedf, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1249542795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7eb9c17e9da54e64a922ade32932c517,
@@ -44590,7 +43733,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1302780720
 GameObject:
@@ -44717,7 +43860,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1304143782
 PrefabInstance:
@@ -44930,7 +44073,7 @@ Transform:
   m_LocalScale: {x: 2.4622467, y: 2.0235739, z: 0.15573141}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1366824385
 BoxCollider:
@@ -49885,104 +49028,6 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!114 &1376276770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1402475193}
-  position: {x: 312, y: -152}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1376276770}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 747652795}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1376276770}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1169052990}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Drink the tea and dream yourself to a faraway land, my home of Japan
-  audio: {fileID: 8300000, guid: f536dc29bca5c1f4dae709f7b762388b, type: 3}
-  extraPlayTime: 1
---- !u!114 &1377510342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
-  position: {x: -152, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1377510342}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 646495687}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1377510342}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 1470273605}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Let me tell you a little about this tea, In India Chai just means tea, so
-    what I am sharing with you is called Masala Chai, each family learns to make
-    it with different ingredients, so no two masalas are the same
-  audio: {fileID: 8300000, guid: 0cd4b0f4d0a1ed84e97803d13b973c84, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1388070097
 GameObject:
   m_ObjectHideFlags: 0
@@ -50015,25 +49060,6 @@ Transform:
   m_Father: {fileID: 969943071}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1402475193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: SitInteraction-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 371805076}
-  - {fileID: 1234266911}
-  - {fileID: 747652795}
-  - {fileID: 1376276770}
-  - {fileID: 1169052990}
-  current: {fileID: 0}
 --- !u!1 &1433995863
 GameObject:
   m_ObjectHideFlags: 0
@@ -50069,7 +49095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
+  graph: {fileID: 0}
 --- !u!114 &1433995865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50152,7 +49178,7 @@ Transform:
   m_LocalScale: {x: 2.6827025, y: 2.0971, z: 0.082402}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1433995875
 MonoBehaviour:
@@ -50205,7 +49231,7 @@ Transform:
   - {fileID: 921937741}
   - {fileID: 1233773822}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1442438945
 MonoBehaviour:
@@ -50219,7 +49245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1850574464}
+  graph: {fileID: 0}
 --- !u!1 &1459829764
 GameObject:
   m_ObjectHideFlags: 0
@@ -50312,55 +49338,6 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1470273605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1182799219}
-  position: {x: 88, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1470273605}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: output
-        node: {fileID: 1377510342}
-        reroutePoints: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1470273605}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 148047536}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: "My own family\u2019s ingredients are, Cardamom, Cinnamon, Cloves, Ginger
-    and Black Pepper, you can substitute ingredients with Lemongrass or Mint"
-  audio: {fileID: 8300000, guid: 7f78ac1dce2eae54099a58804bbced7d, type: 3}
-  extraPlayTime: 1
 --- !u!1001 &1476855798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50891,48 +49868,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1487150549}
   m_Mesh: {fileID: 1647197899}
---- !u!114 &1490051088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1850574464}
-  position: {x: -109.5, y: -38}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1490051088}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1490051088}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: game over!
-  audio: {fileID: 0}
-  extraPlayTime: 5
 --- !u!1 &1547059444
 GameObject:
   m_ObjectHideFlags: 0
@@ -60672,7 +59607,7 @@ Transform:
   m_LocalScale: {x: 0.075, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 38
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!1001 &1623402837
 PrefabInstance:
@@ -65996,55 +64931,13 @@ RectTransform:
   - {fileID: 1367445818}
   - {fileID: 1181520172}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1701280349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 766733590}
-  position: {x: -209.5, y: -11}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1701280349}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1701280349}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: I am not hosting for tea
-  audio: {fileID: 0}
-  extraPlayTime: 1
 --- !u!1001 &1727065670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67203,7 +66096,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1807100777
 PrefabInstance:
@@ -67300,21 +66193,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1807100777}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1809959828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: JapanPromptTrigger-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 572844740}
-  current: {fileID: 0}
 --- !u!1 &1822750729
 GameObject:
   m_ObjectHideFlags: 0
@@ -67442,7 +66320,7 @@ Transform:
   m_LocalScale: {x: 2.889179, y: 2.1441, z: 0.028226}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1827882987
 GameObject:
@@ -72380,23 +71258,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!114 &1850574464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: EndGameModels-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1490051088}
-  current: {fileID: 0}
 --- !u!1 &1881174394
 GameObject:
   m_ObjectHideFlags: 0
@@ -72607,6 +71470,90 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905351863}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1915950714
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.621
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.864
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.679
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7507594
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6605758
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 97.312004
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.8647
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.8647
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.8647
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8b8096427f3707e4f90e6233a6c6f094,
+        type: 3}
+      propertyPath: m_Name
+      value: Anil_IndianCharacter_v03
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b8096427f3707e4f90e6233a6c6f094, type: 3}
 --- !u!1 &1955875214
 GameObject:
   m_ObjectHideFlags: 0
@@ -78384,7 +77331,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2032903106
 GameObject:
@@ -78416,51 +77363,6 @@ Transform:
   m_Father: {fileID: 1476855799}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2033398408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
-  position: {x: -488, y: -136}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 2033398408}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 2033398408}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections:
-      - fieldName: input
-        node: {fileID: 396662022}
-        reroutePoints: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Welcome! I am terribly excited to share this experience with you
-  audio: {fileID: 8300000, guid: b0d75dde76fd1f747a1b7a2f3f9ed4a7, type: 3}
-  extraPlayTime: 1
 --- !u!1001 &2048105164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -83627,7 +82529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 413409063}
+  graph: {fileID: 0}
 --- !u!1 &2085085518
 GameObject:
   m_ObjectHideFlags: 0
@@ -83663,7 +82565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graph: {fileID: 1164025479}
+  graph: {fileID: 0}
 --- !u!114 &2085085520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83746,7 +82648,7 @@ Transform:
   m_LocalScale: {x: 2.889179, y: 2.1441, z: 0.035716}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2085085530
 MonoBehaviour:
@@ -88631,47 +87533,8 @@ Transform:
   - {fileID: 1258086656}
   - {fileID: 1063008444}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &142378921001274001
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856893528305237581}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 994993217860112859, guid: 2e35670f5a3493443aa5fae33f8d39f3, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
 --- !u!4 &862083365250505535
 Transform:
   m_ObjectHideFlags: 0
@@ -88684,26 +87547,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1856893528305237581
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3431280071251070046}
-  - component: {fileID: 5964276311831819880}
-  - component: {fileID: 142378921001274001}
-  m_Layer: 0
-  m_Name: India
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &2171230231508618981
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88752,20 +87597,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7626086522351106893}
   m_Mesh: {fileID: 5170328896136476279, guid: 1d26bc2b7403eb6488db22fa24ecd744, type: 3}
---- !u!4 &3431280071251070046
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856893528305237581}
-  m_LocalRotation: {x: -0, y: 0.70710707, z: -0, w: 0.70710653}
-  m_LocalPosition: {x: -9.103, y: 0.67, z: 1.846}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 232397806}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!33 &3999786276425878516
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -88790,14 +87621,6 @@ Transform:
   m_Father: {fileID: 790395782}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!33 &5964276311831819880
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856893528305237581}
-  m_Mesh: {fileID: 4164511204261677510, guid: 2e35670f5a3493443aa5fae33f8d39f3, type: 3}
 --- !u!23 &6306075216183053745
 MeshRenderer:
   m_ObjectHideFlags: 0
