@@ -8,6 +8,7 @@ public class TransitionManager : MonoBehaviour
 {
     public static TransitionManager instance;
     private bool newGame = false;
+    public GameObject introText;
 
     [HideInInspector]
     public Animator anim;
@@ -71,8 +72,8 @@ public class TransitionManager : MonoBehaviour
             player.transform.localPosition = new Vector3(1.8f, 1.1f, -0.9f);
             player.transform.localRotation = Quaternion.Euler(0, -90, 0);
 
-            //start dialogue
-            DialogueManager.instance.StartDialogue(GetComponent<DialogueSceneGraph>());
+            //show intro text
+            introText.SetActive(true);
 
             //fade in
             StartCoroutine(FadeIn());
@@ -231,6 +232,7 @@ public class TransitionManager : MonoBehaviour
     private IEnumerator FadeIn()
     {
         yield return new WaitForSeconds(10.5f);
+        Destroy(introText);
 
         while (img.color.a > 0f)
         {
