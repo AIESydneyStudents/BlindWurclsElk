@@ -781,7 +781,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh284780
+  m_Name: pb_Mesh26874
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19505,6 +19505,100 @@ MonoBehaviour:
   text: I am not hosting for tea
   audio: {fileID: 0}
   extraPlayTime: 1
+--- !u!1001 &576940661
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -7996341430962460841, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e980a078b46f8c54ab8ece55d54a3ac8, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.513
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.396
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.833
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.73100376
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6823735
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 93.941
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1237817671205137443, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e980a078b46f8c54ab8ece55d54a3ac8, type: 2}
+    - target: {fileID: -927199367670048503, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_Name
+      value: Sakurako_FacialExpressions_v03
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223630509101608776, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e980a078b46f8c54ab8ece55d54a3ac8, type: 2}
+    - target: {fileID: 5755340672790839255, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e980a078b46f8c54ab8ece55d54a3ac8, type: 2}
+    - target: {fileID: 8958170911739385605, guid: 53c1bff85bb583d4cb385ab4322f6892,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e980a078b46f8c54ab8ece55d54a3ac8, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 53c1bff85bb583d4cb385ab4322f6892, type: 3}
 --- !u!1 &606405657
 GameObject:
   m_ObjectHideFlags: 0
@@ -26236,7 +26330,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh283620
+  m_Name: pb_Mesh26036
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37928,7 +38022,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh283734
+  m_Name: pb_Mesh26112
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -43004,7 +43098,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh284922
+  m_Name: pb_Mesh26982
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -78478,75 +78572,6 @@ MonoBehaviour:
   text: "Hullo Ma\u2019am, if you will, join me for a spot of tea! Jolly good!"
   audio: {fileID: 8300000, guid: b0d75dde76fd1f747a1b7a2f3f9ed4a7, type: 3}
   extraPlayTime: 1
---- !u!1001 &2045466547
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.8760575
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.006931901
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.654759
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7315924
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6817423
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 94.04
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 50580b9b2947d254e814b4896a072593,
-        type: 3}
-      propertyPath: m_Name
-      value: Sakurako_JapaneseCharacter
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 50580b9b2947d254e814b4896a072593, type: 3}
 --- !u!1001 &2048105164
 PrefabInstance:
   m_ObjectHideFlags: 0
