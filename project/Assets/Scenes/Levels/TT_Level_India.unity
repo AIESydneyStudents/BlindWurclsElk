@@ -4511,7 +4511,7 @@ GameObject:
   - component: {fileID: 210374306}
   - component: {fileID: 210374305}
   - component: {fileID: 210374304}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trigger 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5289,7 +5289,7 @@ GameObject:
   - component: {fileID: 269535591}
   - component: {fileID: 269535590}
   - component: {fileID: 269535589}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trigger 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116591,7 +116591,7 @@ GameObject:
   - component: {fileID: 2135002971}
   - component: {fileID: 2135002970}
   - component: {fileID: 2135002969}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Trigger 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

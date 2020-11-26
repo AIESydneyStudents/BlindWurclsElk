@@ -13,17 +13,21 @@ public class PlayerInteraction : MonoBehaviour
     [Tooltip("The range an interactable object can be used in")]
     public float interactableDistance = 5f;
 
+    LayerMask layer;
+
 
     void Awake()
     {
         // Get the scene camera
         playerCam = FindObjectOfType<Camera>().transform;
+
+        layer = ~LayerMask.GetMask("Ignore Raycast");
     }
 
     void Update()
     {
         // If the player is looking at an interactable object in range
-        if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, interactableDistance, ~(1 << 3)) && hit.transform.CompareTag("Interactable"))
+        if (Physics.Raycast(playerCam.position, playerCam.forward, out RaycastHit hit, interactableDistance, layer) && hit.transform.CompareTag("Interactable"))
         {
             // Get the objects interaction script
             InteractionBase newSelection = hit.transform.GetComponent<InteractionBase>();
