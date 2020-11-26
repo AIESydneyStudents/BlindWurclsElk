@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class TransitionManager : MonoBehaviour
 {
     public static TransitionManager instance;
+    private bool newGame = false;
 
     [HideInInspector]
     public Animator anim;
@@ -39,9 +40,15 @@ public class TransitionManager : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
-        // If there are less than 2 scenes loaded, load the train carrage
+        // If there are less than 2 scenes loaded, perform new game start
         if (SceneManager.sceneCount < 2)
         {
+            //make image visible and set flag
+            img.gameObject.SetActive(true);
+            img.color = Color.black;
+            newGame = true;
+
+            //load train scene
             SceneManager.LoadScene(2, LoadSceneMode.Additive);
         }
     }
@@ -54,6 +61,22 @@ public class TransitionManager : MonoBehaviour
         currentScene = SceneManager.GetSceneAt(1);
         // Set it as the active scene to use its lighting settings
         SceneManager.SetActiveScene(currentScene);
+
+
+        if (newGame)
+		{
+            newGame = false;
+            //disable controller
+            player.GetComponent<PlayerController>().enabled = false;
+            player.transform.localPosition = new Vector3(1.8f, 1.1f, -0.9f);
+            player.transform.localRotation = Quaternion.Euler(0, -90, 0);
+
+            //start dialogue
+            DialogueManager.instance.StartDialogue(GetComponent<DialogueSceneGraph>());
+
+            //fade in
+            StartCoroutine(FadeIn());
+        }
     }
 
 
@@ -205,19 +228,10 @@ public class TransitionManager : MonoBehaviour
         eyebot.gameObject.SetActive(false);
     }
 
-    private IEnumerator FadeOut()
-    {
-        img.gameObject.SetActive(true);
-
-        while (img.color.a < 1f)
-        {
-            img.color += new Color(0, 0, 0, Time.deltaTime * 0.5f);
-
-            yield return null;
-        }
-    }
     private IEnumerator FadeIn()
     {
+        yield return new WaitForSeconds(10.5f);
+
         while (img.color.a > 0f)
         {
             img.color -= new Color(0, 0, 0, Time.deltaTime * 0.5f);
@@ -225,6 +239,8 @@ public class TransitionManager : MonoBehaviour
             yield return null;
         }
 
+        //enable controller and hide image
+        player.GetComponent<PlayerController>().enabled = true;
         img.gameObject.SetActive(false);
     }
 }
