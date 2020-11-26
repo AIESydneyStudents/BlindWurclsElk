@@ -728,93 +728,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 69654378}
   m_Mesh: {fileID: 2494185979427425891, guid: aab3df16b6fd65940ab8e144b02fef73, type: 3}
---- !u!1 &108712549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 108712550}
-  - component: {fileID: 108712555}
-  - component: {fileID: 108712554}
-  - component: {fileID: 108712553}
-  - component: {fileID: 108712552}
-  m_Layer: 0
-  m_Name: Trigger 4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &108712550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108712549}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.36, y: 0, z: -1.44}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1934502398}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &108712552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108712549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 708095490}
---- !u!114 &108712553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108712549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35233cc9b51c52f4793bc7fdb90eccd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueGraph: {fileID: 108712552}
-  dialoguePlayer: {fileID: 0}
-  playOnce: 1
---- !u!114 &108712554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108712549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cc9c1110fb58b42a850df628811ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &108712555
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108712549}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &108785342
 GameObject:
   m_ObjectHideFlags: 0
@@ -4612,13 +4525,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210374301}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.4, y: 0, z: 3.31}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.3489161, z: -0, w: 0.93715394}
+  m_LocalPosition: {x: 84.41, y: -2.69, z: -63.14}
+  m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1934502398}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -40.842003, z: 0}
 --- !u!114 &210374304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5391,8 +5304,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269535586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.54, y: 0, z: 0.66}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 112.477, y: -2.622, z: -4.287}
+  m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1934502398}
   m_RootOrder: 2
@@ -50688,21 +50601,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696257358}
   m_Mesh: {fileID: 2494185979427425891, guid: aab3df16b6fd65940ab8e144b02fef73, type: 3}
---- !u!114 &708095490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Trigger 4-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 1398072437}
-  current: {fileID: 0}
 --- !u!1 &714135628
 GameObject:
   m_ObjectHideFlags: 0
@@ -76937,108 +76835,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234170505}
   m_Mesh: {fileID: 2494185979427425891, guid: aab3df16b6fd65940ab8e144b02fef73, type: 3}
---- !u!1 &1236601046
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1236601047}
-  - component: {fileID: 1236601052}
-  - component: {fileID: 1236601051}
-  - component: {fileID: 1236601050}
-  - component: {fileID: 1236601049}
-  m_Layer: 0
-  m_Name: Trigger 5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1236601047
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236601046}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.32, y: 0, z: -3.86}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1934502398}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1236601049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236601046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8071cbbec4b75994193938ee43738d9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1258543595}
---- !u!114 &1236601050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236601046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35233cc9b51c52f4793bc7fdb90eccd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueGraph: {fileID: 1236601049}
-  dialoguePlayer: {fileID: 0}
-  playOnce: 1
---- !u!114 &1236601051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236601046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cc9c1110fb58b42a850df628811ecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &1236601052
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1236601046}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1258543595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10da1c6263eab0f47a356099331740db, type: 3}
-  m_Name: Trigger 5-graph
-  m_EditorClassIdentifier: 
-  nodes:
-  - {fileID: 2060730887}
-  current: {fileID: 0}
 --- !u!1001 &1273819187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77273,10 +77069,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: "While we were under Empirical rule around the 1830\u2019s, the empire had
-    seen we had tea plants that could be cultivated to compete with the more dominant
-    and more expensive Chinese monopoly of tea, and at one point we became a main
-    exporter "
+  text: China for a long time dominated the tea market, until the British empire
+    discovered tea in our own lands, after that we became the main exporters of tea
+    for Britain and the world
   audio: {fileID: 8300000, guid: 6be87942cfd78264c9d792316f72346c, type: 3}
   extraPlayTime: 1
 --- !u!1 &1288042716
@@ -83906,49 +83701,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395147277}
   m_Mesh: {fileID: 2494185979427425891, guid: aab3df16b6fd65940ab8e144b02fef73, type: 3}
---- !u!114 &1398072437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 708095490}
-  position: {x: -94.5, y: -158.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 1398072437}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 1398072437}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: Overtime we developed our own culture of tea, mixing in spices and milk,
-    moving away from black tea, much to the empires displeasure
-  audio: {fileID: 8300000, guid: 1636d9f15e09f5840a98a36fed5d80b7, type: 3}
-  extraPlayTime: 1
 --- !u!1 &1415973216
 GameObject:
   m_ObjectHideFlags: 0
@@ -112706,8 +112458,8 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: ' long into antiquity we had grown our tea, but it was seen as a medicinal
-    herb than a drink'
+  text: Long ago in antiquity, we used to grow our own tea but we used it as a medicinal
+    herb instead
   audio: {fileID: 8300000, guid: 44d3d6b1fa43f2345a32a7255261e2cd, type: 3}
   extraPlayTime: 1
 --- !u!1 &1870661691
@@ -113480,8 +113232,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Our ties are strong with the old empire, but we did not take to tea straight
-    away, at least, not back then
+  text: However, we pulled away from the empires influence where tea was concerned,
+    we started creating our own spices and mixing with different milks, eventually
+    moving away from black tea
   audio: {fileID: 8300000, guid: 8430e7a69b42a974689cad4b2db51bfc, type: 3}
   extraPlayTime: 1
 --- !u!1 &1907202445
@@ -114369,8 +114122,6 @@ Transform:
   - {fileID: 2135002967}
   - {fileID: 210374302}
   - {fileID: 269535587}
-  - {fileID: 108712550}
-  - {fileID: 1236601047}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -115782,48 +115533,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059435626}
   m_Mesh: {fileID: 2494185979427425891, guid: aab3df16b6fd65940ab8e144b02fef73, type: 3}
---- !u!114 &2060730887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cb7e6055fdb8ee4a99f2b0508511b24, type: 3}
-  m_Name: Dialogue
-  m_EditorClassIdentifier: 
-  graph: {fileID: 1258543595}
-  position: {x: -471.5, y: -141.5}
-  ports:
-    keys:
-    - input
-    - output
-    values:
-    - _fieldName: input
-      _node: {fileID: 2060730887}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 0
-      _connectionType: 1
-      _typeConstraint: 0
-      _dynamic: 0
-    - _fieldName: output
-      _node: {fileID: 2060730887}
-      _typeQualifiedName: System.Byte, mscorlib, Version=4.0.0.0, Culture=neutral,
-        PublicKeyToken=b77a5c561934e089
-      connections: []
-      _direction: 1
-      _connectionType: 0
-      _typeConstraint: 0
-      _dynamic: 0
-  input: 0
-  output: 0
-  text: And now our Masala Chain is recognized as our national drink
-  audio: {fileID: 8300000, guid: 0b49bc8f4680e314ea956c6fad98568e, type: 3}
-  extraPlayTime: 1
 --- !u!1 &2062783367
 GameObject:
   m_ObjectHideFlags: 0
@@ -116897,8 +116606,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135002966}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.35, y: 0, z: 6.48}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.83, y: 0, z: 1.938}
+  m_LocalScale: {x: 5, y: 1, z: 5}
   m_Children: []
   m_Father: {fileID: 1934502398}
   m_RootOrder: 0
