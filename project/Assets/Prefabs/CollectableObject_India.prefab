@@ -4769,6 +4769,7 @@ GameObject:
   - component: {fileID: 4541755145359218944}
   - component: {fileID: 4541755145359218945}
   - component: {fileID: 4541755145359218950}
+  - component: {fileID: -1108315901539297150}
   m_Layer: 0
   m_Name: CollectableObject_India
   m_TagString: Untagged
@@ -4893,3 +4894,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   waitTime: 30
+--- !u!114 &-1108315901539297150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4541755145359218955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b481220af77041844b08a5bae4fdcc46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 40
+  speed: 1
+  height: 0.15
