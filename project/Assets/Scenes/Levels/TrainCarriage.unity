@@ -6792,7 +6792,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh718264
+  m_Name: pb_Mesh831862
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -37837,7 +37837,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh719200
+  m_Name: pb_Mesh832788
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -50238,8 +50238,8 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: 'Your Journey is almost complete, at the end of the carriage is the last
-    booth, perhaps you can apply what you learnt from the dreams '
+  text: The teamasters are impressed with your tea, you see them close their eyes
+    and dream to faraway lands, you are now a teamaster
   audio: {fileID: 0}
   extraPlayTime: 5
 --- !u!1 &1547059444
@@ -55240,7 +55240,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh719012
+  m_Name: pb_Mesh832600
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
