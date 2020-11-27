@@ -21166,7 +21166,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763082124}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: ccf7824ec1282464e86f9761124b5d9f, type: 2}
   m_CullingMode: 0
@@ -39569,7 +39569,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207291418}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 4d603a0220b0d5148b54796a63773ae4, type: 2}
   m_CullingMode: 0
@@ -50483,6 +50483,7 @@ GameObject:
   - component: {fileID: 1433995865}
   - component: {fileID: 1433995864}
   - component: {fileID: 1433995875}
+  - component: {fileID: 1433995867}
   m_Layer: 0
   m_Name: IndiaInteraction
   m_TagString: Untagged
@@ -50533,6 +50534,19 @@ MonoBehaviour:
   components:
   - {fileID: 1433995865}
   delay: 2
+--- !u!114 &1433995867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433995863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80ef0b30b9108644b0efc5248a41abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 763082125}
 --- !u!114 &1433995868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84002,6 +84016,7 @@ GameObject:
   - component: {fileID: 2085085520}
   - component: {fileID: 2085085519}
   - component: {fileID: 2085085530}
+  - component: {fileID: 2085085522}
   m_Layer: 0
   m_Name: BritishInteraction
   m_TagString: Untagged
@@ -84052,6 +84067,19 @@ MonoBehaviour:
   components:
   - {fileID: 2085085520}
   delay: 2
+--- !u!114 &2085085522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085085518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d80ef0b30b9108644b0efc5248a41abd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1207291419}
 --- !u!114 &2085085523
 MonoBehaviour:
   m_ObjectHideFlags: 0
