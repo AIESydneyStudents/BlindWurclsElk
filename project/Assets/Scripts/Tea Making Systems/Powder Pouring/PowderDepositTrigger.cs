@@ -26,6 +26,9 @@ public class PowderDepositTrigger : MonoBehaviour
 
             if (spoon.hasPowder)
             {
+                // Move spoon over bowl
+                spoon.gameObject.transform.localPosition = transform.localPosition + new Vector3(-0.025f, 0, 0.05f);
+
                 // Play anim
                 spoon.AnimatePowder(true);
 
