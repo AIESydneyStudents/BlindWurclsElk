@@ -52,7 +52,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             }
 
             // Get the offset for where the player has clicked the object
-            mouseOffset = trans.localPosition - (Vector3)eventData.position;
+            mouseOffset = trans.position - (Vector3)eventData.position;
             // Allow the object to be moved
             moving = true;
         }
@@ -63,7 +63,7 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         // If the object is being moved, move it
         if (moving)
         {
-            transform.localPosition = Input.mousePosition + mouseOffset;
+            transform.position = Input.mousePosition + mouseOffset;
         }
     }
 
@@ -81,10 +81,10 @@ public class DragScript : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         for (int i = 0; i < slots.Length; i++)
         {
             // If slot is not being used and is in range
-            if (!slots[i].used && Vector3.Distance(slots[i].transform.localPosition, trans.localPosition) < radius)
+            if (!slots[i].used && Vector3.Distance(slots[i].transform.position, trans.position) < radius)
             {
                 // Use the slot
-                trans.localPosition = slots[i].transform.localPosition;
+                trans.position = slots[i].transform.position;
                 usedSlot = slots[i];
                 slots[i].used = true;
 
