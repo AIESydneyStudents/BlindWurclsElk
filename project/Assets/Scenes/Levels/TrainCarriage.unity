@@ -6246,8 +6246,8 @@ MonoBehaviour:
   output: 0
   text: I always prefer to mix it with 1 part water buffalo milk to 2 parts water
     and heat it just before it boils
-  audio: {fileID: 8300000, guid: e749b9ba7e9cb10459381f1b8ad40ac7, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 934fb5f7a931bb9499d2d62fee9bca18, type: 3}
+  extraPlayTime: 2
 --- !u!1 &148564233
 GameObject:
   m_ObjectHideFlags: 0
@@ -6752,10 +6752,10 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Now, Remember these two things. One, we only move the spoon back and forth
-    to stir and two, when we use a napkin, we dab to clean, and on more thing, we
+    to stir and two, when we use a napkin, we dab to clean, and one last thing, we
     never call it a serviette
-  audio: {fileID: 8300000, guid: 3f2835226701ac84a819973a55e72bb7, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 6a57b5d83a9ac8b4cad1413a5c5c6071, type: 3}
+  extraPlayTime: 2
 --- !u!1 &178073239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8582,7 +8582,7 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Maaf Kiijiye if you have a moment
-  audio: {fileID: 0}
+  audio: {fileID: 8300000, guid: 390e46b3fa96a3645ad2e2a3e4b77b7d, type: 3}
   extraPlayTime: 1
 --- !u!1 &337034253
 GameObject:
@@ -13836,8 +13836,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Yuokoso, thank you for joining me, I was about to prepare tea
-  audio: {fileID: 8300000, guid: 5510c0649afcd9241bf6bce472e017fb, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 3ae96656351e7bc4cb3bc44440e3cc89, type: 3}
+  extraPlayTime: 2
 --- !u!114 &394558697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13926,8 +13926,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: First things first, I only use loose leaf, I proudly observe our traditions
-  audio: {fileID: 8300000, guid: 1e6c75b4a0dc6364cb7bd67819f48a7b, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 8d098e0f5424fd643b3b488f719324fe, type: 3}
+  extraPlayTime: 2
 --- !u!1 &408616981
 GameObject:
   m_ObjectHideFlags: 0
@@ -20157,9 +20157,9 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Ano! Over here! Sit
-  audio: {fileID: 0}
-  extraPlayTime: 1
+  text: Ano! Over here! Sit with me
+  audio: {fileID: 8300000, guid: 153d727f8b50dfe4faeed43ec31ea68e, type: 3}
+  extraPlayTime: 3
 --- !u!114 &646495687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20203,8 +20203,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Namaste, have some tea with me while you relax
-  audio: {fileID: 8300000, guid: 0ab148d6aa165404989b5a3e4fe3a92d, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 834730cf3d1133041b324efc0a22d48b, type: 3}
+  extraPlayTime: 2
 --- !u!1001 &653629829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20613,8 +20613,8 @@ MonoBehaviour:
   text: We have tools that we use for our tea ceremonies; there is a wooden spoon
     called a Chashaku, we use it to pour the powder. The bowl we use is called a
     Chawan and we mix it all together with a whisk called a Chasen
-  audio: {fileID: 8300000, guid: b5126f8caf110a342bf1adec59ea5741, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: fcf1b2400e6830e4e8efc0faad863caf, type: 3}
+  extraPlayTime: 2
 --- !u!1001 &748114599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26851,8 +26851,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: And here, take this Earl Grey and dream of starry nights in the English countryside
-  audio: {fileID: 8300000, guid: ca8783cb35ff77b4fb7b41e9543984ad, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 324cbf6d31c8f784f9c7341e7606f9ab, type: 3}
+  extraPlayTime: 2
 --- !u!1 &871101991
 GameObject:
   m_ObjectHideFlags: 0
@@ -36671,8 +36671,8 @@ MonoBehaviour:
       _dynamic: 0
   input: 0
   output: 0
-  text: Salutations! Take a seat if you will
-  audio: {fileID: 0}
+  text: Salutations! Would you care to join me
+  audio: {fileID: 8300000, guid: 20c4b10c3d84b0e4ea0d83c05ce477a2, type: 3}
   extraPlayTime: 1
 --- !u!1001 &952866772
 PrefabInstance:
@@ -44443,8 +44443,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: I am making tea from my homeland called Matcha Tea, it is a powdered tea
-  audio: {fileID: 8300000, guid: 0fca775f4bac46549a894c26f82eaedf, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: d117a65cf81c1144f82b36fbf136b7a0, type: 3}
+  extraPlayTime: 2
 --- !u!1 &1249542795 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7eb9c17e9da54e64a922ade32932c517,
@@ -50218,8 +50218,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Drink the tea and dream yourself to a faraway land, my home of Japan
-  audio: {fileID: 8300000, guid: f536dc29bca5c1f4dae709f7b762388b, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: ecb278b21b19512429d0cf7bede91080, type: 3}
+  extraPlayTime: 2
 --- !u!114 &1377510342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50268,8 +50268,8 @@ MonoBehaviour:
   text: Let me tell you a little about this tea, In India Chai just means tea, so
     what I am sharing with you is called Masala Chai, each family learns to make
     it with different ingredients, so no two masalas are the same
-  audio: {fileID: 8300000, guid: 0cd4b0f4d0a1ed84e97803d13b973c84, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 792befa03eaa31249a77ecfc5c0f5a1c, type: 3}
+  extraPlayTime: 2
 --- !u!1 &1388070097
 GameObject:
   m_ObjectHideFlags: 0
@@ -50646,8 +50646,8 @@ MonoBehaviour:
   output: 0
   text: "My own family\u2019s ingredients are, Cardamom, Cinnamon, Cloves, Ginger
     and Black Pepper, you can substitute ingredients with Lemongrass or Mint"
-  audio: {fileID: 8300000, guid: 7f78ac1dce2eae54099a58804bbced7d, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: 802a78fd197eeed4cad42a3643952593, type: 3}
+  extraPlayTime: 2
 --- !u!1001 &1476855798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78671,8 +78671,8 @@ MonoBehaviour:
   input: 0
   output: 0
   text: Welcome! I am terribly excited to share this experience with you
-  audio: {fileID: 8300000, guid: b0d75dde76fd1f747a1b7a2f3f9ed4a7, type: 3}
-  extraPlayTime: 1
+  audio: {fileID: 8300000, guid: e31ef4dc762adc64aac35d91736bb8f6, type: 3}
+  extraPlayTime: 2
 --- !u!1001 &2048105164
 PrefabInstance:
   m_ObjectHideFlags: 0
