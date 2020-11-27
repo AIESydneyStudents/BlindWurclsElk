@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: CollectableEffectMat
+  m_Name: CollectableEffectMat_Japan
   m_Shader: {fileID: 210, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHABLEND_ON _EMISSION
   m_LightmapFlags: 0
@@ -91,6 +91,6 @@ Material:
     - _ZWrite: 0
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
-    - _Color: {r: 0, g: 0.9607843, b: 0.9607843, a: 1}
-    - _EmissionColor: {r: 0.019607833, g: 0.4745098, b: 0.3790309, a: 1}
+    - _Color: {r: 0.95956635, g: 0.9607843, b: 0, a: 1}
+    - _EmissionColor: {r: 0.4706213, g: 0.4745098, b: 0.019607833, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
