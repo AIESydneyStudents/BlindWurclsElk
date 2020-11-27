@@ -73,7 +73,7 @@ public class TransitionManager : MonoBehaviour
             player.transform.localRotation = Quaternion.Euler(0, -90, 0);
 
             //show intro text
-            introText.SetActive(true);
+            StartCoroutine(FadeTextIn());
 
             //fade in
             StartCoroutine(FadeIn());
@@ -229,10 +229,41 @@ public class TransitionManager : MonoBehaviour
         eyebot.gameObject.SetActive(false);
     }
 
+
+    private IEnumerator FadeTextOut()
+    {
+        Text text = introText.GetComponent<Text>();
+
+        while (text.color.a > 0f)
+        {
+            text.color -= new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+
+        //destroy text
+        Destroy(introText);
+    }
+    private IEnumerator FadeTextIn()
+    {
+        introText.SetActive(true);
+        Text text = introText.GetComponent<Text>();
+
+        while (text.color.a < 1f)
+        {
+            text.color += new Color(0, 0, 0, Time.deltaTime * 0.5f);
+
+            yield return null;
+        }
+    }
+
     private IEnumerator FadeIn()
     {
-        yield return new WaitForSeconds(10.5f);
-        Destroy(introText);
+        yield return new WaitForSeconds(8);
+        StartCoroutine(FadeTextOut());
+
+        yield return new WaitForSeconds(2.5f);
+        
 
         while (img.color.a > 0f)
         {
