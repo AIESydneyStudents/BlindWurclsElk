@@ -41,11 +41,10 @@ public class ScrollingMenuScript : MonoBehaviour
     {
         //show image and move it to start of canvas
         images[index].gameObject.SetActive(true);
-        images[index].localPosition = new Vector3(images[index].rect.width * 0.25f, images[index].localPosition.y, 0);
-
+        images[index].localPosition = new Vector3(images[index].sizeDelta.x * 0.5f, images[index].localPosition.y, 0);
 
         Vector3 start = images[index].localPosition;
-        Vector3 end = start + new Vector3(-(images[index].rect.width * 0.5f), 0, 0);
+        Vector3 end = start + new Vector3(-images[index].sizeDelta.x, 0, 0);
 
         for (float t = 0f; t < 1f; t += Time.deltaTime * speed)
         {
