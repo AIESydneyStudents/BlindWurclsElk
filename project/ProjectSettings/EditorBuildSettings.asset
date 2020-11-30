@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Other/MainMenuScene.unity
+    guid: d6dc06ad7f79f9249b4a50b9e167e685
+  - enabled: 1
+    path: Assets/Scenes/Other/PlayerScene.unity
+    guid: ce0f8a9d835bfc44ebd6be6d70dad71f
+  - enabled: 1
+    path: Assets/Scenes/Levels/TrainCarriage.unity
+    guid: bf0e59a2d2b66bf488890d3b20a3ab5b
+  - enabled: 1
+    path: Assets/Scenes/Levels/TT_Level_Japan_v1.unity
+    guid: 4fa89ee3a1366bd4e83fae54e984b892
+  - enabled: 1
+    path: Assets/Scenes/Levels/TT_Level_Britain.unity
+    guid: 6233db9eb2cad404ca70d7187eca1a9e
+  - enabled: 1
+    path: Assets/Scenes/Levels/TT_Level_India.unity
+    guid: 581fe2c72fb815e4a9e79840df2c4db8
+  - enabled: 1
+    path: Assets/Scenes/Other/Britain_PuzzleScene.unity
+    guid: 591178dec7d69a44d93c1cb6ff711514
   m_configObjects: {}
