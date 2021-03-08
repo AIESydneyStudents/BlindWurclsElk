@@ -19,6 +19,10 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public bool canMove = true;
 
+    KeyCode[] cheatCode = { KeyCode.UpArrow, KeyCode.UpArrow, KeyCode.DownArrow, KeyCode.DownArrow, KeyCode.LeftArrow, KeyCode.RightArrow, KeyCode.LeftArrow, KeyCode.RightArrow, KeyCode.B, KeyCode.A };
+    int cheatCodeIndex = 0;
+	bool cheatCodeEntered = false;
+
 
     void Awake()
     {
@@ -74,10 +78,32 @@ public class PlayerController : MonoBehaviour
 
 
 
+        //check for cheat code
+        if (!cheatCodeEntered && Input.anyKeyDown)
+        {
+            //right key
+            if (Input.GetKeyDown(cheatCode[cheatCodeIndex]))
+            {
+                cheatCodeIndex++;
+            }
+            //wrong key
+            else
+            {
+                cheatCodeIndex = 0;
+            }
+        }
+
+        //full cheat code entered
+        if (cheatCodeIndex == cheatCode.Length)
+        {
+            cheatCodeEntered = true;
+        }
+
+
         //used to change speed for testing
-        if (Input.GetKeyDown(KeyCode.Equals))
+        if (cheatCodeEntered && Input.GetKeyDown(KeyCode.Equals))
         { speed += 5; }
-        if (Input.GetKeyDown(KeyCode.Minus))
+        if (cheatCodeEntered && Input.GetKeyDown(KeyCode.Minus))
         { speed -= 5; }
     }
 }
