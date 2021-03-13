@@ -12,39 +12,33 @@ public class ScrollingMenuScript : MonoBehaviour
 
     int index = 0;
 
-
+    public Vector3 firstStart;
 
 
     void Start()
     {
-        StartCoroutine(Scroll());
-
+        StartCoroutine(Scroll(true));
     }
 
-    void Update()
-    {
-        
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-    private IEnumerator Scroll()
+    private IEnumerator Scroll(bool first = false)
     {
         //show image and move it to start of canvas
         images[index].gameObject.SetActive(true);
         images[index].localPosition = new Vector3(images[index].sizeDelta.x * 0.5f, images[index].localPosition.y, 0);
 
-        Vector3 start = images[index].localPosition;
-        Vector3 end = start + new Vector3(-images[index].sizeDelta.x, 0, 0);
+        Vector3 start, end;
+
+        if (!first)
+		{
+            start = images[index].localPosition;
+            end = start + new Vector3(-images[index].sizeDelta.x, 0, 0);
+        }
+        else
+		{
+            start = firstStart;
+            end = -firstStart;
+		}
+        
 
         for (float t = 0f; t < 1f; t += Time.deltaTime * speed)
         {
